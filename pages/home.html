@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="ko" class="overflow-x-hidden">
+  <head>
+    <script src="../core/header.js"></script>
+    <script src="../core/component-loader.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        defaultHeader.appendToHead();
+        loadComponent("../components/header.html", "#header-container");
+        loadComponent("../components/navigation.html", "#navigation-container");
+        loadComponent("../components/footer.html", "#footer-container");
+      });
+    </script>
+  </head>
+  <body class="min-w-[360px] overflow-x-hidden max-w-full w-full">
+    <div id="header-container"></div>
+    <div id="navigation-container" class="sr-only md:not-sr-only"></div>
+    <main
+      class="overflow-x-hidden overflow-y-hidden max-w-full w-full relative"
+    >
+      <section
+        class="bg-[#E5E8FF] w-full h-100 grid grid-cols-1 md:grid-cols-2 px-8 relative"
+      >
+        <div class="flex flex-col justify-center items-center md:px-8">
+          <span class="font-semibold text-[24px] md:text-[30px] lg:text-[44px]"
+            >100% <span class="text-[#A10076]">비대면</span> 안전한
+            <span class="text-[#A10076]">직거래!</span>
+          </span>
+          <span
+            class="text-[16px] md:text-[20px] lg:text-[28px] font-normal text-center md:text-left"
+            >차량 인수부터 인도까지 ONE-STOP 서비스로,<br />안전하고 편리한
+            직거래</span
+          >
+        </div>
+        <div
+          class="flex justify-center md:max-lg:items-center items-start w-full"
+        >
+          <img
+            src="../assets/img/img_banner.png"
+            alt="home_banner"
+            class="w-[280px] h-[168px] md:w-[576px] md:h-[346px] object-contain"
+          />
+        </div>
+      </section>
+      <div
+        class="absolute top-80 left-1/2 -translate-x-1/2 bg-white w-[calc(100%-32px)] md:w-[calc(100%-64px)] min-h-[264px] md:min-h-0 px-8 md:px-16 h-50 rounded-3xl flex flex-col justify-center items-center gap-4 md:gap-6 shadow-lg"
+      >
+        <div class="w-full">
+          <span>입찰 진행중인 매각 차량을 찾아보세요!</span>
+        </div>
+        <div class="w-full gap-4 md:gap-6 flex flex-col md:flex-row">
+          <select
+            class="flex-1 border border-zinc-300 rounded-md px-2 py-2 md:py-4 text-lg"
+          >
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+          <input
+            type="text"
+            class="border border-zinc-300 rounded-md px-2 py-2 md:py-4 text-lg flex-1"
+            placeholder="차량명을 입력 해 주세요"
+          />
+          <button
+            class="bg-[#A10076] text-white rounded-md p-2 md:p-4 text-xl min-w-[100px]"
+          >
+            검색
+          </button>
+        </div>
+      </div>
+      <section
+        class="py-10 px-4 md:px-8 flex grid md:grid-cols-2 lg:grid-cols-3 mt-54 md:mt-36 gap-2"
+      >
+        <article
+          class="w-full lg:min-w-[322px] lg:min-h-[360px] border border-zinc-300 flex flex-col py-8 px-6 justify-between"
+        >
+          <div class="flex flex-col">
+            <span class="text-2xl font-bold"
+              ><span class="text-[#A10076]">공매입찰</span>은 이렇게!</span
+            >
+            <span class="text-sm font-normal mt-4">
+              입찰 방법, 진행 절차, 보관소 방문 및 차량 확인 방법 등에 대한
+              정보를 확인하시고
+              <span class="font-bold">내가 원하는 공매 차량</span>을 입찰해
+              보세요.
+            </span>
+          </div>
+
+          <div class="grid grid-cols-3 gap-2">
+            <div class="col-span-1 flex flex-col justify-center items-center">
+              <img
+                src="../assets/img/img_video_guide.png"
+                alt="video_guide"
+                class="w-full h-full object-contain"
+              />
+              <button
+                class="border border-zinc-300 p-2 rounded-md text-xs flex gap-3 items-center justify-center"
+              >
+                <span class="font-bold">공매영상 가이드</span>
+                <span class="text-[#A10076]">></span>
+              </button>
+            </div>
+            <div class="col-span-1 flex flex-col justify-center items-center">
+              <img
+                src="../assets/img/img_process_guide.png"
+                alt="process_guide"
+                class="w-full h-full object-contain"
+              />
+              <button
+                class="border border-zinc-300 p-2 rounded-md text-xs flex gap-3 items-center justify-center"
+              >
+                <span class="font-bold">인터넷 공매절차</span>
+                <span class="text-[#A10076]">></span>
+              </button>
+            </div>
+            <div class="col-span-1 flex flex-col justify-center items-center">
+              <img
+                src="../assets/img/img_checklist.png"
+                alt="checklist"
+                class="w-full h-full object-contain"
+              />
+              <button
+                class="border border-zinc-300 p-2 rounded-md text-xs flex gap-3 items-center justify-center"
+              >
+                <span class="font-bold">입찰전 유의사항</span>
+                <span class="text-[#A10076]">></span>
+              </button>
+            </div>
+          </div>
+        </article>
+        <article
+          class="w-full lg:min-w-[322px] lg:min-h-[360px] border border-zinc-300 flex flex-col py-8 px-6"
+        >
+          <div class="flex flex-col">
+            <span class="text-2xl font-bold text-[#A10076]">내 차 팔기</span>
+            <span class="text-sm font-normal mt-4">
+              <span class="font-bold"
+                >개인 소유 차량을 공매로 매각하기 위한 절차를 안내</span
+              >해 드립니다.<br /><span
+                >절차 확인 후 내 차 팔기를 신청한 차량은 개인공매로 매각이
+                진행됩니다.</span
+              >
+            </span>
+          </div>
+          <div class="flex my-4">
+            <div
+              class="w-6 h-6 text-zinc-600"
+              style="
+                mask: url('../assets/img/ic_car_info.svg') no-repeat center;
+                -webkit-mask: url('../assets/img/ic_car_info.svg') no-repeat
+                  center;
+                mask-size: contain;
+                -webkit-mask-size: contain;
+                background-color: currentColor;
+              "
+            ></div>
+            <div
+              class="py-1 px-2 border-t border-b border-r border-zinc-300 rounded-r-full flex items-center justify-center"
+            >
+              <span class="text-xs font-normal"
+                >오토마트에서 차량입고
+                <span class="text-[#A10076]">무료 탁송 서비스</span>를
+                제공합니다.</span
+              >
+            </div>
+          </div>
+
+          <div class="grid grid-cols-3 gap-2">
+            <div class="col-span-1 flex flex-col justify-center items-center">
+              <img
+                src="../assets/img/img_my_car_sell.png"
+                alt="my_car_sell"
+                class="w-full h-full object-contain"
+              />
+              <button
+                class="border border-zinc-300 p-2 rounded-md text-xs flex gap-3 items-center justify-center"
+              >
+                <span class="font-bold">내차팔기 절차</span>
+                <span class="text-[#A10076]">></span>
+              </button>
+            </div>
+            <div class="col-span-1 flex flex-col justify-center items-center">
+              <img
+                src="../assets/img/img_request_sell.png"
+                alt="request_sell"
+                class="w-full h-full object-contain"
+              />
+              <button
+                class="border border-zinc-300 p-2 rounded-md text-xs flex gap-3 items-center justify-center"
+              >
+                <span class="font-bold">내차팔기 신청</span>
+                <span class="text-[#A10076]">></span>
+              </button>
+            </div>
+            <div class="col-span-1 flex flex-col justify-center items-center">
+              <img
+                src="../assets/img/img_checklist.png"
+                alt="checklist"
+                class="w-full h-full object-contain"
+              />
+              <button
+                class="border border-zinc-300 p-2 rounded-md text-xs flex gap-3 items-center justify-center"
+              >
+                <span class="font-bold">출품전 유의사항</span>
+                <span class="text-[#A10076]">></span>
+              </button>
+            </div>
+          </div>
+        </article>
+        <article
+          class="w-full lg:min-w-[300px] lg:min-h-[360px] border border-zinc-300 flex flex-col py-8 px-6 gap-4"
+        >
+          <span class="text-2xl font-bold">공지사항</span>
+          <ul class="text-sm list-disc list-inside">
+            <li
+              class="p-2 border-b border-zinc-300 last:border-b-0 overflow-hidden text-ellipsis whitespace-nowrap"
+            >
+              오토마트 충북보관소 임시휴무 관련 안내사항
+            </li>
+            <li
+              class="p-2 border-b border-zinc-300 last:border-b-0 overflow-hidden text-ellipsis whitespace-nowrap"
+            >
+              오토마트 충북보관소 임시휴무 관련 안내사항
+            </li>
+            <li
+              class="p-2 border-b border-zinc-300 last:border-b-0 overflow-hidden text-ellipsis whitespace-nowrap"
+            >
+              오토마트 충북보관소 임시휴무 관련 안내사항
+            </li>
+            <li
+              class="p-2 border-b border-zinc-300 last:border-b-0 overflow-hidden text-ellipsis whitespace-nowrap"
+            >
+              오토마트 충북보관소 임시휴무 관련 안내사항
+            </li>
+            <li
+              class="p-2 border-b border-zinc-300 last:border-b-0 overflow-hidden text-ellipsis whitespace-nowrap"
+            >
+              오토마트 충북보관소 임시휴무 관련 안내사항
+            </li>
+          </ul>
+        </article>
+        <article
+          class="w-full lg:min-w-[322px] lg:min-h-[224px] border border-zinc-300 grid grid-cols-2 py-8 px-6 items-center"
+        >
+          <div class="col-span-1 flex flex-col gap-4 items-start">
+            <span class="text-2xl font-bold"
+              ><span class="text-[#A10076]">수입차 실거래가</span> 검색</span
+            >
+            <span class="text-sm font-normal"
+              >과거 사고이력 정보, 차량상태 정보 등 입찰에 도움이 되는 실거래가
+              정보 제공</span
+            >
+            <a href="#" class="text-sm font-normal text-[#A10076] text-center"
+              >자세히 보기 ></a
+            >
+          </div>
+          <div class="col-span-1">
+            <img
+              src="../assets/img/img_car_price.png"
+              alt="import_car_price"
+              class="w-full h-full object-contain"
+            />
+          </div>
+        </article>
+        <article
+          class="w-full lg:min-w-[322px] lg:min-h-[224px] border border-zinc-300 grid grid-cols-2 py-8 px-6 items-center"
+        >
+          <div class="col-span-1 flex flex-col gap-4 items-start">
+            <span class="text-2xl font-bold"
+              ><span class="text-[#A10076]">수입차 빅데이터</span> 제공</span
+            >
+            <span class="text-sm font-normal"
+              >약 10여년간의 빅데이터 분석을 통한 낙찰수, 낙찰가 등의 데이터
+              제시</span
+            >
+            <a href="#" class="text-sm font-normal text-[#A10076] text-center"
+              >자세히 보기 ></a
+            >
+          </div>
+          <div class="col-span-1">
+            <img
+              src="../assets/img/img_car_data.png"
+              alt="car_data"
+              class="w-full h-full object-contain"
+            />
+          </div>
+        </article>
+        <article
+          class="w-full lg:min-w-[300px] lg:min-h-[224px] border border-zinc-300 flex flex-col py-8 px-6"
+        >
+          <span class="text-2xl font-bold">금융서비스</span>
+          <div class="flex-1 flex mt-4">
+            <a
+              href="#"
+              class="flex-1 text-xs font-normal text-[#A10076] min-w-[70px]"
+            >
+              자세히 보기 ></a
+            >
+            <img
+              src="../assets/img/img_money.png"
+              alt="money"
+              class="max-w-[148px] max-h-[119px] object-contain"
+            />
+          </div>
+        </article>
+      </section>
+      <section
+        class="bg-zinc-50 py-12 px-8 flex flex-col text-2xl md:text-[34px] items-center justify-center"
+      >
+        <span class="text-center md:text-left"
+          >지금 <span class="font-bold">오토마트</span>에서
+          <span class="font-bold">공매 중인</span> 차량을 확인해 보세요!</span
+        >
+        <div class="flex gap-2">
+          <button
+            class="bg-transparent lg:min-w-[186px] border border-[#A10076] text-[#A10076] rounded-full px-3 py-2 text-base md:text-lg font-normal mt-8 text-center"
+          >
+            입찰 예정
+          </button>
+          <button
+            class="bg-transparent lg:min-w-[186px] border border-black text-black rounded-full px-3 py-2 text-base md:text-lg font-normal mt-8 text-center"
+          >
+            차량전체보기
+          </button>
+          <button
+            class="bg-transparent lg:min-w-[186px] border border-black text-black rounded-full px-3 py-2 text-base md:text-lg font-normal mt-8 text-center"
+          >
+            입찰 중
+          </button>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-2 mt-11">
+          <div class="col-span-1 flex flex-col bg-white p-2">
+            <img
+              src="../assets/img/img_temp_car.png"
+              alt="car_1"
+              class="w-full h-full object-contain"
+            />
+            <div class="flex flex-col">
+              <span class="text-xl font-semibold">CLS 400d 4MATIC</span>
+              <span class="text-sm font-normal"
+                ><span class="text-[#A10076]">오토마트 부산보관소</span> |
+                2019년형</span
+              >
+              <span class="text-sm font-normal"
+                >자동 ・ 158,808km ・ 2925cc ・ 검정</span
+              >
+              <span class="w-full text-end"
+                ><span class="text-xs font-bold mr-2">예정가</span
+                ><span class="text-xl font-bold">25,000만원</span></span
+              >
+            </div>
+          </div>
+          <div class="col-span-1 flex flex-col bg-white p-2">
+            <img
+              src="../assets/img/img_temp_car.png"
+              alt="car_1"
+              class="w-full h-full object-contain"
+            />
+            <div class="flex flex-col pt-3">
+              <span class="text-xl font-semibold">CLS 400d 4MATIC</span>
+              <span class="text-sm font-normal"
+                ><span class="text-[#A10076]">오토마트 부산보관소</span> |
+                2019년형</span
+              >
+              <span class="text-sm font-normal"
+                >자동 ・ 158,808km ・ 2925cc ・ 검정</span
+              >
+              <span class="w-full text-end"
+                ><span class="text-xs font-bold mr-2">예정가</span
+                ><span class="text-xl font-bold">25,000만원</span></span
+              >
+            </div>
+          </div>
+          <div class="col-span-1 flex flex-col bg-white p-2">
+            <img
+              src="../assets/img/img_temp_car.png"
+              alt="car_1"
+              class="w-full h-full object-contain"
+            />
+            <div class="flex flex-col pt-3">
+              <span class="text-xl font-semibold">CLS 400d 4MATIC</span>
+              <span class="text-sm font-normal"
+                ><span class="text-[#A10076]">오토마트 부산보관소</span> |
+                2019년형</span
+              >
+              <span class="text-sm font-normal"
+                >자동 ・ 158,808km ・ 2925cc ・ 검정</span
+              >
+              <span class="w-full text-end"
+                ><span class="text-xs font-bold mr-2">예정가</span
+                ><span class="text-xl font-bold">25,000만원</span></span
+              >
+            </div>
+          </div>
+          <div class="col-span-1 flex flex-col bg-white p-2">
+            <img
+              src="../assets/img/img_temp_car.png"
+              alt="car_1"
+              class="w-full h-full object-contain"
+            />
+            <div class="flex flex-col pt-3">
+              <span class="text-xl font-semibold">CLS 400d 4MATIC</span>
+              <span class="text-sm font-normal"
+                ><span class="text-[#A10076]">오토마트 부산보관소</span> |
+                2019년형</span
+              >
+              <span class="text-sm font-normal"
+                >자동 ・ 158,808km ・ 2925cc ・ 검정</span
+              >
+              <span class="w-full text-end"
+                ><span class="text-xs font-bold mr-2">예정가</span
+                ><span class="text-xl font-bold">25,000만원</span></span
+              >
+            </div>
+          </div>
+          <div class="col-span-1 flex flex-col bg-white p-2">
+            <img
+              src="../assets/img/img_temp_car.png"
+              alt="car_1"
+              class="w-full h-full object-contain"
+            />
+            <div class="flex flex-col pt-3">
+              <span class="text-xl font-semibold">CLS 400d 4MATIC</span>
+              <span class="text-sm font-normal"
+                ><span class="text-[#A10076]">오토마트 부산보관소</span> |
+                2019년형</span
+              >
+              <span class="text-sm font-normal"
+                >자동 ・ 158,808km ・ 2925cc ・ 검정</span
+              >
+              <span class="w-full text-end"
+                ><span class="text-xs font-bold mr-2">예정가</span
+                ><span class="text-xl font-bold">25,000만원</span></span
+              >
+            </div>
+          </div>
+          <div class="col-span-1 flex flex-col bg-white p-2">
+            <img
+              src="../assets/img/img_temp_car.png"
+              alt="car_1"
+              class="w-full h-full object-contain"
+            />
+            <div class="flex flex-col pt-3">
+              <span class="text-xl font-semibold">CLS 400d 4MATIC</span>
+              <span class="text-sm font-normal"
+                ><span class="text-[#A10076]">오토마트 부산보관소</span> |
+                2019년형</span
+              >
+              <span class="text-sm font-normal"
+                >자동 ・ 158,808km ・ 2925cc ・ 검정</span
+              >
+              <span class="w-full text-end"
+                ><span class="text-xs font-bold mr-2">예정가</span
+                ><span class="text-xl font-bold">25,000만원</span></span
+              >
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex gap-2 w-full py-3 md:px-8 mt-8 items-center justify-center"
+        >
+          <hr class="w-full border-zinc-300" />
+          <div class="flex items-center gap-2">
+            <div
+              class="w-6 h-6 text-zinc-600"
+              style="
+                mask: url('../assets/img/ic_arrow.svg') no-repeat center;
+                -webkit-mask: url('../assets/img/ic_arrow.svg') no-repeat center;
+                mask-size: contain;
+                -webkit-mask-size: contain;
+                background-color: currentColor;
+              "
+            ></div>
+            <span class="text-base text-black line-clamp-1 min-w-8">
+              <span class="text-[#A10076]">1</span> / 3
+            </span>
+            <div
+              class="w-6 h-6 text-zinc-600 rotate-180"
+              style="
+                mask: url('../assets/img/ic_arrow.svg') no-repeat center;
+                -webkit-mask: url('../assets/img/ic_arrow.svg') no-repeat center;
+                mask-size: contain;
+                -webkit-mask-size: contain;
+                background-color: currentColor;
+              "
+            ></div>
+          </div>
+        </div>
+      </section>
+      <section class="grid grid-cols-2 py-8 h-[310px] bg-[#f1f8fa]">
+        <div
+          class="col-span-1 flex flex-col items-center justify-center text-xl md:text-[46px]"
+        >
+          <span class="font-normal">Why</span>
+          <span class="font-bold">AUTOMART?</span>
+        </div>
+        <div class="col-span-1 flex items-center justify-center">
+          <img
+            src="../assets/img/img_banner_car.png"
+            alt="car_1"
+            class="w-full h-auto max-h-[250px] object-contain"
+          />
+        </div>
+      </section>
+      <section class="py-12 px-8 flex flex-col items-center justify-center">
+        <span
+          class="text-2xl text-center md:text-left md:text-[34px] font-normal"
+          ><span class="text-[#A10076] font-bold">최고의 서비스</span>로
+          <span class="text-[#A10076] font-bold">고객 만족</span>을 최우선으로
+          생각하는 기업</span
+        >
+        <span class="text-base text-center md:text-left mt-4">
+          24년 공매 경험을 통한 오토마트 자동차 공매/공개매각은 온라인
+          시스템으로 인터넷과 모바일을 통해
+        </span>
+        <span class="text-base text-center md:text-left">
+          <span class="font-bold">언제 어디서나 입찰 신청이 가능</span>하며
+          <span class="font-bold">안전하고 투명한 거래환경</span>을 제공합니다.
+        </span>
+        <span class="text-base text-center md:text-left">
+          전국 보관소 운영으로 가까운 보관소에서 차량의 출품, 입고, 현장확인,
+          출고 등의 서비스를 받으실 수 있습니다.
+        </span>
+        <div
+          class="mt-8 gap-6 justify-center items-center flex-wrap flex lg:max-w-screen md:max-w-[650px] md:max-w-[480px]"
+        >
+          <div
+            class="flex flex-col items-center justify-center gap-4 min-w-[172px] max-w-[172px]"
+          >
+            <div
+              class="size-[106px]"
+              style="
+                mask: url('../assets/img/ic_home_intro_1.svg') no-repeat center;
+                -webkit-mask: url('../assets/img/ic_home_intro_1.svg') no-repeat
+                  center;
+                mask-size: contain;
+                -webkit-mask-size: contain;
+                background-color: #000;
+              "
+            ></div>
+            <span class="text-sm text-black font-normal text-center">
+              입찰자격 제한없이
+              <span class="text-[#A10076]">누구나, <br />언제 어디서나</span>
+              입찰참여 가능
+            </span>
+          </div>
+          <div
+            class="flex flex-col items-center justify-center gap-4 min-w-[172px] max-w-[172px]"
+          >
+            <div
+              class="size-[106px]"
+              style="
+                mask: url('../assets/img/ic_home_intro_2.svg') no-repeat center;
+                -webkit-mask: url('../assets/img/ic_home_intro_2.svg') no-repeat
+                  center;
+                mask-size: contain;
+                -webkit-mask-size: contain;
+                background-color: #000;
+              "
+            ></div>
+            <span class="text-sm text-black font-normal text-center">
+              <span class="text-[#A10076]">100% 비대면 방식</span>의<br />
+              소비자간 안전한 직거래 방식
+            </span>
+          </div>
+          <div
+            class="flex flex-col items-center justify-center gap-4 min-w-[172px] max-w-[172px]"
+          >
+            <div
+              class="size-[106px]"
+              style="
+                mask: url('../assets/img/ic_home_intro_3.svg') no-repeat center;
+                -webkit-mask: url('../assets/img/ic_home_intro_3.svg') no-repeat
+                  center;
+                mask-size: contain;
+                -webkit-mask-size: contain;
+                background-color: #000;
+              "
+            ></div>
+            <span class="text-sm text-black font-normal text-center">
+              <span class="text-[#A10076]">전국 보관소 운영</span>을 통한<br />
+              차량 전시 및 보관서비스
+            </span>
+          </div>
+          <div
+            class="flex flex-col items-center justify-center gap-4 min-w-[172px] max-w-[172px]"
+          >
+            <div
+              class="size-[106px]"
+              style="
+                mask: url('../assets/img/ic_home_intro_4.svg') no-repeat center;
+                -webkit-mask: url('../assets/img/ic_home_intro_4.svg') no-repeat
+                  center;
+                mask-size: contain;
+                -webkit-mask-size: contain;
+                background-color: #000;
+              "
+            ></div>
+            <span class="text-sm text-black font-normal text-center">
+              자동차 거래를 위한 모든 기능을<br />
+              <span class="text-[#A10076]">One-Stop 서비스</span> 형태로 제공
+            </span>
+          </div>
+          <div
+            class="flex flex-col items-center justify-center gap-4 min-w-[172px] max-w-[172px]"
+          >
+            <div
+              class="size-[106px]"
+              style="
+                mask: url('../assets/img/ic_home_intro_5.svg') no-repeat center;
+                -webkit-mask: url('../assets/img/ic_home_intro_5.svg') no-repeat
+                  center;
+                mask-size: contain;
+                -webkit-mask-size: contain;
+                background-color: #000;
+              "
+            ></div>
+            <span class="text-sm text-black font-normal text-center">
+              <span class="text-[#A10076]">24년 공매 경험을 바탕</span>으로
+              안전하고 투명한 거래환경 제공
+            </span>
+          </div>
+        </div>
+      </section>
+      <section
+        class="p-8 flex flex-col items-center justify-center sr-only lg:not-sr-only"
+      >
+        <div
+          class="border-y border-zinc-300 w-[calc(100%-64px)] grid grid-cols-6 gap-8 py-4"
+        >
+          <div class="col-span-1 flex flex-col gap-4">
+            <span class="border-b border-zinc-300 pb-2 text-sm text-zinc-600"
+              >기관별 검색</span
+            >
+            <div class="flex flex-col gap-4">
+              <a href="#" class="text-sm text-zinc-500">전체</a>
+              <a href="#" class="text-sm text-zinc-500">진행예정</a>
+              <a href="#" class="text-sm text-zinc-500">진행중</a>
+              <a href="#" class="text-sm text-zinc-500">금일발표</a>
+              <a href="#" class="text-sm text-zinc-500">발표완료</a>
+            </div>
+          </div>
+          <div class="col-span-1 flex flex-col gap-4">
+            <span class="border-b border-zinc-300 pb-2 text-sm text-zinc-600"
+              >차량검색</span
+            >
+            <div class="flex flex-col gap-4">
+              <a href="#" class="text-sm text-zinc-500">전체</a>
+              <a href="#" class="text-sm text-zinc-500">관공서공매</a>
+              <a href="#" class="text-sm text-zinc-500">금융기관 공개매각</a>
+              <a href="#" class="text-sm text-zinc-500">개인 공개매각</a>
+              <a href="#" class="text-sm text-zinc-500">회원사 공개매각</a>
+            </div>
+          </div>
+          <div class="col-span-1 flex flex-col gap-4">
+            <span class="border-b border-zinc-300 pb-2 text-sm text-zinc-600"
+              >내차팔기</span
+            >
+            <div class="flex flex-col gap-4">
+              <a href="#" class="text-sm text-zinc-500">전체</a>
+              <a href="#" class="text-sm text-zinc-500">Why? Automart</a>
+              <a href="#" class="text-sm text-zinc-500">내차팔기절차</a>
+              <a href="#" class="text-sm text-zinc-500">내차팔기신청</a>
+              <a href="#" class="text-sm text-zinc-500">내차팔기내역</a>
+            </div>
+          </div>
+          <div class="col-span-1 flex flex-col gap-4">
+            <span class="border-b border-zinc-300 pb-2 text-sm text-zinc-600"
+              >고객센터</span
+            >
+            <div class="flex flex-col gap-4">
+              <a href="#" class="text-sm text-zinc-500">공지사항</a>
+              <a href="#" class="text-sm text-zinc-500">공매절차</a>
+              <a href="#" class="text-sm text-zinc-500">FAQ</a>
+              <a href="#" class="text-sm text-zinc-500">Q&A</a>
+            </div>
+          </div>
+          <div class="col-span-1 flex flex-col gap-4">
+            <span class="border-b border-zinc-300 pb-2 text-sm text-zinc-600"
+              >나의 정보</span
+            >
+            <div class="flex flex-col gap-4">
+              <a href="#" class="text-sm text-zinc-500">회원정보수정</a>
+              <a href="#" class="text-sm text-zinc-500">나의입찰정보</a>
+              <a href="#" class="text-sm text-zinc-500">나의입찰내역</a>
+              <a href="#" class="text-sm text-zinc-500">나의찜한차량</a>
+              <a href="#" class="text-sm text-zinc-500">나의관심조건</a>
+            </div>
+          </div>
+          <div class="col-span-1 flex flex-col gap-4">
+            <span class="border-b border-zinc-300 pb-2 text-sm text-zinc-600"
+              >기타 정보</span
+            >
+            <div class="flex flex-col gap-4">
+              <a href="#" class="text-sm text-zinc-500">수입차 실거래가</a>
+              <a href="#" class="text-sm text-zinc-500">수입차 Bigdata</a>
+              <a href="#" class="text-sm text-zinc-500">차량보관소</a>
+              <a href="#" class="text-sm text-zinc-500">할부/금융</a>
+              <a href="#" class="text-sm text-zinc-500">사이트맵</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div id="footer-container" class="mt-4"></div>
+  </body>
+</html>
