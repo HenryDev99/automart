@@ -10,6 +10,12 @@
         loadComponent("../components/navigation.html", "#navigation-container");
         loadComponent("../components/footer.html", "#footer-container");
         loadComponent("../components/common/pagination.html", "#qa-pagination");
+        loadComponent("../components/qa/qaTable.html", "#qaTable-container");
+        loadComponent(
+          "../components/qa/passwordConfirm.html",
+          "#passwordConfirm-container"
+        );
+        loadComponent("../components/qa/detail.html", "#detail-container");
       });
     </script>
   </head>
@@ -55,181 +61,8 @@
           >
         </article>
       </section>
-      <section class="p-8 flex flex-col gap-4">
-        <form
-          class="flex flex-col items-start gap-6 lg:gap-0 lg:items-center lg:flex-row w-full justify-between items-center"
-        >
-          <div class="flex gap-2 w-full md:min-w-[380px]">
-            <div
-              class="size-6 text-black"
-              style="
-                mask: url('../assets/img/ic_lock.svg') no-repeat center;
-                -webkit-mask: url('../assets/img/ic_lock.svg') no-repeat center;
-                mask-size: contain;
-                -webkit-mask-size: contain;
-                background-color: currentColor;
-              "
-            ></div>
-            <span class="text-sm md:text-lg"
-              >표기는 작성자 선택으로 비밀글 처리된 글입니다.
-            </span>
-          </div>
-          <div class="flex flex-col md:flex-row gap-6 w-full">
-            <input
-              type="text"
-              id="name"
-              class="border border-zinc-300 rounded-md px-2 py-2 md:py-4 text-sm w-full md:w-[585px]"
-            />
-            <button
-              class="text-white bg-[#A10076] rounded-md md:py-4 py-2 text-xl font-semibold self-center w-full md:w-[140px]"
-            >
-              검색
-            </button>
-          </div>
-        </form>
-        <article class="py-8">
-          <table class="w-full! border-collapse text-zinc-600">
-            <thead class="bg-zinc-100">
-              <tr class="bg-zinc-100">
-                <th class="px-3 py-2.5 text-sm font-semibold text-center">
-                  번호
-                </th>
-                <th
-                  class="px-3 py-2.5 text-sm font-semibold text-center min-w-[400px] sr-only md:not-sr-only"
-                >
-                  제목
-                </th>
-                <th class="px-3 py-2.5 text-sm font-semibold text-center">
-                  작성자
-                </th>
-                <th class="px-3 py-2.5 text-sm font-semibold text-center">
-                  등록일
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="border-t md:border-y border-[#d1d5db] text-center">
-                <td class="p-4">13789</td>
-                <td class="text-left p-4 sr-only md:not-sr-only">어플오류</td>
-                <td class="p-4">김철수</td>
-                <td class="p-4">2025-01-01</td>
-              </tr>
-              <tr class="bg-slate-50 md:hidden">
-                <td
-                  colspan="1"
-                  class="text-center border-r border-[#a10076] text-[#a10076]"
-                >
-                  <span>제목</span>
-                </td>
-                <td colspan="3" class="px-3 py-2.5 text-sm text-center">
-                  <span>어플 오류</span>
-                </td>
-              </tr>
 
-              <tr class="border-t md:border-y border-[#d1d5db] text-center">
-                <td class="p-4">13789</td>
-                <td
-                  class="text-left !py-4 flex items-center gap-2 sr-only md:not-sr-only"
-                >
-                  <img
-                    src="../assets/img/ic_answer.svg"
-                    class="size-6 object-contain"
-                  />
-                  <span>답변입니다.</span>
-                </td>
-                <td class="p-4">김철수</td>
-                <td class="p-4">2025-01-01</td>
-              </tr>
-              <tr class="bg-slate-50 md:hidden">
-                <td
-                  colspan="1"
-                  class="text-center border-r border-[#a10076] text-[#a10076]"
-                >
-                  <span>제목</span>
-                </td>
-                <td colspan="3" class="px-3 py-2.5 text-sm text-center">
-                  <span>어플 오류</span>
-                </td>
-              </tr>
-
-              <tr class="border-t md:border-y border-[#d1d5db] text-center">
-                <td class="p-4">13789</td>
-                <td
-                  class="text-left !py-4 flex items-center gap-2 sr-only md:not-sr-only"
-                >
-                  <div
-                    class="size-6 text-black"
-                    style="
-                      mask: url('../assets/img/ic_lock.svg') no-repeat center;
-                      -webkit-mask: url('../assets/img/ic_lock.svg') no-repeat
-                        center;
-                      mask-size: contain;
-                      -webkit-mask-size: contain;
-                      background-color: currentColor;
-                    "
-                  ></div>
-                  압류건수 문의
-                </td>
-                <td class="p-4">김철수</td>
-                <td class="p-4">2025-01-01</td>
-              </tr>
-              <tr class="bg-slate-50 md:hidden">
-                <td
-                  colspan="1"
-                  class="text-center border-r border-[#a10076] text-[#a10076]"
-                >
-                  <span>제목</span>
-                </td>
-                <td colspan="3" class="px-3 py-2.5 text-sm text-center">
-                  <span>어플 오류</span>
-                </td>
-              </tr>
-
-              <tr class="border-t md:border-y border-[#d1d5db] text-center">
-                <td class="p-4">13789</td>
-                <td class="text-left p-4 sr-only md:not-sr-only">어플오류</td>
-                <td class="p-4">김철수</td>
-                <td class="p-4">2025-01-01</td>
-              </tr>
-              <tr class="bg-slate-50 md:hidden">
-                <td
-                  colspan="1"
-                  class="text-center border-r border-[#a10076] text-[#a10076]"
-                >
-                  <span>제목</span>
-                </td>
-                <td colspan="3" class="px-3 py-2.5 text-sm text-center">
-                  <span>어플 오류</span>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-          <div class="flex py-8 gap-4 md:gap-0 md:justify-between">
-            <button
-              class="bg-[#A10076] text-white rounded-md p-2 md:p-4 text-xl w-full md:max-w-[100px]"
-            >
-              글쓰기
-            </button>
-            <button
-              class="text-black border border-zinc-300 rounded-md md:py-4 py-2 text-xl w-[116px] flex items-center justify-center"
-            >
-              <span class="hidden md:block">새로고침</span>
-              <div
-                class="size-6 text-black md:hidden"
-                style="
-                  mask: url('../assets/img/ic_refresh.svg') no-repeat center;
-                  -webkit-mask: url('../assets/img/ic_refresh.svg') no-repeat
-                    center;
-                  mask-size: contain;
-                  -webkit-mask-size: contain;
-                  background-color: currentColor;
-                "
-              ></div>
-            </button>
-          </div>
-          <div id="qa-pagination"></div>
-        </article>
-      </section>
+      <div id="detail-container"></div>
     </main>
     <div id="footer-container"></div>
   </body>
