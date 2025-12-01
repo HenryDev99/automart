@@ -1,6 +1,6 @@
 <section class="p-8 flex flex-col gap-4">
   <form class="flex w-full">
-    <div class="flex flex-col md:flex-row gap-6 w-full">
+    <div class="flex md:flex-row flex-col gap-6 w-full">
       <select
         class="border border-zinc-300 rounded-md px-2 py-2 md:py-4 text-lg min-w-[260px]"
       >
@@ -8,11 +8,11 @@
         <option value="2">금융/개인/회원사 공개매각</option>
         <option value="3">내차팔기</option>
       </select>
-      <div class="flex items-center gap-2">
+      <div class="flex items-center gap-2 w-full">
         <input
           type="text"
           id="name"
-          class="border border-zinc-300 rounded-md px-2 py-2 md:py-4 text-sm w-full md:w-[585px] h-full"
+          class="border border-zinc-300 rounded-md px-2 py-2 md:py-4 text-sm w-full h-full"
         />
         <button
           class="text-white bg-[#A10076] rounded-md md:py-4 py-2 text-xl font-semibold self-center min-w-[100px] md:w-[140px]"
@@ -23,12 +23,12 @@
     </div>
   </form>
   <article class="py-8">
-    <table class="w-full! border-collapse text-zinc-600">
+    <table class="w-full! border-collapse text-zinc-600 sr-only md:not-sr-only">
       <thead class="bg-zinc-100">
         <tr class="bg-zinc-100">
           <th class="px-3 py-2.5 text-sm font-semibold text-center">번호</th>
           <th
-            class="px-3 py-2.5 text-sm font-semibold text-center min-w-[400px] sr-only md:not-sr-only"
+            class="px-3 py-2.5 text-sm font-semibold text-center min-w-[400px]"
           >
             제목
           </th>
@@ -58,18 +58,10 @@
         <tr class="border-b border-[#d1d5db] bg-white">
           <td></td>
           <td colspan="2" class="px-3 py-2.5 text-lg bg-white">
-            <span class="whitespace-pre-line"
-              >1. [공매로 내차팔기] 신청 : 오토마트 홈페이지 혹은 오토마트 APP
-              이용&#10;2. 오토마트 콜센터 전화상담&#10;3. 오토마트 탁송기사 방문
-              : 차량 및 매도서류 전달&#10;4. 오토마트 차량 보관소 입고 및
-              차량점검 진행&#10;5. 공매진행 준비 (공매일정 및 공매시작가격
-              협의)&#10;6. 공매진행&#10;7. 낙찰시&#10; ① 낙찰금액 입금 :
-              낙찰자&#10; ② 차량 소유권 이전 : 오토마트&#10; ③ 낙찰정산금(낙찰금
-              - 공매수수료) 입금&#10; ④ 차량출고&#10;8. 유찰시&#10; ① 재공매
-              여부 협의 결정 : 예정가격 조정 및 공매일정 결정&#10; ② 재공매
-              진행&#10; ③ 재공매 진행 취소 시 : 공매수수료 납부 후,
-              차량출고(본인 출고)</span
-            >
+            <p class="whitespace-pre-line w-full">
+              1. [공매로 내차팔기] 신청 : 오토마트 홈페이지 혹은 오토마트 APP
+              이용 2. 오토마트 콜센터 전화상담
+            </p>
           </td>
         </tr>
 
@@ -132,6 +124,141 @@
         </tr>
       </tbody>
     </table>
-    <div id="faq-pagination" class="mt-8"></div>
+    <div id="faq-pagination" class="mt-8 sr-only md:not-sr-only"></div>
+
+    <div class="flex flex-col gap-4 border-b border-zinc-300 py-4 md:sr-only">
+      <div class="grid grid-cols-5 gap-4">
+        <span
+          class="text-xl text-[#A10076] col-span-1 flex items-center justify-center"
+          >Q</span
+        >
+        <div class="col-span-3 flex flex-col text-zinc-600">
+          <p class="text-xs">내차팔기</p>
+          <p class="text-sm font-semibold">
+            공매로 내차팔기는 어떻게 진행되나요?
+          </p>
+        </div>
+        <div class="col-span-1 flex items-center justify-center">
+          <div
+            class="w-6 h-6 text-zinc-600 rotate-270"
+            style="
+              mask: url('../assets/img/ic_arrow.svg') no-repeat center;
+              -webkit-mask: url('../assets/img/ic_arrow.svg') no-repeat center;
+              mask-size: contain;
+              -webkit-mask-size: contain;
+              background-color: currentColor;
+            "
+          ></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex flex-col gap-4 border-b border-zinc-300 py-4 md:sr-only">
+      <div class="grid grid-cols-5 gap-4">
+        <span
+          class="text-xl text-[#A10076] col-span-1 flex items-center justify-center"
+          >Q</span
+        >
+        <div class="col-span-3 flex flex-col text-zinc-600">
+          <p class="text-xs">내차팔기</p>
+          <p class="text-sm font-semibold">
+            공매로 내차팔기는 어떻게 진행되나요?
+          </p>
+        </div>
+        <div class="col-span-1 flex items-center justify-center">
+          <div
+            class="w-6 h-6 text-zinc-600 rotate-270"
+            style="
+              mask: url('../assets/img/ic_arrow.svg') no-repeat center;
+              -webkit-mask: url('../assets/img/ic_arrow.svg') no-repeat center;
+              mask-size: contain;
+              -webkit-mask-size: contain;
+              background-color: currentColor;
+            "
+          ></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex flex-col gap-4 border-b border-zinc-300 py-4 md:sr-only">
+      <div class="grid grid-cols-5 gap-4">
+        <span
+          class="text-xl text-[#A10076] col-span-1 flex items-center justify-center"
+          >Q</span
+        >
+        <div class="col-span-3 flex flex-col text-zinc-600">
+          <p class="text-xs">내차팔기</p>
+          <p class="text-sm font-semibold">
+            공매로 내차팔기는 어떻게 진행되나요?
+          </p>
+        </div>
+        <div class="col-span-1 flex items-center justify-center">
+          <div
+            class="w-6 h-6 text-zinc-600 rotate-270"
+            style="
+              mask: url('../assets/img/ic_arrow.svg') no-repeat center;
+              -webkit-mask: url('../assets/img/ic_arrow.svg') no-repeat center;
+              mask-size: contain;
+              -webkit-mask-size: contain;
+              background-color: currentColor;
+            "
+          ></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex flex-col gap-4 border-b border-zinc-300 py-4 md:sr-only">
+      <div class="grid grid-cols-5 gap-4">
+        <span
+          class="text-xl text-[#A10076] col-span-1 flex items-center justify-center"
+          >Q</span
+        >
+        <div class="col-span-3 flex flex-col text-zinc-600">
+          <p class="text-xs">내차팔기</p>
+          <p class="text-sm font-semibold">
+            공매로 내차팔기는 어떻게 진행되나요?
+          </p>
+        </div>
+        <div class="col-span-1 flex items-center justify-center">
+          <div
+            class="w-6 h-6 text-zinc-600 rotate-270"
+            style="
+              mask: url('../assets/img/ic_arrow.svg') no-repeat center;
+              -webkit-mask: url('../assets/img/ic_arrow.svg') no-repeat center;
+              mask-size: contain;
+              -webkit-mask-size: contain;
+              background-color: currentColor;
+            "
+          ></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex flex-col gap-4 border-b border-zinc-300 py-4 md:sr-only">
+      <div class="grid grid-cols-5 gap-4">
+        <span
+          class="text-xl text-[#A10076] col-span-1 flex items-center justify-center"
+          >Q</span
+        >
+        <div class="col-span-3 flex flex-col text-zinc-600">
+          <p class="text-xs">내차팔기</p>
+          <p class="text-sm font-semibold">
+            공매로 내차팔기는 어떻게 진행되나요?
+          </p>
+        </div>
+        <div class="col-span-1 flex items-center justify-center">
+          <div
+            class="w-6 h-6 text-zinc-600 rotate-270"
+            style="
+              mask: url('../assets/img/ic_arrow.svg') no-repeat center;
+              -webkit-mask: url('../assets/img/ic_arrow.svg') no-repeat center;
+              mask-size: contain;
+              -webkit-mask-size: contain;
+              background-color: currentColor;
+            "
+          ></div>
+        </div>
+      </div>
+    </div>
   </article>
 </section>
