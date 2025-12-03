@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko" class="overflow-x-hidden">
+  <head>
+    <script src="../core/header.js"></script>
+    <script src="../core/component-loader.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        defaultHeader.appendToHead();
+        loadComponent("../components/header.html", "#header-container");
+        loadComponent("../components/navigation.html", "#navigation-container");
+        loadComponent("../components/footer.html", "#footer-container");
+        loadComponent(
+          "../components/signUp/userInfo.html",
+          "#userInfo-container"
+        );
+      });
+    </script>
+  </head>
+  <body class="min-w-[360px] overflow-x-hidden max-w-full w-full">
+    <div id="header-container"></div>
+    <div id="navigation-container" class="sr-only md:not-sr-only"></div>
+    <main
+      class="overflow-x-hidden overflow-y-hidden max-w-full w-full relative"
+    >
+      <div id="userInfo-container"></div>
+      <section
+        class="p-8 flex flex-col items-center justify-center sr-only lg:not-sr-only"
+      >
+        <div
+          class="border-y border-zinc-300 w-[calc(100%-64px)] grid grid-cols-6 gap-8 py-4"
+        >
+          <div class="col-span-1 flex flex-col gap-4">
+            <span class="border-b border-zinc-300 pb-2 text-sm text-zinc-600"
+              >기관별 검색</span
+            >
+            <div class="flex flex-col gap-4">
+              <a href="#" class="text-sm text-zinc-500">전체</a>
+              <a href="#" class="text-sm text-zinc-500">진행예정</a>
+              <a href="#" class="text-sm text-zinc-500">진행중</a>
+              <a href="#" class="text-sm text-zinc-500">금일발표</a>
+              <a href="#" class="text-sm text-zinc-500">발표완료</a>
+            </div>
+          </div>
+          <div class="col-span-1 flex flex-col gap-4">
+            <span class="border-b border-zinc-300 pb-2 text-sm text-zinc-600"
+              >차량검색</span
+            >
+            <div class="flex flex-col gap-4">
+              <a href="#" class="text-sm text-zinc-500">전체</a>
+              <a href="#" class="text-sm text-zinc-500">관공서공매</a>
+              <a href="#" class="text-sm text-zinc-500">금융기관 공개매각</a>
+              <a href="#" class="text-sm text-zinc-500">개인 공개매각</a>
+              <a href="#" class="text-sm text-zinc-500">회원사 공개매각</a>
+            </div>
+          </div>
+          <div class="col-span-1 flex flex-col gap-4">
+            <span class="border-b border-zinc-300 pb-2 text-sm text-zinc-600"
+              >내차팔기</span
+            >
+            <div class="flex flex-col gap-4">
+              <a href="#" class="text-sm text-zinc-500">전체</a>
+              <a href="#" class="text-sm text-zinc-500">Why? Automart</a>
+              <a href="#" class="text-sm text-zinc-500">내차팔기절차</a>
+              <a href="#" class="text-sm text-zinc-500">내차팔기신청</a>
+              <a href="#" class="text-sm text-zinc-500">내차팔기내역</a>
+            </div>
+          </div>
+          <div class="col-span-1 flex flex-col gap-4">
+            <span class="border-b border-zinc-300 pb-2 text-sm text-zinc-600"
+              >고객센터</span
+            >
+            <div class="flex flex-col gap-4">
+              <a href="#" class="text-sm text-zinc-500">공지사항</a>
+              <a href="#" class="text-sm text-zinc-500">공매절차</a>
+              <a href="#" class="text-sm text-zinc-500">FAQ</a>
+              <a href="#" class="text-sm text-zinc-500">Q&A</a>
+            </div>
+          </div>
+          <div class="col-span-1 flex flex-col gap-4">
+            <span class="border-b border-zinc-300 pb-2 text-sm text-zinc-600"
+              >나의 정보</span
+            >
+            <div class="flex flex-col gap-4">
+              <a href="#" class="text-sm text-zinc-500">회원정보수정</a>
+              <a href="#" class="text-sm text-zinc-500">나의입찰정보</a>
+              <a href="#" class="text-sm text-zinc-500">나의입찰내역</a>
+              <a href="#" class="text-sm text-zinc-500">나의찜한차량</a>
+              <a href="#" class="text-sm text-zinc-500">나의관심조건</a>
+            </div>
+          </div>
+          <div class="col-span-1 flex flex-col gap-4">
+            <span class="border-b border-zinc-300 pb-2 text-sm text-zinc-600"
+              >기타 정보</span
+            >
+            <div class="flex flex-col gap-4">
+              <a href="#" class="text-sm text-zinc-500">수입차 실거래가</a>
+              <a href="#" class="text-sm text-zinc-500">수입차 Bigdata</a>
+              <a href="#" class="text-sm text-zinc-500">차량보관소</a>
+              <a href="#" class="text-sm text-zinc-500">할부/금융</a>
+              <a href="#" class="text-sm text-zinc-500">사이트맵</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div id="footer-container" class="mt-4"></div>
+  </body>
+</html>
