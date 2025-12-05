@@ -96,10 +96,11 @@
         <div class="flex items-center gap-2 md:w-1/3">
           <input
             type="text"
-            id="name"
+            id="userId"
             class="border border-zinc-300 rounded-md px-2 py-2 md:py-4 text-sm w-full"
           />
           <button
+            id="check-overlap-btn"
             class="rounded-md px-2 py-2 md:py-4 text-sm border border-zinc-300 min-w-20"
           >
             중복확인 <span class="text-[#A10076]">></span>
@@ -267,4 +268,5 @@
   >
     회원가입
   </button>
+  <div id="overlap-popup-container"></div>
 </section>

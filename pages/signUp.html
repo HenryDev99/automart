@@ -10,8 +10,12 @@
         loadComponent("../components/navigation.html", "#navigation-container");
         loadComponent("../components/footer.html", "#footer-container");
         loadComponent(
-          "../components/signUp/completed.html",
-          "#completed-container"
+          "../components/signUp/userInfo.html",
+          "#userInfo-container"
+        );
+        loadComponent(
+          "../components/signUp/overlapPopup.html",
+          "#overlap-popup-container"
         );
       });
     </script>
@@ -22,7 +26,7 @@
     <main
       class="overflow-x-hidden overflow-y-hidden max-w-full w-full relative"
     >
-      <div id="completed-container"></div>
+      <div id="userInfo-container"></div>
       <section
         class="p-8 flex flex-col items-center justify-center sr-only lg:not-sr-only"
       >
