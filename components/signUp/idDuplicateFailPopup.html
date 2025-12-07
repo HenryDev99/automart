@@ -1,0 +1,69 @@
+<div
+  id="overlap-popup-overlay"
+  class="fixed inset-0 bg-transparent z-50 flex items-center justify-center"
+>
+  <div
+    class="bg-white rounded-lg w-[70%] max-w-[600px] shadow-lg flex flex-col p-8 min-w-[300px]"
+  >
+    <div
+      class="flex items-center justify-between px-4 py-6 md:border-b border-zinc-300"
+    >
+      <div
+        class="flex items-center gap-2 w-[132px] md:w-[228px] justify-center"
+      >
+        <img src="../../assets/img/logo.png" alt="AUTOMART" />
+      </div>
+      <button
+        class="text-black border border-zinc-300 rounded-md px-4 py-2 flex items-center justify-center gap-2"
+      >
+        <span class="text-lg sr-only md:not-sr-only">닫기</span>
+        <div
+          class="size-4 text-black"
+          style="
+            mask: url('../assets/img/ic_close.svg') no-repeat center;
+            -webkit-mask: url('../assets/img/ic_close.svg') no-repeat center;
+            mask-size: contain;
+            -webkit-mask-size: contain;
+            background-color: currentColor;
+          "
+        ></div>
+      </button>
+    </div>
+    <div
+      class="flex flex-col items-center justify-center md:p-16 gap-6 md:border border-zinc-300 rounded-md mt-8"
+    >
+      <h2 class="text-2xl md:text-[34px] text-center">아이디 중복확인</h2>
+
+      <p
+        class="text-sm md:text-lg text-center leading-relaxed border-y border-zinc-300 py-4 w-full"
+      >
+        해당 회원아이디는 이미 사용중으로<br />회원가입이 불가능합니다.<br /><br />사용하실
+        다른 아이디를 입력 후 중복확인을 눌러주세요.
+      </p>
+      <div class="flex flex-col gap-3 md:mt-16 mt-6 w-full">
+        <div class="flex w-full justify-between">
+          <div class="flex items-center text-sm md:text-lg min-w-[37px]">
+            아이디
+          </div>
+          <div class="flex flex-col text-zinc-400 text-xs md:text-base md:pl-6">
+            <span>5~10자리의 영문/숫자로만 가능합니다.</span>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-2 w-full">
+          <input
+            type="text"
+            id="userId"
+            class="border border-zinc-300 rounded-md px-2 py-2 md:py-4 text-sm w-full"
+          />
+          <button
+            id="check-overlap-btn"
+            class="rounded-md px-2 py-2 md:py-4 text-sm border border-zinc-300 min-w-20"
+          >
+            중복확인 <span class="text-[#A10076]">></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

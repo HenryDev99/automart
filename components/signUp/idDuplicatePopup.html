@@ -1,0 +1,62 @@
+<div
+  id="overlap-popup-overlay"
+  class="fixed inset-0 bg-transparent z-50 flex items-center justify-center"
+>
+  <div
+    class="bg-white rounded-lg w-[70%] max-w-[600px] shadow-lg flex flex-col p-8 min-w-[300px]"
+  >
+    <div
+      class="flex items-center justify-between px-4 py-6 md:border-b border-zinc-300"
+    >
+      <div
+        class="flex items-center gap-2 w-[132px] md:w-[228px] justify-center"
+      >
+        <img src="../../assets/img/logo.png" alt="AUTOMART" />
+      </div>
+      <button
+        class="text-black border border-zinc-300 rounded-md px-4 py-2 flex items-center justify-center gap-2"
+      >
+        <span class="text-lg sr-only md:not-sr-only">닫기</span>
+        <div
+          class="size-4 text-black"
+          style="
+            mask: url('../assets/img/ic_close.svg') no-repeat center;
+            -webkit-mask: url('../assets/img/ic_close.svg') no-repeat center;
+            mask-size: contain;
+            -webkit-mask-size: contain;
+            background-color: currentColor;
+          "
+        ></div>
+      </button>
+    </div>
+    <div
+      class="flex flex-col items-center justify-center md:p-16 gap-6 md:border border-zinc-300 rounded-md mt-8"
+    >
+      <h2 class="text-2xl md:text-[34px] text-center">아이디 중복확인</h2>
+
+      <p
+        class="text-sm md:text-lg text-center leading-relaxed border-y border-zinc-300 py-4 w-full"
+      >
+        오토마트에 회원아이디가 없으므로<br />회원가입이 가능합니다.
+      </p>
+
+      <p class="text-sm md:text-lg text-center">
+        <span id="overlap-popup-username">********</span>를 사용하시겠습니까?
+      </p>
+      <div class="flex gap-3 px-6 pb-6 md:mt-16 mt-8 w-full">
+        <button
+          id="overlap-popup-confirm"
+          class="flex-1 bg-[#A10076] text-white rounded-md py-3 px-4 font-medium hover:bg-[#8a0066] transition-colors"
+        >
+          사용
+        </button>
+        <button
+          id="overlap-popup-cancel"
+          class="flex-1 bg-zinc-100 text-black rounded-md py-3 px-4 font-medium hover:bg-zinc-200 transition-colors"
+        >
+          취소
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
