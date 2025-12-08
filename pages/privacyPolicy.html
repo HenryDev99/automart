@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko" class="overflow-x-hidden">
+  <head>
+    <script src="../core/header.js"></script>
+    <script src="../core/component-loader.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        defaultHeader.appendToHead();
+        loadComponent("../components/header.html", "#header-container");
+        loadComponent("../components/navigation.html", "#navigation-container");
+        loadComponent("../components/footer.html", "#footer-container");
+        loadComponent(
+          "../components/notice/noticeTable.html",
+          "#noticeTable-container"
+        );
+      });
+    </script>
+  </head>
+  <body class="min-w-[360px] overflow-x-hidden w-full">
+    <div id="header-container"></div>
+    <div id="navigation-container" class="sr-only md:not-sr-only"></div>
+    <main class="overflow-x-hidden max-w-full w-full">
+      <section
+        class="sr-only md:not-sr-only py-4 grid bg-[#FCEAE0] grid-cols-3 md:px-8 lg:px-20 lg:gap-8"
+      >
+        <article class="col-span-2 flex flex-col justify-center">
+          <span class="font-semibold mb-4 text-[40px] text-[#A10076]"
+            >개인정보처리방침</span
+          >
+          <span class="text-sm font-normal text-zinc-600 text-lg"
+            >오토마트에서는 회원님들의 개인정보를 보호하기 위해 아래와 같이
+            개인정보처리방침 및 개인정보 처리방침에 대한 정책지정하여 소중한
+            정보를 보호하고 있습니다.
+          </span>
+        </article>
+        <article class="col-span-1 flex justify-center items-center">
+          <img
+            src="../assets/img/img_banner_privacyPolicy.png"
+            alt="q&a_banner"
+            class="w-[300px] h-[200px] object-contain"
+          />
+        </article>
+      </section>
+      <section
+        class="p-4 bg-[#FCEAE0] flex flex-col justify-center items-center md:sr-only"
+      >
+        <article class="flex items-center justify-between gap-2 w-full">
+          <span class="font-semibold mb-4 text-2xl text-[#A10076]"
+            >개인정보처리방침</span
+          >
+          <img
+            src="../assets/img/img_banner_privacyPolicy.png"
+            alt="q&a_banner"
+            class="w-[120px] h-[80px] object-contain"
+          />
+        </article>
+        <article class="text-[11px] text-zinc-600">
+          <span
+            >오토마트에서는 회원님들의 개인정보를 보호하기 위해 아래와 같이
+            개인정보처리방침 및 개인정보 처리방침에 대한 정책지정하여 소중한
+            정보를 보호하고 있습니다.</span
+          >
+        </article>
+      </section>
+
+      <section></section>
+    </main>
+    <div id="footer-container"></div>
+  </body>
+</html>
