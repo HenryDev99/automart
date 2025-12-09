@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ko" class="overflow-x-hidden">
+  <head>
+    <script src="../core/header.js"></script>
+    <script src="../core/component-loader.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        defaultHeader.appendToHead();
+        loadComponent("../components/header.html", "#header-container");
+        loadComponent("../components/navigation.html", "#navigation-container");
+        loadComponent("../components/footer.html", "#footer-container");
+      });
+    </script>
+  </head>
+  <body class="min-w-[360px] overflow-x-hidden w-full">
+    <div id="header-container"></div>
+    <div id="navigation-container" class="sr-only md:not-sr-only"></div>
+    <main class="overflow-x-hidden max-w-full w-full">
+      <section
+        class="sr-only md:not-sr-only py-4 grid bg-[#D5F2F7] grid-cols-3 md:px-8 lg:px-20 lg:gap-8"
+      >
+        <article class="col-span-2 flex flex-col justify-center">
+          <span class="font-semibold mb-4 text-[40px] text-[#A10076]"
+            >오토마트 소개</span
+          >
+          <span class="text-sm font-normal text-zinc-600 text-lg"
+            >(주)오토마트는 1999년 국내 최초로 인터넷 자동차 공매서비스를
+            시작하였으며, 지금도 국내 자동차공매의 선두 기업으로, 항상 최고의
+            서비스를 제공하고 있습니다.
+          </span>
+        </article>
+        <article class="col-span-1 flex justify-center items-center">
+          <img
+            src="../assets/img/img_banner_ceo.png"
+            alt="ceo_banner"
+            class="w-[400px] object-contain"
+          />
+        </article>
+      </section>
+      <section
+        class="p-4 bg-[#D5F2F7] flex flex-col justify-center items-center md:sr-only"
+      >
+        <article class="flex items-center justify-between gap-2 w-full">
+          <span class="font-semibold mb-4 text-2xl text-[#A10076]"
+            >오토마트 소개</span
+          >
+          <img
+            src="../assets/img/img_banner_ceo.png"
+            alt="ceo_banner"
+            class="w-[120px] h-[80px] object-contain"
+          />
+        </article>
+        <article class="text-[11px] text-zinc-600">
+          <span
+            >(주)오토마트는 1999년 국내 최초로 인터넷 자동차 공매서비스를
+            시작하였으며, 지금도 국내 자동차공매의 선두 기업으로, 항상 최고의
+            서비스를 제공하고 있습니다.</span
+          >
+        </article>
+      </section>
+      <section class="p-8 flex flex-col gap-8">
+        <div
+          class="bg-[url('../assets/img/img_companyInfo_mobile_bg.png')] md:bg-[url('../assets/img/img_companyInfo_bg.png')] bg-cover bg-center w-full h-[500px]"
+        ></div>
+        <span class="text-5 md:sr-only text-center">Welocome to Automart!</span>
+        <span class="text-sm text-center md:sr-only"
+          >인터넷의 큰시장! <br />국내 최대의 인터넷 자동차 공매 사이트<br />오트마트에
+          오신걸 환영합니다.</span
+        >
+        <h1 class="text-[#A10076] text-xl md:text-2xl font-semibold text-left">
+          오토마트 기업정보
+        </h1>
+        <div class="flex flex-col text-sm md:text-lg">
+          <div class="grid grid-cols-5 w-full border-y border-zinc-300">
+            <div
+              class="col-span-1 flex justify-center items-center bg-zinc-100 py-4"
+            >
+              <span>상호</span>
+            </div>
+            <div class="col-span-4 flex py-4 px-8">
+              <span>(주)오토마트</span>
+            </div>
+          </div>
+          <div class="grid grid-cols-5 w-full border-b border-zinc-300">
+            <div
+              class="col-span-1 flex justify-center items-center bg-zinc-100 py-4"
+            >
+              <span>업종</span>
+            </div>
+            <div class="col-span-4 flex py-4 px-8">
+              <span>자동차 관련 인터넷 서비스업 (인터넷 자동차 공매)</span>
+            </div>
+          </div>
+          <div class="grid grid-cols-5 w-full border-b border-zinc-300">
+            <div
+              class="col-span-1 flex justify-center items-center bg-zinc-100 py-4"
+            >
+              <span>대표이사</span>
+            </div>
+            <div class="col-span-4 flex py-4 px-8">
+              <span>예영식</span>
+            </div>
+          </div>
+          <div class="grid grid-cols-5 w-full border-b border-zinc-300">
+            <div
+              class="col-span-1 flex justify-center items-center bg-zinc-100 py-4"
+            >
+              <span>설립일</span>
+            </div>
+            <div class="col-span-4 flex py-4 px-8">
+              <span>1999년 6월 14일</span>
+            </div>
+          </div>
+          <div class="grid grid-cols-5 w-full border-b border-zinc-300">
+            <div
+              class="col-span-1 flex justify-center items-center bg-zinc-100 py-4"
+            >
+              <span>자본금</span>
+            </div>
+            <div class="col-span-4 flex py-4 px-8">
+              <span>13억 6천만원</span>
+            </div>
+          </div>
+          <div class="grid grid-cols-5 w-full border-b border-zinc-300">
+            <div
+              class="col-span-1 flex justify-center items-center bg-zinc-100 py-4"
+            >
+              <span>주소</span>
+            </div>
+            <div class="col-span-4 flex py-4 px-8">
+              <span
+                >서울특별시 금천구 벚꽃로 234 (가산동) 에이스 하이-엔드6차
+                313호</span
+              >
+            </div>
+          </div>
+          <div class="grid grid-cols-5 w-full border-b border-zinc-300">
+            <div
+              class="col-span-1 flex justify-center items-center bg-zinc-100 py-4"
+            >
+              <span>전화</span>
+            </div>
+            <div class="col-span-4 flex py-4 px-8">
+              <span>82-1811-8949</span>
+            </div>
+          </div>
+          <div class="grid grid-cols-5 w-full border-b border-zinc-300">
+            <div
+              class="col-span-1 flex justify-center items-center bg-zinc-100 py-4"
+            >
+              <span>팩스</span>
+            </div>
+            <div class="col-span-4 flex py-4 px-8">
+              <span>82-02-6299-5488</span>
+            </div>
+          </div>
+          <div class="grid grid-cols-5 w-full border-b border-zinc-300">
+            <div
+              class="col-span-1 flex justify-center items-center bg-zinc-100 py-4"
+            >
+              <span>이메일</span>
+            </div>
+            <div class="col-span-4 flex py-4 px-8">
+              <span>webmaster@automart.co.kr</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div id="footer-container"></div>
+  </body>
+</html>
