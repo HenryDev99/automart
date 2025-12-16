@@ -1,0 +1,113 @@
+<div class="flex flex-col gap-1">
+  <section class="gap-8 flex flex-col">
+    <article>
+      <div class="flex items-center justify-start gap-1">
+        <span class="text-2xl font-semibold text-[#A10076]">결과조회</span>
+      </div>
+    </article>
+
+    <ul class="list-disc list-inside text-[#A10076]">
+      <li>
+        <span class="text-black">
+          입찰건수는 보증금 입금과 입찰참여가 모두 완료된 경우의 건수입니다.
+          (보증금 미납 자료 및 입찰금액 미등록 자료는 건수에서 제외됩니다.)
+        </span>
+      </li>
+      <li>
+        <span class="text-black">
+          낙찰자는 대금납부기한까지 잔금을 입금하고 해당 기관으로 통보하셔야
+          합니다.(잔금납부기한 및 관련 연락처는 공고문에 기술되어 있습니다.)
+        </span>
+      </li>
+      <li class="text-[#A10076]">
+        차량 인수시 필요 서류 (해당 공고문 상에 아래 서류외의 필요서류가 추가로
+        있는 경우에는 추가 필요합니다. 보다 상세한 내용은 차량보관소 페이지를
+        참조하세요)
+        <br />
+        <span class="pl-4 text-black">
+          - 낙찰자 본인인 경우 : 신분증, 등록증(이전후 출고인 경우)
+        </span>
+        <br />
+        <span class="pl-4 text-black">
+          - 낙찰자 본인이 아닌 경우 : 방문자 신분증, 인감증명서, 등록증(이전후
+          출고인 경우), 인감도장 날인된 위임장 (양식 : [위임장HWP] /
+          [위임장Excel] / [위임장Doc])
+        </span>
+      </li>
+      <li>
+        낙찰후 15일까지 보관소에서 차량을 인수해야하며, 15일이후 출고시 보관료가
+        부가됩니다.<span class="text-black"
+          >(오토마트 보관소 보관료 : 1일 6,000원, 그외 보관소: 해당 기관으로
+          문의)
+        </span>
+      </li>
+      <li>
+        <span class="text-black"
+          >결과조회의 자료 조회는 매각발표일 기준으로 3년까지의 자료를 조회할 수
+          있습니다.</span
+        >
+      </li>
+    </ul>
+  </section>
+
+  <section class="mt-8 flex flex-col gap-8">
+    <article
+      class="px-8 py-4 rounded-md bg-zinc-100 border border-zinc-300 gap-8 flex flex-col lg:flex-row"
+    >
+      <div class="w-full lg:w-1/2 flex gap-8 items-center">
+        <span class="min-w-[100px]">진행년도</span>
+        <select
+          class="border border-zinc-300 rounded-md px-2 py-2 md:py-4 text-lg min-w-[260px] bg-white w-full"
+        >
+          <option value="1">2025</option>
+          <option value="2">2024</option>
+          <option value="3">2023</option>
+        </select>
+      </div>
+      <div class="w-full lg:w-1/2 flex gap-8 items-center">
+        <span class="min-w-[100px]">공고번호</span>
+        <select
+          class="border border-zinc-300 rounded-md px-2 py-2 md:py-4 text-lg min-w-[260px] bg-white w-full"
+        >
+          <option value="1">2025-1274 [입찰진행중]</option>
+          <option value="2">2025-1274 [입찰진행중]</option>
+          <option value="3">2025-1274 [입찰진행중]</option>
+        </select>
+      </div>
+    </article>
+
+    <table class="w-full! border-collapse text-zinc-600 sr-only lg:not-sr-only">
+      <thead class="bg-zinc-100">
+        <tr class="bg-zinc-100">
+          <th class="px-3 py-2.5 text-sm font-semibold text-center">순번</th>
+          <th class="px-3 py-2.5 text-sm font-semibold text-center">
+            차량번호
+          </th>
+          <th class="px-3 py-2.5 text-sm font-semibold text-center">차량명</th>
+          <th class="px-3 py-2.5 text-sm font-semibold text-center">
+            모델연도
+          </th>
+          <th class="px-3 py-2.5 text-sm font-semibold text-center">
+            낙찰금액
+          </th>
+          <th class="px-3 py-2.5 text-sm font-semibold text-center">
+            입찰건수
+          </th>
+          <th class="px-3 py-2.5 text-sm font-semibold text-center">낙찰자</th>
+          <th class="px-3 py-2.5 text-sm font-semibold text-center">
+            잔금계좌
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="border-b border-[#d1d5db] bg-white">
+          <td colspan="6" class="px-3 py-2.5 text-sm text-center bg-white">
+            <span class="text-zinc-300"
+              >아직 매각발표 시간이 아니거나 마감처리가 안되었습니다.</span
+            >
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+</div>
