@@ -55,9 +55,11 @@
       class="px-8 py-4 rounded-md bg-zinc-100 border border-zinc-300 gap-8 flex flex-col lg:flex-row"
     >
       <div class="w-full lg:w-1/2 flex gap-8 items-center">
-        <span class="min-w-[100px]">진행년도</span>
+        <span class="text-sm min-w-13 md:text-lg md:min-w-[100px]"
+          >진행년도</span
+        >
         <select
-          class="border border-zinc-300 rounded-md px-2 py-2 md:py-4 text-lg min-w-[260px] bg-white w-full"
+          class="border border-zinc-300 rounded-md px-2 py-2 md:py-4 text-sm md:text-lg md:min-w-[260px] bg-white w-full"
         >
           <option value="1">2025</option>
           <option value="2">2024</option>
@@ -65,9 +67,11 @@
         </select>
       </div>
       <div class="w-full lg:w-1/2 flex gap-8 items-center">
-        <span class="min-w-[100px]">공고번호</span>
+        <span class="text-sm min-w-13 md:text-lg md:min-w-[100px]"
+          >공고번호</span
+        >
         <select
-          class="border border-zinc-300 rounded-md px-2 py-2 md:py-4 text-lg min-w-[260px] bg-white w-full"
+          class="border border-zinc-300 rounded-md px-2 py-2 md:py-4 text-sm md:text-lg md:min-w-[260px] bg-white w-full"
         >
           <option value="1">2025-1274 [입찰진행중]</option>
           <option value="2">2025-1274 [입찰진행중]</option>
@@ -109,5 +113,108 @@
         </tr>
       </tbody>
     </table>
+
+    <div class="w-full lg:sr-only flex flex-col">
+      <div class="grid grid-cols-3 border-t border-zinc-300">
+        <div
+          class="bg-zinc-100 flex items-center justify-center col-span-1 py-4 border-b border-zinc-300"
+        >
+          <span>순번</span>
+        </div>
+        <div
+          class="col-span-2 flex items-center justify-center py-4 border-b border-zinc-300"
+        >
+          <span>1</span>
+        </div>
+        <div
+          class="bg-zinc-100 flex items-center justify-center col-span-1 py-4 border-b border-zinc-300"
+        >
+          <span>차량번호</span>
+        </div>
+        <div
+          class="col-span-2 flex items-center justify-center py-4 border-b border-zinc-300"
+        >
+          <span>1111</span>
+        </div>
+        <div
+          class="bg-zinc-100 flex items-center justify-center col-span-1 py-4 border-b border-zinc-300"
+        >
+          <span>차량명</span>
+        </div>
+        <div
+          class="col-span-2 flex items-center justify-center py-4 border-b border-zinc-300"
+        >
+          <span>sss</span>
+        </div>
+        <div
+          class="bg-zinc-100 flex items-center justify-center col-span-1 py-4 border-b border-zinc-300"
+        >
+          <span>모델연도</span>
+        </div>
+        <div
+          class="col-span-2 flex items-center justify-center py-4 border-b border-zinc-300"
+        >
+          <span>2022</span>
+        </div>
+        <div
+          class="bg-zinc-100 flex items-center justify-center col-span-1 py-4 border-b border-zinc-300"
+        >
+          <span>낙찰금액</span>
+        </div>
+        <div
+          class="col-span-2 flex items-center justify-center py-4 border-b border-zinc-300"
+        >
+          <span>1000000</span>
+        </div>
+        <div
+          class="bg-zinc-100 flex items-center justify-center col-span-1 py-4 border-b border-zinc-300"
+        >
+          <span>입찰건수</span>
+        </div>
+        <div
+          class="col-span-2 flex items-center justify-center py-4 border-b border-zinc-300"
+        >
+          <span>10</span>
+        </div>
+        <div
+          class="bg-zinc-100 flex items-center justify-center col-span-1 py-4 border-b border-zinc-300"
+        >
+          <span>낙찰자</span>
+        </div>
+        <div
+          class="col-span-2 flex items-center justify-center py-4 border-b border-zinc-300"
+        >
+          <span>sss</span>
+        </div>
+        <div
+          class="bg-zinc-100 flex items-center justify-center col-span-1 py-4 border-b border-zinc-300"
+        >
+          <span>잔금계좌</span>
+        </div>
+        <div
+          class="col-span-2 flex items-center justify-center py-4 border-b border-zinc-300"
+        >
+          <span>sss</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="flex flex-col md:flex-row gap-2 mt-8">
+    <button
+      class="flex-1 text-[#A10076] font-semibold border border-[#A10076] rounded-md px-2 py-2 md:py-4 text-sm md:text-lg"
+    >
+      공고문 내용
+    </button>
+    <button
+      class="flex-1 text-[#A10076] font-semibold border border-[#A10076] rounded-md px-2 py-2 md:py-4 text-sm md:text-lg"
+    >
+      유의사항 동의내용
+    </button>
+    <button
+      class="flex-1 text-[#A10076] font-semibold border border-[#A10076] rounded-md px-2 py-2 md:py-4 text-sm md:text-lg"
+    >
+      나의 입찰정보 조회
+    </button>
   </section>
 </div>

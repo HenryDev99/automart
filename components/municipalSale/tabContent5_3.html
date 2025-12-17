@@ -1,0 +1,70 @@
+<div class="flex flex-col gap-1">
+  <section class="gap-8 flex flex-col">
+    <article>
+      <div class="flex items-center justify-start gap-1">
+        <span class="text-2xl font-semibold text-[#A10076]"
+          >결과조회 - 나의 입찰정보 조회</span
+        >
+      </div>
+    </article>
+
+    <ul class="list-disc list-inside text-[#A10076]">
+      <li>
+        <span class="text-black">
+          공고번호 2022-305호 공매에 대한 나의 입찰내역을 조회할 수 있습니다.
+        </span>
+      </li>
+      <li>
+        <span class="text-black">
+          주민등록번호와(법인은 법인등록번호) 입찰하였던 비밀번호를 입력하고
+          확인을 누르세요.
+        </span>
+      </li>
+      <li>
+        <span class="text-black">
+          다른 공고의 입찰결과를 조회하려면 상단의 결과조회 메뉴를 클릭한 후
+          조회하고자 하는 공고번호를 선택하세요.
+        </span>
+      </li>
+    </ul>
+  </section>
+
+  <section class="mt-8 flex flex-col gap-8">
+    <article
+      class="lg:py-6 grid grid-cols-4 lg:grid-cols-8 border-y border-zinc-300"
+    >
+      <div class="col-span-1 py-4 lg:py-0 flex items-center justify-center">
+        <span class="text-lg">주민등록번호</span>
+      </div>
+      <div class="col-span-3 flex items-center py-4 lg:py-0 gap-2">
+        <input
+          type="number"
+          id="phoneNumber"
+          class="border border-zinc-300 rounded-md px-2 py-2 md:py-4 text-sm w-full"
+        />
+        <span class="text-xl">-</span>
+        <input
+          type="number"
+          id="phoneNumber2"
+          class="border border-zinc-300 rounded-md px-2 py-2 md:py-4 text-sm w-full"
+        />
+      </div>
+
+      <div class="col-span-1 flex items-center justify-center">
+        <span class="text-lg">비밀번호 </span>
+      </div>
+      <div class="col-span-3 flex items-center gap-2 py-4 lg:py-0">
+        <input
+          type="password"
+          id="password"
+          class="border border-zinc-300 rounded-md px-2 py-2 md:py-4 text-sm w-full"
+        />
+      </div>
+    </article>
+  </section>
+  <button
+    class="mt-8 self-center bg-[#A10076] text-white rounded-md px-20 py-2 md:py-4 text-sm w-full md:w-fit"
+  >
+    확인
+  </button>
+</div>
