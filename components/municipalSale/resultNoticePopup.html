@@ -1,0 +1,51 @@
+<div
+  id="overlap-popup-overlay"
+  class="fixed inset-0 bg-transparent z-50 flex items-center justify-center"
+>
+  <div
+    class="bg-white rounded-lg w-[70%] max-w-[600px] shadow-lg flex flex-col p-8 min-w-[300px]"
+  >
+    <div
+      class="flex items-center justify-between px-4 py-6 md:border-b border-zinc-300"
+    >
+      <div
+        class="flex items-center gap-2 w-[132px] md:w-[228px] justify-center"
+      >
+        <img src="../../assets/img/logo.png" alt="AUTOMART" />
+      </div>
+      <button
+        class="text-black border border-zinc-300 rounded-md px-4 py-2 flex items-center justify-center gap-2"
+      >
+        <span class="text-lg sr-only md:not-sr-only">닫기</span>
+        <div
+          class="size-4 text-black"
+          style="
+            mask: url('../assets/img/ic_close.svg') no-repeat center;
+            -webkit-mask: url('../assets/img/ic_close.svg') no-repeat center;
+            mask-size: contain;
+            -webkit-mask-size: contain;
+            background-color: currentColor;
+          "
+        ></div>
+      </button>
+    </div>
+    <div
+      class="flex flex-col items-center justify-center md:p-8 gap-4 md:border border-zinc-300 rounded-md mt-8"
+    >
+      <div
+        class="w-full py-6 px-2 bg-zinc-100 rounded-md flex items-center justify-center"
+      >
+        <span
+          ><span class="text-[#A10076]">[ 공매 공고 ]</span> 서울특별시 서울시청
+          2025-2632 (입찰) - <span class="text-[#A10076]">진행예정</span></span
+        >
+      </div>
+      <div class="py-12 px-8 gap-4 flex flex-col border h-100 w-full"></div>
+    </div>
+    <button
+      class="bg-zinc-100 text-zinc-600 rounded-md px-6 md:px-20 py-2 w-fit mt-6 border border-zinc-300 self-center text-base md:text-xl"
+    >
+      닫기
+    </button>
+  </div>
+</div>
