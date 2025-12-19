@@ -1,0 +1,407 @@
+<div
+  id="overlap-popup-overlay"
+  class="fixed inset-0 bg-transparent z-50 flex items-center justify-center overflow-y-hidden"
+>
+  <div
+    class="bg-white rounded-lg w-[70%] max-w-[600px] shadow-lg flex flex-col p-8 min-w-[300px]"
+  >
+    <div
+      class="flex items-center justify-between px-4 py-6 md:border-b border-zinc-300"
+    >
+      <div
+        class="flex items-center gap-2 w-[132px] md:w-[228px] justify-center"
+      >
+        <img src="../../assets/img/logo.png" alt="AUTOMART" />
+      </div>
+      <button
+        class="text-black border border-zinc-300 rounded-md px-4 py-2 flex items-center justify-center gap-2"
+      >
+        <span class="text-lg sr-only md:not-sr-only">닫기</span>
+        <div
+          class="size-4 text-black"
+          style="
+            mask: url('../assets/img/ic_close.svg') no-repeat center;
+            -webkit-mask: url('../assets/img/ic_close.svg') no-repeat center;
+            mask-size: contain;
+            -webkit-mask-size: contain;
+            background-color: currentColor;
+          "
+        ></div>
+      </button>
+    </div>
+    <div
+      class="flex flex-col items-center justify-center md:p-8 gap-4 md:border border-zinc-300 rounded-md mt-8 max-h-[600px] overflow-y-auto"
+    >
+      <div
+        class="w-full py-6 px-2 bg-zinc-100 rounded-md flex items-center justify-center overflow-y-hidden"
+      >
+        <span class="text-[#A10076] text-xl font-semibold"
+          >[입찰신청시 입찰자가 유의사항 동의내용]</span
+        >
+      </div>
+      <div class="py-10 gap-6 flex flex-col w-full">
+        <h2
+          class="text-[#A10076] text-2xl font-semibold flex items-center gap-2"
+        >
+          <div
+            class="size-3 text-[#A10076]"
+            style="
+              mask: url('../assets/img/ic_dot_triangle.svg') no-repeat center;
+              -webkit-mask: url('../assets/img/ic_dot_triangle.svg') no-repeat
+                center;
+              mask-size: contain;
+              -webkit-mask-size: contain;
+              background-color: currentColor;
+            "
+          ></div>
+          유의사항 동의내용
+        </h2>
+        <span class="text-lg text-zinc-600"
+          >아래 유의사항은 입찰자가 반드시 숙지해야 하는 사항이며, 입찰시
+          동의해야만 입찰이 가능합니다.</span
+        >
+        <hr class="border-1 border-zinc-400" />
+        <div class="flex flex-col">
+          <div class="grid grid-cols-10 border-b border-zinc-300 p-6 min-h-50">
+            <div
+              class="border border-[#A10076] rounded-full flex items-center justify-center min-w-4 min-h-4 mt-2 size-6 col-span-1"
+            >
+              <div
+                class="size-4 text-[#A10076]"
+                style="
+                  mask: url('../assets/img/ic_dot_triangle.svg') no-repeat
+                    center;
+                  -webkit-mask: url('../assets/img/ic_dot_triangle.svg')
+                    no-repeat center;
+                  mask-size: contain;
+                  -webkit-mask-size: contain;
+                  background-color: currentColor;
+                "
+              ></div>
+            </div>
+            <div
+              class="col-span-7 flex flex-col text-zinc-600 text-lg justify-between"
+            >
+              <span
+                >입찰 안내를 위한
+                <span class="text-[#A10076]"
+                  >각종 자료가 공고사항과 부합되지 아니하더라도</span
+                >
+                이는 입찰요건이 아니므로 이에 대하여 이의하지 않기로 합니다.
+              </span>
+              <span class="font-semibold">동의하십니까?</span>
+            </div>
+            <div class="col-span-2 flex items-end pl-4">
+              <div class="flex items-center justify-center gap-2 min-w-[120px]">
+                <input type="checkbox" class="size-6" />
+                <span class="text-lg min-w-[84px]"> 동의합니다. </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-10 border-b border-zinc-300 p-6 min-h-50">
+            <div
+              class="border border-[#A10076] rounded-full flex items-center justify-center min-w-4 min-h-4 mt-2 size-6 col-span-1"
+            >
+              <div
+                class="size-4 text-[#A10076]"
+                style="
+                  mask: url('../assets/img/ic_dot_triangle.svg') no-repeat
+                    center;
+                  -webkit-mask: url('../assets/img/ic_dot_triangle.svg')
+                    no-repeat center;
+                  mask-size: contain;
+                  -webkit-mask-size: contain;
+                  background-color: currentColor;
+                "
+              ></div>
+            </div>
+            <div
+              class="col-span-7 flex flex-col text-zinc-600 text-lg justify-between"
+            >
+              <span
+                >물건에 대한 제3자의 권리침해, 공부 및 지적부상 하자나 행정상의
+                규제 또는 규격, 품질, 수량등의 상이에 대하여 진행기관은 일체의
+                책임을 지지 아니하므로 입찰자의 책임하에 공부의 열람,현지답사
+                등으로
+                <span class="text-[#A10076]"
+                  >차량의 상태에 대해서는 본인이 직접 확인한 후 차량 고장수리 및
+                  하자 보수부분에 대한 차량 점검을 한 후 입찰신청을 하여야
+                  합니다.</span
+                >
+              </span>
+              <span class="font-semibold"
+                >본인 책임하에 차량상태를 직접 확인 후 입찰하시는 것에
+                동의하십니까?</span
+              >
+            </div>
+            <div class="col-span-2 flex items-end pl-4">
+              <div class="flex items-center justify-center gap-2 min-w-[120px]">
+                <input type="checkbox" class="size-6" />
+                <span class="text-lg min-w-[84px]"> 동의합니다. </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-10 border-b border-zinc-300 p-6 min-h-50">
+            <div
+              class="border border-[#A10076] rounded-full flex items-center justify-center min-w-4 min-h-4 mt-2 size-6 col-span-1"
+            >
+              <div
+                class="size-4 text-[#A10076]"
+                style="
+                  mask: url('../assets/img/ic_dot_triangle.svg') no-repeat
+                    center;
+                  -webkit-mask: url('../assets/img/ic_dot_triangle.svg')
+                    no-repeat center;
+                  mask-size: contain;
+                  -webkit-mask-size: contain;
+                  background-color: currentColor;
+                "
+              ></div>
+            </div>
+            <div
+              class="col-span-7 flex flex-col text-zinc-600 text-lg justify-between"
+            >
+              <span
+                >입찰 자료의
+                <span class="text-[#A10076]"
+                  >입찰자 변경 및 입찰금액은 수정/취소/삭제가 불가하며, 낙찰시
+                  낙찰자(입찰자) 명의로만 이전 등록이 가능합니다.</span
+                >
+                (보증금 입금 및 입찰금액이 입력된 입찰은 낙찰대상(입찰 취소
+                불가)이 될 수 있습니다.)
+              </span>
+              <span class="font-semibold">동의하십니까?</span>
+            </div>
+            <div class="col-span-2 flex items-end pl-4">
+              <div class="flex items-center justify-center gap-2 min-w-[120px]">
+                <input type="checkbox" class="size-6" />
+                <span class="text-lg min-w-[84px]"> 동의합니다. </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-10 border-b border-zinc-300 p-6 min-h-50">
+            <div
+              class="border border-[#A10076] rounded-full flex items-center justify-center min-w-4 min-h-4 mt-2 size-6 col-span-1"
+            >
+              <div
+                class="size-4 text-[#A10076]"
+                style="
+                  mask: url('../assets/img/ic_dot_triangle.svg') no-repeat
+                    center;
+                  -webkit-mask: url('../assets/img/ic_dot_triangle.svg')
+                    no-repeat center;
+                  mask-size: contain;
+                  -webkit-mask-size: contain;
+                  background-color: currentColor;
+                "
+              ></div>
+            </div>
+            <div
+              class="col-span-7 flex flex-col text-zinc-600 text-lg justify-between"
+            >
+              <span
+                >낙찰자는 계약 체결시
+                <spn class="text-[#A10076]">낙찰차량을 반드시 확인해야</spn>
+                하며, 어떤 이유이든간에 낙찰자가 기간내 낙찰잔대금을 입금하지
+                않을 경우에는 입찰보증금은 환불받을 수 없습니다.
+              </span>
+              <span class="font-semibold">동의하십니까?</span>
+            </div>
+            <div class="col-span-2 flex items-end pl-4">
+              <div class="flex items-center justify-center gap-2 min-w-[120px]">
+                <input type="checkbox" class="size-6" />
+                <span class="text-lg min-w-[84px]"> 동의합니다. </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-10 border-b border-zinc-300 p-6 min-h-50">
+            <div
+              class="border border-[#A10076] rounded-full flex items-center justify-center min-w-4 min-h-4 mt-2 size-6 col-span-1"
+            >
+              <div
+                class="size-4 text-[#A10076]"
+                style="
+                  mask: url('../assets/img/ic_dot_triangle.svg') no-repeat
+                    center;
+                  -webkit-mask: url('../assets/img/ic_dot_triangle.svg')
+                    no-repeat center;
+                  mask-size: contain;
+                  -webkit-mask-size: contain;
+                  background-color: currentColor;
+                "
+              ></div>
+            </div>
+            <div
+              class="col-span-7 flex flex-col text-zinc-600 text-lg justify-between"
+            >
+              <span
+                >부가가치세법에 의해
+                <span class="text-[#A10076]"
+                  >세금계산서가 발급되지 않으며,</span
+                >
+                체납자(소유자)의 사업자 등록여부는 확인이 불가합니다.
+              </span>
+              <span class="font-semibold">동의하십니까?</span>
+            </div>
+            <div class="col-span-2 flex items-end pl-4">
+              <div class="flex items-center justify-center gap-2 min-w-[120px]">
+                <input type="checkbox" class="size-6" />
+                <span class="text-lg min-w-[84px]"> 동의합니다. </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-10 border-b border-zinc-300 p-6 min-h-50">
+            <div
+              class="border border-[#A10076] rounded-full flex items-center justify-center min-w-4 min-h-4 mt-2 size-6 col-span-1"
+            >
+              <div
+                class="size-4 text-[#A10076]"
+                style="
+                  mask: url('../assets/img/ic_dot_triangle.svg') no-repeat
+                    center;
+                  -webkit-mask: url('../assets/img/ic_dot_triangle.svg')
+                    no-repeat center;
+                  mask-size: contain;
+                  -webkit-mask-size: contain;
+                  background-color: currentColor;
+                "
+              ></div>
+            </div>
+            <div
+              class="col-span-7 flex flex-col text-zinc-600 text-lg justify-between"
+            >
+              <span
+                >매각 차량의
+                <span class="text-[#A10076]"
+                  >전 소유자에 대한 인적사항(주민등록번호, 연락처, 주소)</span
+                >은 어떠한 경우에도 알려드릴 수 없습니다.
+              </span>
+              <span class="font-semibold">동의하십니까?</span>
+            </div>
+            <div class="col-span-2 flex items-end pl-4">
+              <div class="flex items-center justify-center gap-2 min-w-[120px]">
+                <input type="checkbox" class="size-6" />
+                <span class="text-lg min-w-[84px]"> 동의합니다. </span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="grid grid-cols-10 border-b border-zinc-300 p-6 min-h-50 md:min-h-50"
+          >
+            <div
+              class="border border-[#A10076] rounded-full flex items-center justify-center min-w-4 min-h-4 mt-2 size-6 col-span-1"
+            >
+              <div
+                class="size-4 text-[#A10076]"
+                style="
+                  mask: url('../assets/img/ic_dot_triangle.svg') no-repeat
+                    center;
+                  -webkit-mask: url('../assets/img/ic_dot_triangle.svg')
+                    no-repeat center;
+                  mask-size: contain;
+                  -webkit-mask-size: contain;
+                  background-color: currentColor;
+                "
+              ></div>
+            </div>
+            <div
+              class="col-span-7 flex flex-col text-zinc-600 text-sm md:text-lg justify-between"
+            >
+              <span
+                ><span class="text-[#A10076]"
+                  >차량번호가 지역번호인 경우이거나 번호판이 없는 경우에는
+                  낙찰자가 해당 보관소에서 번호판 유무를 확인 후 재교부 받아야
+                  합니다. </span
+                >일부 관공서의 경우 낙찰자 소유권이전시 기존 번호판을 교부하지
+                않으므로, 소유권 이전등록시 신규번호로 재교부 받아야 하며
+                (공고문에서 확인), 특히
+                <span class="text-[#A10076]"
+                  >인천시청의 경우에는 낙찰시 번호판을 폐기하므로 신규 발급을
+                  받아야 합니다.</span
+                >
+              </span>
+              <span class="font-semibold">동의하십니까?</span>
+              <div class="col-span-2 flex items-end md:sr-only min-h-10">
+                <div class="flex items-center gap-2 min-w-[120px]">
+                  <input type="checkbox" class="size-4" />
+                  <span class="min-w-[84px] text-sm"> 동의합니다. </span>
+                </div>
+              </div>
+            </div>
+            <div class="col-span-2 flex items-end pl-4 sr-only md:not-sr-only">
+              <div class="flex items-center justify-center gap-2 min-w-[120px]">
+                <input type="checkbox" class="size-6" />
+                <span class="text-lg min-w-[84px]"> 동의합니다. </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-10 border-b border-zinc-300 p-6 min-h-50">
+            <div
+              class="border border-[#A10076] rounded-full flex items-center justify-center min-w-4 min-h-4 mt-2 size-6 col-span-1"
+            >
+              <div
+                class="size-4 text-[#A10076]"
+                style="
+                  mask: url('../assets/img/ic_dot_triangle.svg') no-repeat
+                    center;
+                  -webkit-mask: url('../assets/img/ic_dot_triangle.svg')
+                    no-repeat center;
+                  mask-size: contain;
+                  -webkit-mask-size: contain;
+                  background-color: currentColor;
+                "
+              ></div>
+            </div>
+            <div
+              class="col-span-7 flex flex-col text-zinc-600 text-sm md:text-lg justify-between"
+            >
+              <span>개인정보 수집 및 이용에 대한 동의 </span>
+              <div class="border border-zinc-300 p-6"></div>
+              <span class="font-semibold"
+                >개인정보 수집 및 이용에 동의하십니까?</span
+              >
+              <div class="col-span-2 flex items-end md:sr-only">
+                <div class="flex items-center gap-2 min-w-[120px] min-h-10">
+                  <input type="checkbox" class="size-4" />
+                  <span class="min-w-[84px]"> 동의합니다. </span>
+                </div>
+              </div>
+            </div>
+            <div class="col-span-2 flex items-end pl-4 sr-only md:not-sr-only">
+              <div class="flex items-center justify-center gap-2 min-w-[120px]">
+                <input type="checkbox" class="size-6" />
+                <span class="min-w-[84px]"> 동의합니다. </span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="w-full py-6 px-8 bg-zinc-100 rounded-md flex flex-col md:flex-row items-center justify-center overflow-y-hidden min-h-30 mt-10"
+          >
+            <span class="text-sm md:text-xl"
+              ><span class="font-semibold"
+                >[모두 동의]을 선택하면 위 동의사항이 모두 선택됩니다.</span
+              >(상기 유의사항의 내용은 반드시 확인하셔야 합니다)</span
+            >
+            <div class="flex items-center justify-center gap-2 min-w-[120px]">
+              <input type="checkbox" class="size-4 md:size-6" />
+              <span class="text-sm md:text-lg min-w-[84px]"> 동의합니다. </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button
+      class="bg-zinc-100 text-zinc-600 rounded-md px-6 md:px-20 py-2 w-fit mt-6 border border-zinc-300 self-center text-base md:text-xl"
+    >
+      닫기
+    </button>
+  </div>
+</div>
