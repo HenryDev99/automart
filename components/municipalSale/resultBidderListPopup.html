@@ -1,0 +1,197 @@
+<div
+  id="overlap-popup-overlay"
+  class="fixed inset-0 bg-transparent z-50 flex items-center justify-center overflow-y-hidden"
+>
+  <div
+    class="bg-white rounded-lg w-[70%] max-w-[600px] shadow-lg flex flex-col p-8 min-w-[300px]"
+  >
+    <div
+      class="flex items-center justify-between px-4 py-6 md:border-b border-zinc-300"
+    >
+      <div
+        class="flex items-center gap-2 w-[132px] md:w-[228px] justify-center"
+      >
+        <img src="../../assets/img/logo.png" alt="AUTOMART" />
+      </div>
+      <button
+        class="text-black border border-zinc-300 rounded-md px-4 py-2 flex items-center justify-center gap-2"
+      >
+        <span class="text-lg sr-only md:not-sr-only">닫기</span>
+        <div
+          class="size-4 text-black"
+          style="
+            mask: url('../assets/img/ic_close.svg') no-repeat center;
+            -webkit-mask: url('../assets/img/ic_close.svg') no-repeat center;
+            mask-size: contain;
+            -webkit-mask-size: contain;
+            background-color: currentColor;
+          "
+        ></div>
+      </button>
+    </div>
+    <div
+      class="flex flex-col items-center justify-center md:p-8 gap-4 md:border border-zinc-300 rounded-md mt-8 max-h-[600px] overflow-y-auto"
+    >
+      <div class="py-7 gap-6 flex flex-col w-full">
+        <h2
+          class="text-[#A10076] text-lg md:text-2xl font-semibold flex items-center gap-2"
+        >
+          입찰자목록조회
+        </h2>
+        <div
+          class="flex items-center bg-zinc-100 p-6 rounded-md min-h-25 text-sm md:text-lg overflow-y-hidden"
+        >
+          <ul class="list-disc list-inside text-[#A10076]">
+            <li>
+              <span class="text-black"> 공고번호 [2025-1274] </span>
+            </li>
+            <li>
+              <span class="text-black"> 공고차량 [에쿠스(03오8228)] </span>
+            </li>
+          </ul>
+        </div>
+
+        <ul class="list-disc list-inside text-[#A10076]">
+          <li class="mb-4">
+            <span class="text-black">
+              입찰목록은 최상위 입찰금액에서부터
+              <span class="text-[#A10076]">50건</span>까지 공개하며,
+              매각결정일로부터 6개월까지의 자료를 제공합니다.
+            </span>
+          </li>
+          <li class="mb-4">
+            <span class="text-black">
+              개인정보보호법에 의해 입찰자 정보는 자릿수로만 표기하며, 입찰가격,
+              보증금, 입찰일시를 열람할 수 있습니다.
+            </span>
+          </li>
+          <li class="mb-4">
+            <span class="text-black">
+              보증금미납 또는 입찰금액 미등록 건은 입찰에 포함되지 않으므로
+              결과조회의 입찰건수와 차이가 있을 수 있습니다.
+            </span>
+          </li>
+        </ul>
+
+        <table
+          class="w-full! border-collapse text-zinc-600 sr-only lg:not-sr-only"
+        >
+          <thead class="bg-zinc-100">
+            <tr class="bg-zinc-100">
+              <th class="px-3 py-2.5 text-sm font-semibold text-center">
+                순번
+              </th>
+              <th class="px-3 py-2.5 text-sm font-semibold text-center">
+                입찰가격
+              </th>
+              <th class="px-3 py-2.5 text-sm font-semibold text-center">
+                보증금
+              </th>
+              <th class="px-3 py-2.5 text-sm font-semibold text-center">
+                입찰자명
+              </th>
+              <th class="px-3 py-2.5 text-sm font-semibold text-center">
+                비고
+              </th>
+              <th class="px-3 py-2.5 text-sm font-semibold text-center">
+                입찰일자<br />(시간)
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b border-[#d1d5db] bg-white">
+              <td colspan="1" class="px-3 py-2.5 text-sm text-center bg-white">
+                1
+              </td>
+              <td colspan="1" class="px-3 py-2.5 text-sm text-center bg-white">
+                1
+              </td>
+              <td colspan="1" class="px-3 py-2.5 text-sm text-center bg-white">
+                1
+              </td>
+              <td colspan="1" class="px-3 py-2.5 text-sm text-center bg-white">
+                1
+              </td>
+              <td colspan="1" class="px-3 py-2.5 text-sm text-center bg-white">
+                1
+              </td>
+              <td colspan="1" class="px-3 py-2.5 text-sm text-center bg-white">
+                1
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="w-full lg:sr-only flex flex-col min-h-120">
+          <div class="grid grid-cols-3 border-t border-zinc-300">
+            <div
+              class="bg-zinc-100 flex items-center justify-center col-span-1 py-4 border-b border-zinc-300"
+            >
+              <span>순번</span>
+            </div>
+            <div
+              class="col-span-2 flex items-center justify-center py-4 border-b border-zinc-300"
+            >
+              <span>1</span>
+            </div>
+            <div
+              class="bg-zinc-100 flex items-center justify-center col-span-1 py-4 border-b border-zinc-300"
+            >
+              <span>입찰가격</span>
+            </div>
+            <div
+              class="col-span-2 flex items-center justify-center py-4 border-b border-zinc-300"
+            >
+              <span>1111</span>
+            </div>
+            <div
+              class="bg-zinc-100 flex items-center justify-center col-span-1 py-4 border-b border-zinc-300"
+            >
+              <span>보증금</span>
+            </div>
+            <div
+              class="col-span-2 flex items-center justify-center py-4 border-b border-zinc-300"
+            >
+              <span>sss</span>
+            </div>
+            <div
+              class="bg-zinc-100 flex items-center justify-center col-span-1 py-4 border-b border-zinc-300"
+            >
+              <span>입찰자명</span>
+            </div>
+            <div
+              class="col-span-2 flex items-center justify-center py-4 border-b border-zinc-300"
+            >
+              <span>2022</span>
+            </div>
+            <div
+              class="bg-zinc-100 flex items-center justify-center col-span-1 py-4 border-b border-zinc-300"
+            >
+              <span>비고</span>
+            </div>
+            <div
+              class="col-span-2 flex items-center justify-center py-4 border-b border-zinc-300"
+            >
+              <span>1000000</span>
+            </div>
+            <div
+              class="bg-zinc-100 flex items-center justify-center col-span-1 py-4 border-b border-zinc-300"
+            >
+              <span class="text-center">입찰일자<br />(시간)</span>
+            </div>
+            <div
+              class="col-span-2 flex items-center justify-center py-4 border-b border-zinc-300"
+            >
+              <span>10</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button
+      class="bg-zinc-100 text-zinc-600 rounded-md px-6 md:px-20 py-2 w-fit mt-6 border border-zinc-300 self-center text-base md:text-xl"
+    >
+      닫기
+    </button>
+  </div>
+</div>

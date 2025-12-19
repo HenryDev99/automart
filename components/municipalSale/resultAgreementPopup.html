@@ -35,13 +35,13 @@
       <div
         class="w-full py-6 px-2 bg-zinc-100 rounded-md flex items-center justify-center overflow-y-hidden"
       >
-        <span class="text-[#A10076] text-xl font-semibold"
+        <span class="text-[#A10076] text-base md:text-xl font-semibold"
           >[입찰신청시 입찰자가 유의사항 동의내용]</span
         >
       </div>
       <div class="py-10 gap-6 flex flex-col w-full">
         <h2
-          class="text-[#A10076] text-2xl font-semibold flex items-center gap-2"
+          class="text-[#A10076] text-lg md:text-2xl font-semibold flex items-center gap-2"
         >
           <div
             class="size-3 text-[#A10076]"
@@ -56,7 +56,7 @@
           ></div>
           유의사항 동의내용
         </h2>
-        <span class="text-lg text-zinc-600"
+        <span class="text-base md:text-lg text-zinc-600"
           >아래 유의사항은 입찰자가 반드시 숙지해야 하는 사항이며, 입찰시
           동의해야만 입찰이 가능합니다.</span
         >
@@ -80,7 +80,7 @@
               ></div>
             </div>
             <div
-              class="col-span-7 flex flex-col text-zinc-600 text-lg justify-between"
+              class="col-span-9 md:col-span-7 flex flex-col text-zinc-600 text-sm md:text-lg justify-between"
             >
               <span
                 >입찰 안내를 위한
@@ -90,8 +90,14 @@
                 이는 입찰요건이 아니므로 이에 대하여 이의하지 않기로 합니다.
               </span>
               <span class="font-semibold">동의하십니까?</span>
+              <div class="col-span-2 flex items-end md:sr-only min-h-10">
+                <div class="flex items-center gap-2 min-w-[120px]">
+                  <input type="checkbox" class="size-4" />
+                  <span class="min-w-[84px] text-sm"> 동의합니다. </span>
+                </div>
+              </div>
             </div>
-            <div class="col-span-2 flex items-end pl-4">
+            <div class="col-span-2 flex items-end pl-4 sr-only md:not-sr-only">
               <div class="flex items-center justify-center gap-2 min-w-[120px]">
                 <input type="checkbox" class="size-6" />
                 <span class="text-lg min-w-[84px]"> 동의합니다. </span>
@@ -117,7 +123,7 @@
               ></div>
             </div>
             <div
-              class="col-span-7 flex flex-col text-zinc-600 text-lg justify-between"
+              class="col-span-9 md:col-span-7 flex flex-col text-zinc-600 text-sm md:text-lg justify-between"
             >
               <span
                 >물건에 대한 제3자의 권리침해, 공부 및 지적부상 하자나 행정상의
@@ -134,8 +140,14 @@
                 >본인 책임하에 차량상태를 직접 확인 후 입찰하시는 것에
                 동의하십니까?</span
               >
+              <div class="col-span-2 flex items-end md:sr-only min-h-10">
+                <div class="flex items-center gap-2 min-w-[120px]">
+                  <input type="checkbox" class="size-4" />
+                  <span class="min-w-[84px] text-sm"> 동의합니다. </span>
+                </div>
+              </div>
             </div>
-            <div class="col-span-2 flex items-end pl-4">
+            <div class="col-span-2 flex items-end pl-4 sr-only md:not-sr-only">
               <div class="flex items-center justify-center gap-2 min-w-[120px]">
                 <input type="checkbox" class="size-6" />
                 <span class="text-lg min-w-[84px]"> 동의합니다. </span>
@@ -161,7 +173,7 @@
               ></div>
             </div>
             <div
-              class="col-span-7 flex flex-col text-zinc-600 text-lg justify-between"
+              class="col-span-9 md:col-span-7 flex flex-col text-zinc-600 text-sm md:text-lg justify-between"
             >
               <span
                 >입찰 자료의
@@ -173,8 +185,14 @@
                 불가)이 될 수 있습니다.)
               </span>
               <span class="font-semibold">동의하십니까?</span>
+              <div class="col-span-2 flex items-end md:sr-only min-h-10">
+                <div class="flex items-center gap-2 min-w-[120px]">
+                  <input type="checkbox" class="size-4" />
+                  <span class="min-w-[84px] text-sm"> 동의합니다. </span>
+                </div>
+              </div>
             </div>
-            <div class="col-span-2 flex items-end pl-4">
+            <div class="col-span-2 flex items-end pl-4 sr-only md:not-sr-only">
               <div class="flex items-center justify-center gap-2 min-w-[120px]">
                 <input type="checkbox" class="size-6" />
                 <span class="text-lg min-w-[84px]"> 동의합니다. </span>
@@ -200,7 +218,7 @@
               ></div>
             </div>
             <div
-              class="col-span-7 flex flex-col text-zinc-600 text-lg justify-between"
+              class="col-span-9 md:col-span-7 flex flex-col text-zinc-600 text-sm md:text-lg justify-between"
             >
               <span
                 >낙찰자는 계약 체결시
@@ -209,8 +227,14 @@
                 않을 경우에는 입찰보증금은 환불받을 수 없습니다.
               </span>
               <span class="font-semibold">동의하십니까?</span>
+              <div class="col-span-2 flex items-end md:sr-only min-h-10">
+                <div class="flex items-center gap-2 min-w-[120px]">
+                  <input type="checkbox" class="size-4" />
+                  <span class="min-w-[84px] text-sm"> 동의합니다. </span>
+                </div>
+              </div>
             </div>
-            <div class="col-span-2 flex items-end pl-4">
+            <div class="col-span-2 flex items-end pl-4 sr-only md:not-sr-only">
               <div class="flex items-center justify-center gap-2 min-w-[120px]">
                 <input type="checkbox" class="size-6" />
                 <span class="text-lg min-w-[84px]"> 동의합니다. </span>
@@ -236,7 +260,7 @@
               ></div>
             </div>
             <div
-              class="col-span-7 flex flex-col text-zinc-600 text-lg justify-between"
+              class="col-span-9 md:col-span-7 flex flex-col text-zinc-600 text-sm md:text-lg justify-between"
             >
               <span
                 >부가가치세법에 의해
@@ -246,8 +270,14 @@
                 체납자(소유자)의 사업자 등록여부는 확인이 불가합니다.
               </span>
               <span class="font-semibold">동의하십니까?</span>
+              <div class="col-span-2 flex items-end md:sr-only min-h-10">
+                <div class="flex items-center gap-2 min-w-[120px]">
+                  <input type="checkbox" class="size-4" />
+                  <span class="min-w-[84px] text-sm"> 동의합니다. </span>
+                </div>
+              </div>
             </div>
-            <div class="col-span-2 flex items-end pl-4">
+            <div class="col-span-2 flex items-end pl-4 sr-only md:not-sr-only">
               <div class="flex items-center justify-center gap-2 min-w-[120px]">
                 <input type="checkbox" class="size-6" />
                 <span class="text-lg min-w-[84px]"> 동의합니다. </span>
@@ -273,7 +303,7 @@
               ></div>
             </div>
             <div
-              class="col-span-7 flex flex-col text-zinc-600 text-lg justify-between"
+              class="col-span-9 md:col-span-7 flex flex-col text-zinc-600 text-sm md:text-lg justify-between"
             >
               <span
                 >매각 차량의
@@ -282,8 +312,14 @@
                 >은 어떠한 경우에도 알려드릴 수 없습니다.
               </span>
               <span class="font-semibold">동의하십니까?</span>
+              <div class="col-span-2 flex items-end md:sr-only min-h-10">
+                <div class="flex items-center gap-2 min-w-[120px]">
+                  <input type="checkbox" class="size-4" />
+                  <span class="min-w-[84px] text-sm"> 동의합니다. </span>
+                </div>
+              </div>
             </div>
-            <div class="col-span-2 flex items-end pl-4">
+            <div class="col-span-2 flex items-end pl-4 sr-only md:not-sr-only">
               <div class="flex items-center justify-center gap-2 min-w-[120px]">
                 <input type="checkbox" class="size-6" />
                 <span class="text-lg min-w-[84px]"> 동의합니다. </span>
@@ -311,7 +347,7 @@
               ></div>
             </div>
             <div
-              class="col-span-7 flex flex-col text-zinc-600 text-sm md:text-lg justify-between"
+              class="col-span-9 md:col-span-7 flex flex-col text-zinc-600 text-sm md:text-lg justify-between"
             >
               <span
                 ><span class="text-[#A10076]"
@@ -360,7 +396,7 @@
               ></div>
             </div>
             <div
-              class="col-span-7 flex flex-col text-zinc-600 text-sm md:text-lg justify-between"
+              class="col-span-9 md:col-span-7 flex flex-col text-zinc-600 text-sm md:text-lg justify-between"
             >
               <span>개인정보 수집 및 이용에 대한 동의 </span>
               <div class="border border-zinc-300 p-6"></div>
@@ -383,7 +419,7 @@
           </div>
 
           <div
-            class="w-full py-6 px-8 bg-zinc-100 rounded-md flex flex-col md:flex-row items-center justify-center overflow-y-hidden min-h-30 mt-10"
+            class="w-full py-6 px-8 bg-zinc-100 rounded-md flex flex-col md:flex-row items-center justify-center overflow-y-hidden min-h-35 mt-10"
           >
             <span class="text-sm md:text-xl"
               ><span class="font-semibold"

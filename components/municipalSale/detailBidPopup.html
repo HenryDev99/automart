@@ -1,0 +1,137 @@
+<div
+  id="overlap-popup-overlay"
+  class="fixed inset-0 bg-transparent z-50 flex items-center justify-center overflow-y-hidden"
+>
+  <div
+    class="bg-white rounded-lg w-[70%] max-w-[600px] shadow-lg flex flex-col p-8 min-w-[300px]"
+  >
+    <div
+      class="flex items-center justify-between px-4 py-6 md:border-b border-zinc-300"
+    >
+      <div
+        class="flex items-center gap-2 w-[132px] md:w-[228px] justify-center"
+      >
+        <img src="../../assets/img/logo.png" alt="AUTOMART" />
+      </div>
+      <button
+        class="text-black border border-zinc-300 rounded-md px-4 py-2 flex items-center justify-center gap-2"
+      >
+        <span class="text-lg sr-only md:not-sr-only">닫기</span>
+        <div
+          class="size-4 text-black"
+          style="
+            mask: url('../assets/img/ic_close.svg') no-repeat center;
+            -webkit-mask: url('../assets/img/ic_close.svg') no-repeat center;
+            mask-size: contain;
+            -webkit-mask-size: contain;
+            background-color: currentColor;
+          "
+        ></div>
+      </button>
+    </div>
+    <div
+      class="flex flex-col items-center justify-center md:p-8 gap-4 md:border border-zinc-300 rounded-md mt-8 max-h-[600px] overflow-y-auto"
+    >
+      <div class="py-5 gap-6 flex flex-col w-full">
+        <h2
+          class="text-[#A10076] text-lg md:text-2xl font-semibold flex items-center gap-2"
+        >
+          공매 [제 2022-1166호] (총 2대)
+        </h2>
+        <div class="w-full flex flex-col min-h-100">
+          <div class="flex items-center w-full">
+            <div
+              class="border-y border-zinc-300 min-h-100 flex items-center px-4 md:px-10"
+            >
+              <input type="checkbox" />
+            </div>
+
+            <div
+              class="grid grid-cols-3 border-t border-zinc-300 min-h-100 w-full"
+            >
+              <div
+                class="bg-zinc-100 flex items-center justify-center col-span-1 py-4 border-b border-zinc-300"
+              >
+                <span>순번</span>
+              </div>
+              <div
+                class="col-span-2 flex items-center justify-center py-4 border-b border-zinc-300"
+              >
+                <span>1</span>
+              </div>
+              <div
+                class="bg-zinc-100 flex items-center justify-center col-span-1 py-4 border-b border-zinc-300"
+              >
+                <span>차량번호</span>
+              </div>
+              <div
+                class="col-span-2 flex items-center justify-center py-4 border-b border-zinc-300"
+              >
+                <span>1111</span>
+              </div>
+              <div
+                class="bg-zinc-100 flex items-center justify-center col-span-1 py-4 border-b border-zinc-300"
+              >
+                <span>차량명</span>
+              </div>
+              <div
+                class="col-span-2 flex items-center justify-center py-4 border-b border-zinc-300"
+              >
+                <span>sss</span>
+              </div>
+              <div
+                class="bg-zinc-100 flex items-center justify-center col-span-1 py-4 border-b border-zinc-300"
+              >
+                <span>모델연도</span>
+              </div>
+              <div
+                class="col-span-2 flex items-center justify-center py-4 border-b border-zinc-300"
+              >
+                <span>2022</span>
+              </div>
+              <div
+                class="bg-zinc-100 flex items-center justify-center col-span-1 py-4 border-b border-zinc-300"
+              >
+                <span>예정가</span>
+              </div>
+              <div
+                class="col-span-2 flex items-center justify-center py-4 border-b border-zinc-300"
+              >
+                <span>1000000</span>
+              </div>
+              <div
+                class="bg-zinc-100 flex items-center justify-center col-span-1 py-4 border-b border-zinc-300"
+              >
+                <span class="text-center">보관소</span>
+              </div>
+              <div
+                class="col-span-2 flex items-center justify-center py-4 border-b border-zinc-300"
+              >
+                <span>10</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <ul class="list-disc list-inside text-[#A10076]">
+          <li class="mb-4">
+            <span class="text-black">
+              차량 선택방법 : 입찰을 원하는 차량의 선택란의 체크박스를 체크한 후
+              [차량선택 완료]버튼을 클릭해 주세요
+            </span>
+          </li>
+          <li class="mb-4">
+            <span class="text-black">
+              입찰이 완료된 차량은 수정/취소/삭제가 불가합니다.
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <button
+      class="bg-[#A10076] text-white rounded-md px-6 md:px-20 py-2 w-fit mt-6 border border-zinc-300 self-center text-base md:text-xl"
+    >
+      차량선택 완료
+    </button>
+  </div>
+</div>
