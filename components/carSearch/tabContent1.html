@@ -1,0 +1,114 @@
+<section class="flex flex-col gap-4">
+  <table class="w-full! border-collapse text-zinc-600 sr-only md:not-sr-only">
+    <thead class="bg-zinc-100">
+      <tr class="bg-zinc-100">
+        <th class="px-3 py-2.5 text-sm font-semibold text-center">No</th>
+        <th class="px-3 py-2.5 text-sm font-semibold text-center">
+          차량명<br />차량번호
+        </th>
+        <th class="px-3 py-2.5 text-sm font-semibold text-center">
+          공고번호<br />모델연도 / 변속기
+        </th>
+        <th class="px-3 py-2.5 text-sm font-semibold text-center">
+          집행기관<br />보관소
+        </th>
+        <th class="px-3 py-2.5 text-sm font-semibold text-center">
+          입찰신청<br />마감일시
+        </th>
+        <th class="px-3 py-2.5 text-sm font-semibold text-center">
+          예정가<br />(매각시작가)
+        </th>
+        <th class="px-3 py-2.5 text-sm font-semibold text-center">구분</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="border-b border-[#d1d5db] bg-white">
+        <td
+          colspan="1"
+          class="px-3 py-2.5 flex items-center justify-between border-r border-zinc-300"
+        >
+          <img
+            src="../../assets/img/img_temp_car.png"
+            class="rounded-md max-w-[170px] max-h-[100px] w-[80%] min-h-[100px]"
+          />
+          01
+        </td>
+        <td
+          colspan="1"
+          class="px-3 py-2.5 text-sm text-center bg-white border-r border-zinc-300"
+        >
+          CLS 400d 4MATIC<br />XXX0279 (경유)
+        </td>
+        <td
+          colspan="1"
+          class="px-3 py-2.5 text-sm text-center bg-white border-r border-zinc-300"
+        >
+          2025-727<br />2022 / 자동
+        </td>
+        <td
+          colspan="1"
+          class="px-3 py-2.5 text-sm text-center bg-white border-r border-zinc-300"
+        >
+          서울특별시 용산구청 오토마트 인천보관소
+        </td>
+        <td
+          colspan="1"
+          class="px-3 py-2.5 text-sm text-center bg-white border-r border-zinc-300"
+        >
+          09/24 (14:00)<br />09/24 (14:00)
+        </td>
+        <td
+          colspan="1"
+          class="px-3 py-2.5 text-sm text-center bg-white border-r border-zinc-300"
+        >
+          27,800,000원
+        </td>
+        <td
+          colspan="1"
+          class="px-3 py-2.5 text-sm text-center bg-white border-r border-zinc-300"
+        >
+          <button class="text-[#A10076] border border-[#A10076] rounded-md p-2">
+            입찰
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="grid md:sr-only gap-2 mt-11">
+    <div
+      class="col-span-1 flex flex-col bg-white rounded-lg overflow-hidden border-b border-x border-zinc-300"
+    >
+      <img
+        src="../assets/img/img_temp_car.png"
+        alt="car_1"
+        class="w-full h-full object-contain"
+      />
+      <div class="flex w-full gap-2">
+        <div class="w-1/7 flex justify-center border-r border-zinc-300 p-1">
+          <span class="text-base font-semibold">1</span>
+        </div>
+        <div class="flex flex-col w-6/7">
+          <span class="text-base font-semibold">CLS 400d 4MATIC</span>
+          <span class="text-sm font-normal"
+            >XXX0279 (경유)・09/24 (14:00) | 09/24 (14:00)</span
+          >
+          <span class="text-sm font-normal">2017 / 자동・2025-727</span>
+          <span class="text-sm font-normal"
+            >서울특별시 용산구청 | 오토마트 인천보관소</span
+          >
+          <span class="w-full text-end text-[#A10076] pr-2"
+            ><span class="text-xl font-bold">25,000만원</span></span
+          >
+        </div>
+      </div>
+      <div class="flex items-center justify-center p-4">
+        <button
+          class="text-[#A10076] border border-[#A10076] rounded-md p-2 w-full"
+        >
+          입찰
+        </button>
+      </div>
+    </div>
+  </div>
+  <div id="car-search-pagination" class="mt-8 sr-only md:not-sr-only"></div>
+</section>

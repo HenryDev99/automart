@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="ko" class="overflow-x-hidden">
+  <head>
+    <script src="../core/header.js"></script>
+    <script src="../core/component-loader.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        defaultHeader.appendToHead();
+        loadComponent("../components/header.html", "#header-container");
+        loadComponent("../components/navigation.html", "#navigation-container");
+        loadComponent("../components/footer.html", "#footer-container");
+        loadComponent(
+          "../components/carSearch/tabContent1.html",
+          "#tabContent-container"
+        ).then(() => {
+          loadComponent(
+            "../components/common/pagination.html",
+            "#car-search-pagination"
+          );
+        });
+        loadComponent(
+          "../components/carSearch/warehousePopup.html",
+          "#carDetailPopup"
+        );
+      });
+    </script>
+  </head>
+  <body class="min-w-[360px] overflow-x-hidden w-full">
+    <div id="carDetailPopup"></div>
+    <div id="header-container"></div>
+    <div id="navigation-container" class="sr-only md:not-sr-only"></div>
+    <main class="overflow-x-hidden max-w-full w-full">
+      <section
+        class="sr-only md:not-sr-only py-4 grid bg-[#CDF3EC] grid-cols-3 md:px-8 lg:px-20 lg:gap-8"
+      >
+        <article class="col-span-2 flex flex-col justify-center">
+          <span class="font-semibold mb-4 text-[40px]"
+            ><span class="text-[#A10076]">차량</span> 검색</span
+          >
+          <span class="text-sm font-normal text-zinc-600 text-lg"
+            >차량을 일정별로 조건을 설정하여 차량을 검색하는 서비스입니다.
+            검색된 목록에서 [입찰] 버튼을 클릭하면 해당 공고문으로 이동되며
+            각각의 공고문 내용은 반드시 확인하고 입찰하셔야 합니다.
+          </span>
+        </article>
+        <article class="col-span-1 flex justify-center items-center">
+          <img
+            src="../assets/img/img_carSerarch_banner.png"
+            alt="car_search_banner"
+            class="w-[300px] h-[200px] object-contain"
+          />
+        </article>
+      </section>
+
+      <section
+        class="p-4 bg-[#CDF3EC] flex flex-col justify-center items-center md:sr-only"
+      >
+        <article class="flex items-center justify-between gap-2 w-full">
+          <span class="font-semibold mb-4 text-2xl"
+            ><span class="text-[#A10076]">차량</span> 검색</span
+          >
+          <img
+            src="../assets/img/img_carSerarch_banner.png"
+            alt="car_search_banner"
+            class="w-[120px] h-[80px] object-contain"
+          />
+        </article>
+        <article class="text-[11px] text-zinc-600">
+          <span
+            >차량을 일정별로 조건을 설정하여 차량을 검색하는 서비스입니다.
+            검색된 목록에서 [입찰] 버튼을 클릭하면 해당 공고문으로 이동되며
+            각각의 공고문 내용은 반드시 확인하고 입찰하셔야 합니다.</span
+          >
+        </article>
+      </section>
+
+      <section class="p-8 gap-8 flex flex-col">
+        <div class="w-full grid grid-cols-5">
+          <div
+            class="col-span-1 rounded-t-md bg-white py-4 px-2 border-t border-x border-black flex items-center justify-center"
+          >
+            <span class="md:text-xl font-semibold text-[#A10076]">전체</span>
+          </div>
+          <div
+            class="col-span-1 rounded-t-md bg-zinc-100 py-4 px-2 border-t-zinc-300 border-x-zinc-300 border-b-black flex items-center justify-center border"
+          >
+            <span
+              class="text-center text-sm md:text-xl font-semibold text-zinc-600"
+              >관공서<br class="lg:hidden" />공매</span
+            >
+          </div>
+          <div
+            class="col-span-1 rounded-t-md bg-zinc-100 py-4 px-2 border-t-zinc-300 border-x-zinc-300 border-b-black flex items-center justify-center border"
+          >
+            <span
+              class="text-center text-sm md:text-xl font-semibold text-zinc-600"
+              >금융기관<br class="lg:hidden" />
+              공개매각</span
+            >
+          </div>
+          <div
+            class="col-span-1 rounded-t-md bg-zinc-100 py-4 px-2 border-t-zinc-300 border-x-zinc-300 border-b-black flex items-center justify-center border"
+          >
+            <span
+              class="text-center text-sm md:text-xl font-semibold text-zinc-600"
+              >개인<br class="lg:hidden" />
+              공개매각</span
+            >
+          </div>
+          <div
+            class="col-span-1 rounded-t-md bg-zinc-100 py-4 px-2 border-t-zinc-300 border-x-zinc-300 border-b-black flex items-center justify-center border"
+          >
+            <span
+              class="text-center text-sm md:text-xl font-semibold text-zinc-600"
+              >회원사<br class="lg:hidden" />
+              공개매각</span
+            >
+          </div>
+        </div>
+        <section>
+          <div
+            class="flex w-full items-center justify-between sr-only lg:not-sr-only border-b border-zinc-300 !pb-5"
+          >
+            <span class="text-2xl text-[#A10076] font-semibold">입찰상태</span>
+            <div class="flex items-center justify-center gap-2">
+              <input type="checkbox" class="w-4 h-4" />
+              <span class="text-lg text-zinc-600">진행예정</span>
+            </div>
+            <div class="flex items-center justify-center gap-2">
+              <input type="checkbox" class="w-4 h-4" />
+              <span class="text-lg text-zinc-600">금일시작</span>
+            </div>
+            <div class="flex items-center justify-center gap-2">
+              <input type="checkbox" class="w-4 h-4" />
+              <span class="text-lg text-zinc-600">입찰중</span>
+            </div>
+            <div class="flex items-center justify-center gap-2">
+              <input type="checkbox" class="w-4 h-4" />
+              <span class="text-lg text-zinc-600">금일마감</span>
+            </div>
+            <div class="flex items-center justify-center gap-2">
+              <input type="checkbox" class="w-4 h-4" />
+              <span class="text-lg text-zinc-600">발표대기</span>
+            </div>
+            <div class="flex items-center justify-center gap-2">
+              <input type="checkbox" class="w-4 h-4" />
+              <span class="text-lg text-zinc-600">장기미반환/방치</span>
+            </div>
+          </div>
+
+          <div
+            class="flex w-full items-center gap-8 md:not-sr-only sr-only lg:sr-only border-b border-zinc-300 !pb-5"
+          >
+            <span class="text-2xl text-[#A10076] font-semibold min-w-[90px]"
+              >입찰상태</span
+            >
+            <div class="grid grid-cols-3">
+              <div class="flex items-center gap-2">
+                <input type="checkbox" class="w-4 h-4" />
+                <span class="text-lg text-zinc-600">진행예정</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <input type="checkbox" class="w-4 h-4" />
+                <span class="text-lg text-zinc-600">금일시작</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <input type="checkbox" class="w-4 h-4" />
+                <span class="text-lg text-zinc-600">입찰중</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <input type="checkbox" class="w-4 h-4" />
+                <span class="text-lg text-zinc-600">금일마감</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <input type="checkbox" class="w-4 h-4" />
+                <span class="text-lg text-zinc-600">발표대기</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <input type="checkbox" class="w-4 h-4" />
+                <span class="text-lg text-zinc-600">장기미반환/방치</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col w-full items-start gap-4 md:sr-only border-b border-zinc-300 !pb-5"
+          >
+            <span class="text-2xl text-[#A10076] font-semibold min-w-[90px]"
+              >입찰상태</span
+            >
+            <div class="grid grid-cols-2 w-full">
+              <div class="flex items-center gap-2">
+                <input type="checkbox" class="w-4 h-4" />
+                <span class="text-lg text-zinc-600">진행예정</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <input type="checkbox" class="w-4 h-4" />
+                <span class="text-lg text-zinc-600">금일시작</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <input type="checkbox" class="w-4 h-4" />
+                <span class="text-lg text-zinc-600">입찰중</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <input type="checkbox" class="w-4 h-4" />
+                <span class="text-lg text-zinc-600">금일마감</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <input type="checkbox" class="w-4 h-4" />
+                <span class="text-lg text-zinc-600">발표대기</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <input type="checkbox" class="w-4 h-4" />
+                <span class="text-lg text-zinc-600">장기미반환/방치</span>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="flex flex-col justify-center">
+          <div class="w-full grid grid-cols-1 lg:grid-cols-2 gap-4">
+            <div class="flex items-center gap-4 md:gap-6">
+              <span
+                class="text-sm min-w-[50px] md:text-xl text-[#A10076] font-semibold md:min-w-[70px]"
+                >출력선택</span
+              >
+              <div class="flex items-center justify-start gap-2">
+                <input type="radio" />
+                <span class="text-sm md:text-base text-center"
+                  >10건씩<br class="md:hidden" />
+                  보기</span
+                >
+              </div>
+              <div class="flex items-center justify-start gap-2">
+                <input type="radio" />
+                <span class="text-sm md:text-base text-center"
+                  >20건씩<br class="md:hidden" />
+                  보기</span
+                >
+              </div>
+              <div class="flex items-center justify-start gap-2">
+                <input type="radio" />
+                <span class="text-sm md:text-base text-center"
+                  >50건씩<br class="md:hidden" />
+                  보기</span
+                >
+              </div>
+            </div>
+
+            <div class="flex items-center gap-4 md:gap-6">
+              <span
+                class="text-sm min-w-[50px] md:text-xl text-[#A10076] md:min-w-[70px]"
+                >관심조건</span
+              >
+              <select
+                class="border border-zinc-300 rounded-md px-2 py-2 md:py-4 text-sm md:text-lg w-full"
+              >
+                <option value="1">선택없음</option>
+                <option value="2">금융/개인/회원사 공개매각</option>
+                <option value="3">내차팔기</option>
+              </select>
+            </div>
+
+            <div class="flex items-center gap-4 md:gap-6">
+              <span
+                class="text-sm min-w-[50px] md:text-xl text-[#A10076] md:min-w-[70px]"
+                >진행기관</span
+              >
+              <select
+                class="border border-zinc-300 rounded-md px-2 py-2 md:py-4 text-sm md:text-lg w-full"
+              >
+                <option value="1">전체</option>
+                <option value="2">금융/개인/회원사 공개매각</option>
+                <option value="3">내차팔기</option>
+              </select>
+            </div>
+
+            <div class="flex items-center gap-4 md:gap-6">
+              <span
+                class="text-sm min-w-[50px] md:text-xl text-[#A10076] md:min-w-[70px]"
+                >보 관 소</span
+              >
+              <select
+                class="border border-zinc-300 rounded-md px-2 py-2 md:py-4 text-sm md:text-lg w-full"
+              >
+                <option value="1">전체</option>
+                <option value="2">금융/개인/회원사 공개매각</option>
+                <option value="3">내차팔기</option>
+              </select>
+            </div>
+
+            <div class="flex flex-col md:flex-row items-center gap-4 md:gap-6">
+              <div class="w-full md:w-1/2 flex items-center gap-4 md:gap-6">
+                <span
+                  class="text-sm min-w-[50px] md:text-xl text-[#A10076] md:min-w-[70px]"
+                  >차 량 명</span
+                >
+                <input
+                  type="text"
+                  class="border border-zinc-300 rounded-md px-2 py-2 md:py-4 text-sm w-full"
+                />
+              </div>
+              <div class="w-full md:w-1/2 flex items-center gap-4 md:gap-6">
+                <span
+                  class="text-sm min-w-[50px] md:text-xl text-[#A10076] md:min-w-[70px]"
+                  >연 료</span
+                >
+                <select
+                  class="border border-zinc-300 rounded-md px-2 py-2 md:py-4 text-sm md:text-lg w-full"
+                >
+                  <option value="1">전체</option>
+                  <option value="2">금융/개인/회원사 공개매각</option>
+                  <option value="3">내차팔기</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row items-center gap-4 md:gap-6">
+              <div class="w-full md:w-1/2 flex items-center gap-4 md:gap-6">
+                <span
+                  class="text-sm min-w-[50px] md:text-xl text-[#A10076] md:min-w-[70px]"
+                  >차량번호</span
+                >
+                <input
+                  type="text"
+                  class="border border-zinc-300 rounded-md px-2 py-2 md:py-4 text-sm md:text-lg w-full"
+                />
+              </div>
+              <div class="w-full md:w-1/2 flex items-center gap-4 md:gap-6">
+                <span
+                  class="text-sm min-w-[50px] md:text-xl text-[#A10076] md:min-w-[70px]"
+                  >변 속 기</span
+                >
+                <select
+                  class="border border-zinc-300 rounded-md px-2 py-2 md:py-4 text-sm md:text-lg w-full"
+                >
+                  <option value="1">전체</option>
+                  <option value="2">금융/개인/회원사 공개매각</option>
+                  <option value="3">내차팔기</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-4 md:gap-6">
+              <div class="w-1/2 flex items-center gap-4 md:gap-6">
+                <span
+                  class="text-sm min-w-[50px] md:text-xl text-[#A10076] md:min-w-[70px]"
+                  >예정가</span
+                >
+                <select
+                  class="bg-zinc-100 border border-zinc-300 rounded-md px-2 py-2 md:py-4 text-sm md:text-lg w-full"
+                >
+                  <option value="1">전체</option>
+                  <option value="2">금융/개인/회원사 공개매각</option>
+                  <option value="3">내차팔기</option>
+                </select>
+              </div>
+              <div class="w-1/2 flex items-center gap-4 md:gap-6">
+                <span>~</span>
+                <select
+                  class="bg-zinc-100 border border-zinc-300 rounded-md px-2 py-2 md:py-4 text-sm md:text-lg w-full"
+                >
+                  <option value="1">전체</option>
+                  <option value="2">금융/개인/회원사 공개매각</option>
+                  <option value="3">내차팔기</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-4 md:gap-6">
+              <div class="w-1/2 flex items-center gap-4 md:gap-6">
+                <span
+                  class="text-sm min-w-[50px] md:text-xl text-[#A10076] md:min-w-[70px]"
+                  >모델연도</span
+                >
+                <select
+                  class="bg-zinc-100 border border-zinc-300 rounded-md px-2 py-2 md:py-4 text-sm md:text-lg w-full"
+                >
+                  <option value="1">전체</option>
+                  <option value="2">금융/개인/회원사 공개매각</option>
+                  <option value="3">내차팔기</option>
+                </select>
+              </div>
+              <div class="w-1/2 flex items-center gap-4 md:gap-6">
+                <span>~</span>
+                <select
+                  class="bg-zinc-100 border border-zinc-300 rounded-md px-2 py-2 md:py-4 text-sm md:text-lg w-full"
+                >
+                  <option value="1">전체</option>
+                  <option value="2">금융/개인/회원사 공개매각</option>
+                  <option value="3">내차팔기</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <button
+            class="bg-[#A10076] text-white px-10 py-2 rounded-md w-full md:w-1/4 self-center mt-5"
+          >
+            검색
+          </button>
+        </section>
+        <article id="tabContent-container"></article>
+      </section>
+    </main>
+    <div id="footer-container" class="mt-4"></div>
+  </body>
+</html>
