@@ -1,0 +1,100 @@
+<div
+  id="overlap-popup-overlay"
+  class="fixed inset-0 bg-transparent z-50 flex items-center justify-center overflow-y-hidden"
+>
+  <div
+    class="bg-white rounded-lg w-[80%] max-w-[600px] shadow-lg flex flex-col p-8 min-w-[350px]"
+  >
+    <div
+      class="flex items-center justify-between px-4 py-6 md:border-b border-zinc-300"
+    >
+      <div
+        class="flex items-center gap-2 w-[132px] md:w-[228px] justify-center"
+      >
+        <img src="../../assets/img/logo.png" alt="AUTOMART" />
+      </div>
+      <button
+        class="text-black border border-zinc-300 rounded-md px-4 py-2 flex items-center justify-center gap-2"
+      >
+        <span class="text-lg sr-only md:not-sr-only">닫기</span>
+        <div
+          class="size-4 text-black"
+          style="
+            mask: url('../assets/img/ic_close.svg') no-repeat center;
+            -webkit-mask: url('../assets/img/ic_close.svg') no-repeat center;
+            mask-size: contain;
+            -webkit-mask-size: contain;
+            background-color: currentColor;
+          "
+        ></div>
+      </button>
+    </div>
+    <div
+      class="flex flex-col items-center justify-center md:p-8 gap-4 md:border border-zinc-300 rounded-md mt-8 max-h-[600px] overflow-y-auto border border-zinc-300 p-4"
+    >
+      <div class="py-5 gap-6 flex flex-col w-full">
+        <h2
+          class="text-[#A10076] text-lg md:text-2xl font-semibold flex items-center justify-center gap-2"
+        >
+          오토마트 자동차 공매 및 공개매각 안내 영상
+        </h2>
+        <div class="border h-300 w-full"></div>
+        <div class="flex items-center justify-between w-full min-h-fit">
+          <button
+            class="text-sm md:text-lg text-[#A10076] border border-[#A10076] rounded-md px-4 py-2 flex items-center justify-center gap-2"
+          >
+            공매 소개<br class="md:hidden" />
+            VOD
+          </button>
+          <button
+            class="text-sm md:text-lg bg-zinc-100 border border-zinc-300 rounded-md px-4 py-2 flex items-center justify-center gap-2 text-zinc-600"
+          >
+            입찰 방법<br class="md:hidden" />
+            VOD
+          </button>
+          <button
+            class="text-sm md:text-lg bg-zinc-100 border border-zinc-300 rounded-md px-4 py-2 flex items-center justify-center gap-2 text-zinc-600"
+          >
+            입찰 방법<br class="md:hidden" />
+            VOD
+          </button>
+        </div>
+
+        <ul class="list-disc list-inside text-[#A10076]">
+          <li class="mb-4">
+            <span class="text-zinc-600">
+              <span class="font-semibold">입찰방법</span> : 오토마트 자동차 공매
+              및 공개매각 입찰방법을 쉽게 이해되도록 입찰하는 과정을 동영상으로
+              소개합니다.
+            </span>
+          </li>
+          <li class="mb-4">
+            <span class="text-zinc-600">
+              <span class="font-semibold">오토마트 소개</span> : 오토마트 자동차
+              공매 및 공개매각에 대한 전반적인 소개와 진행절차에 대해
+              안내합니다.
+            </span>
+          </li>
+          <li class="mb-4">
+            <span class="text-zinc-600">
+              <span class="font-semibold">차량보관소 이용방법</span> : 오토마트
+              차량보관소의 방문 및 차량을 확인하는 방법을 안내합니다.
+              안내합니다.
+            </span>
+          </li>
+          <li>
+            <span class="text-zinc-600">
+              점검영상의 일체의 저작권은 ㈜오토마트에 있으며 본 영상을 무단으로
+              복제, 변경, 배포, 상영, 게시할 수 없습니다.
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <button
+      class="bg-zinc-100 text-zinc-600 rounded-md px-6 md:px-20 py-2 w-fit mt-6 border border-zinc-300 self-center text-base md:text-xl"
+    >
+      닫기
+    </button>
+  </div>
+</div>

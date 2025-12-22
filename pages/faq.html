@@ -14,11 +14,16 @@
           "#faq-pagination"
         );
         loadComponent("../components/faq/faqTable.html", "#faqTable-container");
+        loadComponent(
+          "../components/faq/videoPopup.html",
+          "#videoPopup-container"
+        );
       });
     </script>
   </head>
   <body class="min-w-[360px] overflow-x-hidden w-full">
     <div id="header-container"></div>
+    <div id="videoPopup-container"></div>
     <div id="navigation-container" class="sr-only md:not-sr-only"></div>
     <main class="overflow-x-hidden max-w-full w-full">
       <section
