@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko" class="overflow-x-hidden">
+  <head>
+    <script src="../core/header.js"></script>
+    <script src="../core/component-loader.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        defaultHeader.appendToHead();
+        loadComponent("../components/header.html", "#header-container");
+        loadComponent("../components/navigation.html", "#navigation-container");
+        loadComponent("../components/footer.html", "#footer-container");
+        loadComponent(
+          "../components/myInfo/withdraw.html",
+          "#myInfo-container"
+        );
+      });
+    </script>
+  </head>
+  <body class="min-w-[360px] overflow-x-hidden w-full">
+    <div id="header-container"></div>
+    <div id="navigation-container" class="sr-only md:not-sr-only"></div>
+    <main class="overflow-x-hidden max-w-full w-full">
+      <section
+        class="sr-only md:not-sr-only py-4 grid bg-[#F4EDE3] grid-cols-3 md:px-8 lg:px-20 lg:gap-8"
+      >
+        <article class="col-span-2 flex flex-col justify-center">
+          <span class="font-semibold mb-4 text-[40px]"
+            ><span class="text-[#A10076]">회원정보</span> 수정</span
+          >
+          <span class="text-sm font-normal text-zinc-600 text-lg"
+            >회원가입여부와 상관없이 입찰을 할 수 있습니다. 회원가입은
+            개인/매매상사/법인등의 구분없이 개인으로만 가입할 수 있습니다.
+            입찰할때 사용하는 개인/매매상사/법인 등의 구분자료는
+            [나의입찰정보]에서 구분 등록하여 사용합니다.
+          </span>
+        </article>
+        <article class="col-span-1 flex justify-center items-center">
+          <img
+            src="../assets/img/img_banner_myinfo.png"
+            alt="myinfo_banner"
+            class="w-[400px] object-contain"
+          />
+        </article>
+      </section>
+      <section
+        class="p-4 bg-[#F4EDE3] flex flex-col justify-center items-center md:sr-only"
+      >
+        <article class="flex items-center justify-between gap-2 w-full">
+          <span class="font-semibold mb-4 text-2xl"
+            ><span class="text-[#A10076]">회원정보</span> 인사말</span
+          >
+          <img
+            src="../assets/img/img_banner_myinfo.png"
+            alt="myinfo_banner"
+            class="w-[120px] h-[80px] object-contain"
+          />
+        </article>
+        <article class="text-[11px] text-zinc-600">
+          <span
+            >회원가입여부와 상관없이 입찰을 할 수 있습니다. 회원가입은
+            개인/매매상사/법인등의 구분없이 개인으로만 가입할 수 있습니다.
+            입찰할때 사용하는 개인/매매상사/법인 등의 구분자료는
+            [나의입찰정보]에서 구분 등록하여 사용합니다.</span
+          >
+        </article>
+      </section>
+      <div id="myInfo-container"></div>
+    </main>
+    <div id="footer-container"></div>
+  </body>
+</html>
