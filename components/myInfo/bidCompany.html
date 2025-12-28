@@ -1,0 +1,296 @@
+<div class="p-8 flex flex-col">
+  <article class="flex py-8 border-b border-zinc-300 items-center">
+    <h1 class="text-lg md:text-2xl font-bold text-[#A10076]">
+      입찰신청자 구분
+    </h1>
+  </article>
+
+  <article class="py-6 flex flex-col lg:flex-row border-b border-zinc-300">
+    <div class="grid grid-cols-8 w-full">
+      <div
+        class="col-span-2 lg:col-span-1 flex items-center text-sm md:text-lg"
+      >
+        대표자명
+      </div>
+      <div
+        class="col-span-6 lg:col-span-3 flex flex-col md:flex-row items-center mb-2 gap-4"
+      >
+        <input
+          type="text"
+          id="userId"
+          class="border border-zinc-300 rounded-md px-2 py-2 md:py-4 text-sm w-full"
+        />
+      </div>
+      <div
+        class="col-span-2 lg:col-span-1 flex items-center text-sm md:text-lg lg:ml-8"
+      >
+        주민등록번호<br />(대표자)
+      </div>
+      <div
+        class="col-span-6 lg:col-span-3 flex flex-col md:flex-row items-center mb-2 gap-4"
+      >
+        <input
+          type="text"
+          id="userId"
+          class="border border-zinc-300 rounded-md px-2 py-2 md:py-4 text-sm w-full"
+        />
+      </div>
+      <div
+        class="col-span-2 lg:col-span-1 flex items-center justify-start text-sm md:text-lg"
+      >
+        <span>상호 (법인명)</span>
+      </div>
+      <div
+        class="col-span-6 lg:col-span-3 flex flex-col md:flex-row items-center mb-2 gap-4"
+      >
+        <input
+          type="text"
+          id="userId"
+          class="border border-zinc-300 rounded-md px-2 py-2 md:py-4 text-sm w-full"
+        />
+      </div>
+      <div class="col-span-4 hidden lg:block"></div>
+      <div
+        class="col-span-2 lg:col-span-1 flex items-center justify-start text-sm md:text-lg"
+      >
+        <span>사업장주소</span>
+      </div>
+      <div class="col-span-6 lg:col-span-7 flex flex-col gap-2 py-2">
+        <div class="flex flex-col md:flex-row gap-2 md:items-center">
+          <div class="flex items-center gap-2 w-full">
+            <input
+              type="text"
+              id="userId"
+              class="border border-zinc-300 rounded-md px-2 py-2 md:py-4 text-sm w-full"
+            />
+            <button
+              id="check-overlap-btn"
+              class="rounded-md px-2 py-2 md:py-4 text-sm border border-zinc-300 min-w-20"
+            >
+              주소찾기 <span class="text-[#A10076]">></span>
+            </button>
+          </div>
+        </div>
+        <div class="flex flex-col md:flex-row md:items-center gap-2 w-full">
+          <input
+            type="text"
+            id="userId"
+            class="border border-zinc-300 rounded-md px-2 py-2 md:py-4 text-sm w-full"
+          />
+          <input
+            type="text"
+            id="userId"
+            class="border border-zinc-300 rounded-md px-2 py-2 md:py-4 text-sm w-full"
+          />
+        </div>
+      </div>
+      <div
+        class="col-span-2 lg:col-span-1 flex items-center text-sm md:text-lg"
+      >
+        담당자명
+      </div>
+      <div
+        class="col-span-6 lg:col-span-3 flex flex-col md:flex-row items-center mb-2 gap-4"
+      >
+        <input
+          type="text"
+          id="userId"
+          class="border border-zinc-300 rounded-md px-2 py-2 md:py-4 text-sm w-full"
+        />
+      </div>
+      <div
+        class="col-span-2 lg:col-span-1 flex items-center text-sm md:text-lg lg:ml-8"
+      >
+        주민등록번호<br />(담당자)
+      </div>
+      <div
+        class="col-span-6 lg:col-span-3 flex flex-col md:flex-row items-center mb-2 gap-4"
+      >
+        <input
+          type="text"
+          id="userId"
+          class="border border-zinc-300 rounded-md px-2 py-2 md:py-4 text-sm w-full"
+        />
+      </div>
+      <div
+        class="col-span-2 lg:col-span-1 flex items-center text-sm md:text-lg"
+      >
+        법인 전화번호
+      </div>
+      <div class="col-span-6 lg:col-span-7 flex items-center gap-2 mb-2">
+        <input
+          type="number"
+          id="phoneNumber"
+          class="border border-zinc-300 rounded-md px-2 py-2 md:py-4 text-sm w-1/6"
+        />
+        <span class="text-xl">-</span>
+        <input
+          type="number"
+          id="phoneNumber2"
+          class="border border-zinc-300 rounded-md px-2 py-2 md:py-4 text-sm w-1/6"
+        />
+        <span class="text-xl">-</span>
+        <input
+          type="number"
+          id="phoneNumber3"
+          class="border border-zinc-300 rounded-md px-2 py-2 md:py-4 text-sm w-1/6"
+        />
+      </div>
+
+      <div
+        class="col-span-2 lg:col-span-1 flex items-center text-sm md:text-lg"
+      >
+        담당자 휴대폰
+      </div>
+      <div class="col-span-6 lg:col-span-7 flex items-center gap-2 mb-2">
+        <input
+          type="number"
+          id="phoneNumber"
+          class="border border-zinc-300 rounded-md px-2 py-2 md:py-4 text-sm w-1/6"
+        />
+        <span class="text-xl">-</span>
+        <input
+          type="number"
+          id="phoneNumber2"
+          class="border border-zinc-300 rounded-md px-2 py-2 md:py-4 text-sm w-1/6"
+        />
+        <span class="text-xl">-</span>
+        <input
+          type="number"
+          id="phoneNumber3"
+          class="border border-zinc-300 rounded-md px-2 py-2 md:py-4 text-sm w-1/6"
+        />
+      </div>
+    </div>
+  </article>
+
+  <article class="flex flex-col py-8 justify-center gap-4">
+    <article class="flex items-center">
+      <h1 class="text-lg md:text-2xl text-[#A10076]">
+        <span class="font-bold">보증금 환불계좌</span>
+        <span class="text-base"
+          >입찰후 유찰되었을때 환불 받을 계좌를 입력합니다.</span
+        >
+      </h1>
+    </article>
+
+    <div
+      class="grid grid-cols-2 items-center w-full border-b border-zinc-300 py-6"
+    >
+      <div class="col-span-1 flex items-center text-sm md:text-lg">
+        <span class="w-1/3">은행명</span>
+        <select
+          class="w-2/3 border border-zinc-300 rounded-md px-2 py-2 md:py-4 text-sm md:text-lg"
+        >
+          <option value="1">선택하세요</option>
+          <option value="2">금융/개인/회원사 공개매각</option>
+          <option value="3">내차팔기</option>
+        </select>
+      </div>
+
+      <div class="col-span-1 flex items-center text-sm md:text-lg py-3"></div>
+
+      <div
+        class="col-span-1 h-full flex items-center justify-center min-h-full text-sm md:text-lg py-3"
+      >
+        <span class="w-1/3"
+          >계좌번호<span class="text-sm">(숫자만 입력)</span></span
+        >
+        <input
+          type="text"
+          class="w-2/3 border border-zinc-300 rounded-md px-2 py-2 text-sm md:text-lg"
+        />
+      </div>
+      <div
+        class="col-span-1 h-full flex items-center justify-center min-h-full text-sm md:text-lg py-3"
+      >
+        <span class="w-1/3 pl-4">예금주 </span>
+        <input
+          type="text"
+          class="w-2/3 border border-zinc-300 rounded-md px-2 py-2 text-sm md:text-lg"
+        />
+      </div>
+    </div>
+    <ul class="list-disc list-inside text-sm md:text-base">
+      <li>
+        환불계좌를 잘못 기재한 경우에 유찰된 차량의 보증금 반환시 불이익을 받을
+        수 있으며 이는 입력자의 책임입니다.
+      </li>
+      <li>보즘금 반환계좌는 유찰시 보증금 반환계좌입니다.</li>
+    </ul>
+  </article>
+
+  <article class="flex flex-col py-8 justify-center gap-4">
+    <article class="flex items-center">
+      <h1 class="text-lg md:text-2xl text-[#A10076]">
+        <span class="font-bold"
+          >낙찰안내 E-mail (금융기관/개인 공개매각 대상)</span
+        >
+        <span class="text-base"
+          >금융기관 및 개인 공개매각에 한해서만 지원되며 낙찰안내 자료발송
+          용도로만 사용합니다.</span
+        >
+      </h1>
+    </article>
+
+    <div class="flex items-center gap-2 border-y border-zinc-300 py-4">
+      <label for="name" class="min-w-[100px] text-base md:text-lg"
+        >낙찰안내 E-mail</label
+      >
+      <div class="flex flex-col gap-4">
+        <div class="flex flex-col md:flex-row items-center gap-4">
+          <div class="flex gap-4 items-center w-full">
+            <input
+              type="text"
+              id="email"
+              class="border border-zinc-300 rounded-md px-2 py-2 md:py-4 text-sm w-full"
+            />
+            <span class="text-xl">@</span>
+            <input
+              type="text"
+              id="email2"
+              class="border border-zinc-300 rounded-md px-2 py-2 md:py-4 text-sm w-full"
+            />
+          </div>
+
+          <select
+            class="border border-zinc-300 rounded-md px-2 py-2 md:py-4 text-sm md:text-lg w-full"
+          >
+            <option value="1">직접입력</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+        </div>
+        <span class="text-sm md:text-base"
+          >이메일 발송은 낙찰된 경우에 등록관련 서류 및 기타 안내를 위해
+          사용되며 별도의 수신동의를 받지 않음을 고지합니다.</span
+        >
+      </div>
+    </div>
+  </article>
+
+  <ul class="list-disc list-inside text-sm md:text-base">
+    <li class="text-[#A10076] mb-8">
+      금융기관/개인 공개매각에 낙찰이 되었을 경우에만 지원됩니다.
+      낙찰자료(낙찰서 및 가상계좌 확인서 등) 등을 메일로 받을 경우에만 Email을
+      등록해주세요.
+    </li>
+    <li class="mb-8">
+      낙찰안내 발송조건<br />① 등록된 회원 ID로 로그인 상태에서 입찰 후 낙찰이
+      된 경우에만 낙찰안내 Email 발송이 지원됩니다.<br />② 낙찰안내
+      Email서비스는
+      <span class="text-[#A10076]"
+        >금융기관 및 개인 공개매각에 한해서만 지원</span
+      >됩니다. (관공서, 검찰/경찰, 장기미반환/방치, 회원사 공개매각 등 제외)
+    </li>
+    <li>
+      위 낙찰안내 조건 ①,②에 해당하지 않는 경우에는 Email안내 서비스가 지원되지
+      않으며 문자로 낙찰안내만 가능합니다.
+    </li>
+  </ul>
+  <button
+    class="w-full md:w-1/4 bg-[#A10076] text-white py-2 rounded-md self-center mt-8"
+  >
+    저장
+  </button>
+</div>
