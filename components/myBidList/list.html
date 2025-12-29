@@ -1,0 +1,229 @@
+<section class="flex flex-col gap-4 p-8">
+  <section class="gap-8 flex flex-col">
+    <article class="flex gap-4 border-b border-zinc-300 py-6">
+      <div class="flex items-center">
+        <span class="font-bold text-sm md:text-base">출력선택</span>
+      </div>
+      <div class="flex items-center gap-8">
+        <div class="flex items-center justify-start gap-2 min-w-15">
+          <input type="radio" />
+          <span class="text-sm md:text-base">10건씩</span>
+        </div>
+        <div class="flex items-center justify-start gap-2 min-w-15">
+          <input type="radio" />
+          <span class="text-sm md:text-base">20건씩</span>
+        </div>
+        <div class="flex items-center justify-start gap-2 min-w-15">
+          <input type="radio" />
+          <span class="text-sm md:text-base">30건씩</span>
+        </div>
+      </div>
+    </article>
+    <article class="grid grid-cols-8 gap-2">
+      <span class="col-span-1 flex items-center text-sm lg:text-xl"
+        >조회기간</span
+      >
+      <select
+        class="col-span-7 lg:col-span-3 border border-zinc-300 rounded-md px-2 py-2 md:py-4 text-sm lg:text-lg w-full"
+      >
+        <option value="1">관공서 공매</option>
+        <option value="2">금융/개인/회원사 공개매각</option>
+        <option value="3">내차팔기</option>
+      </select>
+      <span class="col-span-1 flex items-center text-sm lg:text-xl"
+        >진행기관</span
+      >
+      <select
+        class="col-span-7 lg:col-span-3 border border-zinc-300 rounded-md px-2 py-2 md:py-4 text-sm lg:text-lg w-full"
+      >
+        <option value="1">전체</option>
+        <option value="2">금융/개인/회원사 공개매각</option>
+        <option value="3">내차팔기</option>
+      </select>
+      <span class="col-span-1 flex items-center text-sm lg:text-xl"
+        >보 관 소</span
+      >
+      <select
+        class="col-span-7 lg:col-span-3 border border-zinc-300 rounded-md px-2 py-2 md:py-4 text-sm lg:text-lg w-full"
+      >
+        <option value="1">전체</option>
+        <option value="2">금융/개인/회원사 공개매각</option>
+        <option value="3">내차팔기</option>
+      </select>
+      <span class="col-span-1 flex items-center text-sm lg:text-xl"
+        >차 량 명</span
+      >
+      <input
+        type="text"
+        id="name"
+        class="col-span-7 lg:col-span-3 border border-zinc-300 rounded-md px-2 py-2 md:py-4 text-sm w-full"
+      />
+      <span class="col-span-1 flex items-center text-sm lg:text-xl"
+        >차량번호</span
+      >
+      <input
+        type="text"
+        id="name"
+        class="col-span-7 lg:col-span-3 border border-zinc-300 rounded-md px-2 py-2 md:py-4 text-sm w-full"
+      />
+      <span class="col-span-1 flex items-center text-sm lg:text-xl"
+        >진행기관</span
+      >
+      <select
+        class="col-span-7 lg:col-span-3 border border-zinc-300 rounded-md px-2 py-2 md:py-4 text-sm lg:text-lg w-full"
+      >
+        <option value="1">전체</option>
+        <option value="2">금융/개인/회원사 공개매각</option>
+        <option value="3">내차팔기</option>
+      </select>
+    </article>
+    <button
+      class="w-full lg:w-1/5 self-center bg-[#A10076] text-white px-4 py-2 rounded-md"
+    >
+      검색
+    </button>
+  </section>
+  <table
+    class="w-full! border-collapse text-zinc-600 sr-only lg:not-sr-only mt-8"
+  >
+    <thead class="bg-zinc-100">
+      <tr class="bg-zinc-100">
+        <th class="px-3 py-2.5 text-sm font-semibold text-center">No</th>
+        <th class="px-3 py-2.5 text-sm font-semibold text-center">
+          차량명<br />차량번호
+        </th>
+        <th class="px-3 py-2.5 text-sm font-semibold text-center">
+          집행기관<br />보관소
+        </th>
+        <th class="px-3 py-2.5 text-sm font-semibold text-center">공고번호</th>
+        <th class="px-3 py-2.5 text-sm font-semibold text-center">
+          입찰참여일<br />(참여시간)
+        </th>
+        <th class="px-3 py-2.5 text-sm font-semibold text-center">
+          매각발표일<br />(발표시간)
+        </th>
+        <th class="px-3 py-2.5 text-sm font-semibold text-center">입찰서</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="border-b border-[#d1d5db] bg-white">
+        <td
+          colspan="1"
+          class="px-3 py-2.5 flex items-center justify-between border-r border-zinc-300"
+        >
+          <img
+            src="../../assets/img/img_temp_car.png"
+            class="rounded-md max-w-[170px] max-h-[100px] w-[80%] min-h-[100px]"
+          />
+          01
+        </td>
+        <td
+          colspan="1"
+          class="px-3 py-2.5 text-sm text-center bg-white border-r border-zinc-300"
+        >
+          CLS 400d 4MATIC<br />XXX0279 (경유)
+        </td>
+        <td
+          colspan="1"
+          class="px-3 py-2.5 text-sm text-center bg-white border-r border-zinc-300"
+        >
+          2025-727<br />2022 / 자동
+        </td>
+        <td
+          colspan="1"
+          class="px-3 py-2.5 text-sm text-center bg-white border-r border-zinc-300"
+        >
+          서울특별시 용산구청 오토마트 인천보관소
+        </td>
+        <td
+          colspan="1"
+          class="px-3 py-2.5 text-sm text-center bg-white border-r border-zinc-300"
+        >
+          09/24 (14:00)<br />09/24 (14:00)
+        </td>
+        <td
+          colspan="1"
+          class="px-3 py-2.5 text-sm text-center bg-white border-r border-zinc-300"
+        >
+          27,800,000원
+        </td>
+        <td
+          colspan="1"
+          class="px-3 py-2.5 text-sm text-center bg-white border-r border-zinc-300"
+        >
+          <button class="text-[#A10076] border border-[#A10076] rounded-md p-2">
+            입찰
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="grid lg:sr-only gap-4 mt-8">
+    <div
+      class="col-span-1 bg-zinc-100 flex flex-col bg-white overflow-hidden border border-zinc-300"
+    >
+      <div class="flex w-full gap-2">
+        <div class="w-1/7 flex justify-center border-r border-zinc-300 p-1">
+          <span class="text-base font-semibold">No</span>
+        </div>
+        <div class="flex flex-col w-6/7">
+          <div class="flex w-full justify-between items-center px-2">
+            <span class="text-base font-semibold">차량명</span>
+            <span class="text-base font-semibold text-[#A10076]">공고번호</span>
+          </div>
+
+          <span class="text-sm font-normal"
+            >차량번호・입찰참여일(참여시간) | 매각발표일(발표시간)</span
+          >
+          <span class="text-sm font-normal"
+            >집행기관 | 보관장소 | 진행상황(입찰현황)</span
+          >
+        </div>
+      </div>
+      <div class="flex items-center justify-center p-4">
+        <button
+          class="text-zinc-600 border border-zinc-300 rounded-md p-2 w-full"
+        >
+          입찰서
+        </button>
+      </div>
+    </div>
+
+    <div
+      class="col-span-1 flex flex-col bg-white rounded-lg overflow-hidden border-b border-x border-zinc-300"
+    >
+      <img
+        src="../assets/img/img_temp_car.png"
+        alt="car_1"
+        class="w-full h-full object-contain"
+      />
+      <div class="flex w-full gap-2">
+        <div class="w-1/7 flex justify-center border-r border-zinc-300 p-1">
+          <span class="text-base font-semibold">1</span>
+        </div>
+        <div class="flex flex-col w-6/7">
+          <div class="flex w-full justify-between items-center px-2">
+            <span class="text-base font-semibold">CLS 400d 4MATIC</span>
+            <span class="text-base font-semibold text-[#A10076]">2025-727</span>
+          </div>
+
+          <span class="text-sm font-normal"
+            >XXX0279 (경유)・09/24 (14:00) | 09/24 (14:00)</span
+          >
+          <span class="text-sm font-normal"
+            >서울특별시 용산구청 | 오토마트 인천보관소 | 진행</span
+          >
+        </div>
+      </div>
+      <div class="flex items-center justify-center p-4">
+        <button
+          class="text-[#A10076] border border-[#A10076] rounded-md p-2 w-full"
+        >
+          입찰
+        </button>
+      </div>
+    </div>
+  </div>
+  <div id="myBidList-pagination" class="mt-8 sr-only md:not-sr-only"></div>
+</section>

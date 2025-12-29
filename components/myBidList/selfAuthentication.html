@@ -1,0 +1,81 @@
+<section class="p-8 flex flex-col">
+  <article class="py-6 flex items-center justify-center">
+    <div
+      class="bg-[#FCE7F3] rounded-md p-8 w-full flex flex-col lg:flex-row gap-4 lg:gap-8"
+    >
+      <span class="text-lg md:text-2xl font-semibold text-[#A10076]"
+        >유의사항</span
+      >
+      <ul class="list-disc list-inside text-[#A10076] text-base md:text-lg">
+        <li>
+          <span class="text-zinc-600"
+            >진행기관, 보관장소, 차량번호, 공고번호, 입찰서의 내용을 클릭하면
+            각각의 관련 내용을 조회할 수 있습니다.</span
+          >
+        </li>
+        <li>
+          <span class="text-zinc-600"
+            >[입찰 미참여] 또는 [미입찰]로 표기되어 있는 차량은 입찰금액을
+            등록하지 않고 입찰한 것입니다.</span
+          >
+        </li>
+      </ul>
+    </div>
+  </article>
+  <div class="flex flex-col">
+    <article class="flex py-8 border-b border-zinc-300 items-center gap-4">
+      <h1 class="text-lg md:text-2xl font-bold text-[#A10076]">
+        실명인증 확인 구분
+      </h1>
+      <span class="text-base text-[#A10076]"
+        >입력한 정보는 나이스 신용평가정보의 인증을 통해 검색됩니다.</span
+      >
+    </article>
+    <article class="py-6 flex flex-col lg:flex-row border-b border-zinc-300">
+      <div class="grid grid-cols-8 w-full">
+        <div
+          class="col-span-2 lg:col-span-1 flex items-center text-sm md:text-lg font-semibold"
+        >
+          회원이름
+        </div>
+        <div
+          class="col-span-6 lg:col-span-3 flex flex-col md:flex-row items-center mb-2 gap-4"
+        >
+          <input
+            type="text"
+            id="userId"
+            class="border border-zinc-300 rounded-md px-2 py-2 md:py-4 text-sm w-full"
+          />
+          <span class="text-base text-zinc-600"
+            ><span class="text-[#A10076]">※</span> 로그인 회원명과 실명인증
+            내역이 동일한 경우에만 나의입찰내역의 조회가 가능합니다.</span
+          >
+        </div>
+        <div
+          class="col-span-2 lg:col-span-1 flex items-center text-sm md:text-lg font-semibold"
+        >
+          주민등록번호
+        </div>
+        <div class="col-span-6 lg:col-span-3 flex items-center gap-2 mb-2">
+          <input
+            type="number"
+            id="phoneNumber"
+            class="border border-zinc-300 rounded-md px-2 py-2 md:py-4 text-sm w-full"
+          />
+          <span class="text-xl">-</span>
+          <input
+            type="number"
+            id="phoneNumber2"
+            class="border border-zinc-300 rounded-md px-2 py-2 md:py-4 text-sm w-full"
+          />
+          <button
+            id="check-overlap-btn"
+            class="rounded-md px-2 py-2 md:py-4 text-sm border border-zinc-300 min-w-20"
+          >
+            실명인증 <span class="text-[#A10076]">></span>
+          </button>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>

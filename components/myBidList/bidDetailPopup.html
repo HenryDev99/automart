@@ -1,0 +1,429 @@
+<div
+  id="overlap-popup-overlay"
+  class="fixed inset-0 bg-transparent z-50 flex items-center justify-center overflow-y-hidden"
+>
+  <div
+    class="bg-white rounded-lg w-[70%] max-w-[600px] shadow-lg flex flex-col p-8 min-w-[300px] h-[80%] overflow-y-auto"
+  >
+    <div
+      class="flex items-center justify-between px-4 py-6 md:border-b border-zinc-300 min-h-fit"
+    >
+      <div
+        class="flex items-center gap-2 w-[132px] md:w-[228px] justify-center"
+      >
+        <img src="../../assets/img/logo.png" alt="AUTOMART" />
+      </div>
+      <button
+        class="text-black border border-zinc-300 rounded-md px-4 py-2 flex items-center justify-center gap-2"
+      >
+        <span class="text-lg sr-only md:not-sr-only">닫기</span>
+        <div
+          class="size-4 text-black"
+          style="
+            mask: url('../assets/img/ic_close.svg') no-repeat center;
+            -webkit-mask: url('../assets/img/ic_close.svg') no-repeat center;
+            mask-size: contain;
+            -webkit-mask-size: contain;
+            background-color: currentColor;
+          "
+        ></div>
+      </button>
+    </div>
+    <div class="flex flex-col p-2 md:p-10 w-full min-h-fit">
+      <!-- Title -->
+      <h1 class="text-[#A10076] text-xl md:text-2xl font-bold mb-4">
+        [공매] 인터넷자동차 공매 입찰정보 내역
+      </h1>
+
+      <!-- Top Notice -->
+      <ul
+        class="list-disc pl-5 text-sm md:text-base text-zinc-600 space-y-1 mb-8"
+      >
+        <li>
+          은행 업무시간외(오후 10시부터 오전 9시) 및 은행사정등에 의한 미입금은
+          입찰자의 책임입니다.
+        </li>
+        <li>
+          아래 입찰참여일자에 [입찰 미참예로 되어 있다면 입찰가를 등록하지 않은
+          것입니다.
+        </li>
+        <li>
+          이 경우에는 [입찰신청] 또는 [입찰참여]에서 반드시 입찰가를 등록해야
+          입찰이 완료됩니다.
+        </li>
+      </ul>
+
+      <!-- Section 1: Bid Application Info -->
+      <div class="flex flex-col gap-2 mb-8">
+        <div
+          class="flex flex-wrap items-end gap-2 border-b border-[#A10076] pb-2"
+        >
+          <h2 class="text-[#A10076] text-lg md:text-xl font-bold">
+            입찰신청정보
+          </h2>
+          <span class="text-zinc-500 text-sm md:text-base"
+            >입찰신청정보 [현재일자 :
+            <span class="text-[#A10076]">2025년11월23일 22시03분05초</span
+            >]</span
+          >
+        </div>
+
+        <div class="border-t-2 border-zinc-200">
+          <!-- Row 1 -->
+          <div
+            class="grid grid-cols-1 md:grid-cols-[140px_1fr_140px_1fr] border-b border-zinc-200"
+          >
+            <div
+              class="bg-zinc-100 p-4 flex items-center justify-center font-bold text-zinc-700"
+            >
+              진행기관<br />(공고번호)
+            </div>
+            <div class="p-4 flex flex-col justify-center">
+              <span class="text-[#A10076] font-bold">서울시청</span>
+              <span class="text-[#A10076] font-bold">(제 2025-1274 호)</span>
+            </div>
+            <div
+              class="bg-zinc-100 p-4 flex items-center justify-center font-bold text-zinc-700"
+            >
+              결과발표
+            </div>
+            <div class="p-4 flex flex-col justify-center text-zinc-700">
+              <span>2025.12.31 1400 이후</span>
+              <span class="text-zinc-500 text-sm">(휴일인 경우 익일 발표)</span>
+            </div>
+          </div>
+
+          <!-- Row 2 -->
+          <div
+            class="grid grid-cols-1 md:grid-cols-[140px_1fr] border-b border-zinc-200"
+          >
+            <div
+              class="bg-zinc-100 p-4 flex items-center justify-center font-bold text-zinc-700"
+            >
+              입찰자<br />정보
+            </div>
+            <div class="p-4 flex flex-col gap-1 text-zinc-700">
+              <span>[개인] 입찰</span>
+              <span>입찰자명 : 김동진</span>
+              <span>주민번호 : 930306-1xx90</span>
+              <span
+                >주소 : 경기도 성남시 분당구 이매로 54(이매동,
+                이매촌성지아파트)</span
+              >
+            </div>
+          </div>
+
+          <!-- Row 3 -->
+          <div
+            class="grid grid-cols-1 md:grid-cols-[140px_1fr] border-b border-zinc-200"
+          >
+            <div
+              class="bg-zinc-100 p-4 flex items-center justify-center font-bold text-zinc-700"
+            >
+              보증금<br />입금계좌
+            </div>
+            <div class="p-4 flex flex-col gap-1 text-zinc-700">
+              <span class="font-bold text-zinc-600"
+                >※ 납부은행 : 신한은행, 예금주명 : 공매김동진(오토마트)</span
+              >
+              <span class="pl-4 text-zinc-600"
+                >└ 납부계좌 (납부금액) : 56216590069440 ( 126,000원 )</span
+              >
+              <span class="pl-4 text-zinc-600"
+                >└ 납부기한 : 2025년 12월 31일 16시 00분</span
+              >
+              <span class="text-zinc-600 mt-1"
+                >• 반드시 입찰자명으로 입금해야 하며, 공고문에 유의사항이 있다면
+                공고문을 따릅니다.</span
+              >
+              <span class="text-zinc-600"
+                >• 만약 입금 오류시 공고문에 게시된 납부계좌정보를 확인
+                바랍니다.</span
+              >
+            </div>
+          </div>
+
+          <!-- Row 4 -->
+          <div
+            class="grid grid-cols-1 md:grid-cols-[140px_1fr] border-b border-zinc-200"
+          >
+            <div
+              class="bg-zinc-100 p-4 flex items-center justify-center font-bold text-zinc-700"
+            >
+              보증금<br />환불계좌
+            </div>
+            <div class="p-4 flex flex-col justify-center gap-1">
+              <span class="text-zinc-700"
+                >입찰자 환불은행(계좌) :
+                <span class="text-[#A10076] font-bold"
+                  >신한은행 ( 110385401113 , 예금주명: 김동진)</span
+                ></span
+              >
+              <span class="text-zinc-500 text-sm"
+                >(유찰자 보증금 환불 일정은 해당 기관으로 문의하기
+                바랍니다.)</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 2: Vehicle Info -->
+      <div class="flex flex-col gap-2 mb-8">
+        <h2 class="text-[#A10076] text-lg md:text-xl font-bold">
+          입찰 차량정보
+        </h2>
+        <div class="border-t-2 border-zinc-200 w-full">
+          <!-- Desktop Header -->
+          <div
+            class="hidden md:grid md:grid-cols-[60px_1fr_100px_140px_120px_120px] bg-zinc-100 font-bold border-b border-zinc-200 text-center text-zinc-700"
+          >
+            <div class="p-3 flex items-center justify-center">순번</div>
+            <div class="p-3 flex items-center justify-center">
+              차량번호<br />차량명
+            </div>
+            <div class="p-3 flex items-center justify-center">
+              모델<br />연도
+            </div>
+            <div class="p-3 flex items-center justify-center">
+              입찰참여일시<br />(입찰가등록)
+            </div>
+            <div class="p-3 flex items-center justify-center">보증금</div>
+            <div class="p-3 flex items-center justify-center">입찰금액</div>
+          </div>
+
+          <!-- Vehicle 1 -->
+          <div
+            class="grid grid-cols-1 md:grid-cols-[60px_1fr_100px_140px_120px_120px] border-b border-zinc-200 text-zinc-700"
+          >
+            <!-- Rank -->
+            <div
+              class="bg-zinc-100 p-4 font-bold flex items-center justify-center md:hidden border-b border-zinc-200"
+            >
+              순번
+            </div>
+            <div class="p-4 flex items-center justify-center">1</div>
+
+            <!-- Car Info -->
+            <div
+              class="bg-zinc-100 p-4 font-bold flex items-center justify-center md:hidden border-b border-zinc-200"
+            >
+              차량번호<br />차량명
+            </div>
+            <div class="p-4 flex items-center justify-center text-center">
+              03오8228<br />에쿠스
+            </div>
+
+            <!-- Model Year -->
+            <div
+              class="bg-zinc-100 p-4 font-bold flex items-center justify-center md:hidden border-b border-zinc-200"
+            >
+              모델<br />연도
+            </div>
+            <div class="p-4 flex items-center justify-center">2005</div>
+
+            <!-- Date -->
+            <div
+              class="bg-zinc-100 p-4 font-bold flex items-center justify-center md:hidden border-b border-zinc-200"
+            >
+              입찰참여일시<br />(입찰가등록)
+            </div>
+            <div class="p-4 flex items-center justify-center text-center">
+              2025.11.19<br />(16:40:20)
+            </div>
+
+            <!-- Deposit -->
+            <div
+              class="bg-zinc-100 p-4 font-bold flex items-center justify-center md:hidden border-b border-zinc-200"
+            >
+              보증금
+            </div>
+            <div class="p-4 flex items-center justify-center">30,000원</div>
+
+            <!-- Bid Amount -->
+            <div
+              class="bg-zinc-100 p-4 font-bold flex items-center justify-center md:hidden border-b border-zinc-200"
+            >
+              입찰금액
+            </div>
+            <div class="p-4 flex items-center justify-center">500.000원</div>
+          </div>
+
+          <!-- Vehicle 2 -->
+          <div
+            class="grid grid-cols-1 md:grid-cols-[60px_1fr_100px_140px_120px_120px] border-b border-zinc-200 text-zinc-700"
+          >
+            <!-- Rank -->
+            <div
+              class="bg-zinc-100 p-4 font-bold flex items-center justify-center md:hidden border-b border-zinc-200"
+            >
+              순번
+            </div>
+            <div class="p-4 flex items-center justify-center">2</div>
+
+            <!-- Car Info -->
+            <div
+              class="bg-zinc-100 p-4 font-bold flex items-center justify-center md:hidden border-b border-zinc-200"
+            >
+              차량번호<br />차량명
+            </div>
+            <div class="p-4 flex items-center justify-center text-center">
+              03오8228<br />에쿠스
+            </div>
+
+            <!-- Model Year -->
+            <div
+              class="bg-zinc-100 p-4 font-bold flex items-center justify-center md:hidden border-b border-zinc-200"
+            >
+              모델<br />연도
+            </div>
+            <div class="p-4 flex items-center justify-center">2005</div>
+
+            <!-- Date -->
+            <div
+              class="bg-zinc-100 p-4 font-bold flex items-center justify-center md:hidden border-b border-zinc-200"
+            >
+              입찰참여일시<br />(입찰가등록)
+            </div>
+            <div class="p-4 flex items-center justify-center text-center">
+              2025.11.19<br />(16:40:20)
+            </div>
+
+            <!-- Deposit -->
+            <div
+              class="bg-zinc-100 p-4 font-bold flex items-center justify-center md:hidden border-b border-zinc-200"
+            >
+              보증금
+            </div>
+            <div class="p-4 flex items-center justify-center">30,000원</div>
+
+            <!-- Bid Amount -->
+            <div
+              class="bg-zinc-100 p-4 font-bold flex items-center justify-center md:hidden border-b border-zinc-200"
+            >
+              입찰금액
+            </div>
+            <div class="p-4 flex items-center justify-center">500.000원</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 3: Total Info -->
+      <div class="flex flex-col gap-2 mb-8">
+        <h2 class="text-[#A10076] text-lg md:text-xl font-bold">
+          보증금 및 입찰금액 합계 정보
+        </h2>
+        <div class="border-t-2 border-zinc-200 w-full">
+          <!-- Desktop Header -->
+          <div
+            class="hidden md:grid md:grid-cols-4 bg-zinc-100 font-bold border-b border-zinc-200 text-center text-zinc-700"
+          >
+            <div class="p-4 flex items-center justify-center">보증금 합계</div>
+            <div class="p-4 flex items-center justify-center">수수료 합계</div>
+            <div class="p-4 flex items-center justify-center">
+              입금할 보증금 합계
+            </div>
+            <div class="p-4 flex items-center justify-center">
+              입찰금액 합계
+            </div>
+          </div>
+
+          <!-- Data Row -->
+          <div
+            class="grid grid-cols-1 md:grid-cols-4 border-b border-zinc-200 text-zinc-700"
+          >
+            <!-- Deposit Total -->
+            <div class="grid grid-cols-[100px_1fr] md:block">
+              <div
+                class="bg-zinc-100 p-4 font-bold flex items-center justify-center md:hidden border-r md:border-none border-b md:border-none border-zinc-200"
+              >
+                보증금 합계
+              </div>
+              <div
+                class="p-4 flex items-center justify-center border-b md:border-none border-zinc-200"
+              >
+                126,000 원
+              </div>
+            </div>
+
+            <!-- Fee Total -->
+            <div class="grid grid-cols-[100px_1fr] md:block">
+              <div
+                class="bg-zinc-100 p-4 font-bold flex items-center justify-center md:hidden border-r md:border-none border-b md:border-none border-zinc-200"
+              >
+                수수료 합계
+              </div>
+              <div
+                class="p-4 flex items-center justify-center border-b md:border-none border-zinc-200"
+              >
+                0 원
+              </div>
+            </div>
+
+            <!-- Total Deposit to Pay -->
+            <div class="grid grid-cols-[100px_1fr] md:block">
+              <div
+                class="bg-zinc-100 p-4 font-bold flex items-center justify-center md:hidden border-r md:border-none border-b md:border-none border-zinc-200"
+              >
+                입금할 보증금 합계
+              </div>
+              <div
+                class="p-4 flex items-center justify-center border-b md:border-none border-zinc-200"
+              >
+                126,000 원
+              </div>
+            </div>
+
+            <!-- Total Bid Amount -->
+            <div class="grid grid-cols-[100px_1fr] md:block">
+              <div
+                class="bg-zinc-100 p-4 font-bold flex items-center justify-center md:hidden border-r md:border-none border-b md:border-none border-zinc-200"
+              >
+                입찰금액 합계
+              </div>
+              <div class="p-4 flex items-center justify-center">
+                2,500.000원
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Notice -->
+      <ul
+        class="list-disc pl-5 text-sm md:text-base text-zinc-600 space-y-2 mb-10"
+      >
+        <li>
+          본 화면은 입찰신청 및 입찰참여의 내역을 확인하는 참조자료로
+          사용합니다.
+        </li>
+        <li class="text-[#A10076] font-bold">
+          입찰참여일자에 (입찰미참여) 상태라면 입찰이 완료되지 않은 것이므로
+          입찰금액을 꼭 등록하십시요
+        </li>
+        <li>
+          입금내열항목에서의 수수료늘 입금영분의 자동, 처리에 달한 순수료와
+          유창식 보증은 반환을 위한 이제 환불 수수료를 의미하며, 이와 관련된
+          내용은 각 관공서와 오토마트와의 규정에 따릅니다.
+        </li>
+        <li class="text-[#A10076] font-bold">
+          입찰미참여라고 표기된 입찰내역서는 입찰이 완료되지 않은 자료입니다.
+        </li>
+      </ul>
+
+      <!-- Action Buttons -->
+      <div class="flex flex-col md:flex-row items-center justify-center gap-4">
+        <button
+          class="w-full md:w-auto bg-[#A10076] hover:bg-[#8a0065] text-white rounded-md px-6 md:px-12 py-3 text-base md:text-lg font-bold transition-colors"
+        >
+          인쇄하기
+        </button>
+        <button
+          class="w-full md:w-auto bg-zinc-100 hover:bg-zinc-200 text-zinc-800 border border-zinc-300 rounded-md px-8 md:px-16 py-3 text-base md:text-lg font-bold transition-colors"
+        >
+          닫기
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

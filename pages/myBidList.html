@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko" class="overflow-x-hidden">
+  <head>
+    <script src="../core/header.js"></script>
+    <script src="../core/component-loader.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        defaultHeader.appendToHead();
+        loadComponent("../components/header.html", "#header-container");
+        loadComponent("../components/navigation.html", "#navigation-container");
+        loadComponent("../components/footer.html", "#footer-container");
+        loadComponent(
+          "../components/myBidList/list.html",
+          "#myBidList-container"
+        );
+        loadComponent(
+          "../components/common/pagination.html",
+          "#myBidList-pagination"
+        );
+        loadComponent(
+          "../components/myBidList/bidDetailPopup.html",
+          "#myBidList-popup"
+        );
+      });
+    </script>
+  </head>
+  <body class="min-w-[360px] overflow-x-hidden w-full">
+    <div id="myBidList-popup"></div>
+    <div id="header-container"></div>
+    <div id="navigation-container" class="sr-only md:not-sr-only"></div>
+    <main class="overflow-x-hidden max-w-full w-full">
+      <section
+        class="sr-only md:not-sr-only py-4 grid bg-[#F4EDE3] grid-cols-3 md:px-8 lg:px-20 lg:gap-8"
+      >
+        <article class="col-span-2 flex flex-col justify-center">
+          <span class="font-semibold mb-4 text-[40px] text-[#A10076]"
+            >나의 입찰내역</span
+          >
+          <span class="text-sm font-normal text-zinc-600 text-lg"
+            >오토마트 공매/공개매각에 입찰한 나의 입찰내역을 확인할 수 있는
+            서비스입니다. 현재부터 3개월까지의 나의 입찰내역을 확인할 수
+            있습니다. 입찰정보를 통해 해당 공고로 바로가기 및 입찰내용 확인이
+            가능합니다.
+          </span>
+        </article>
+        <article class="col-span-1 flex justify-center items-center">
+          <img
+            src="../assets/img/img_banner_myinfo.png"
+            alt="myinfo_banner"
+            class="w-[400px] object-contain"
+          />
+        </article>
+      </section>
+      <section
+        class="p-4 bg-[#F4EDE3] flex flex-col justify-center items-center md:sr-only"
+      >
+        <article class="flex items-center justify-between gap-2 w-full">
+          <span class="font-semibold mb-4 text-2xl text-[#A10076]"
+            >나의 입찰내역</span
+          >
+          <img
+            src="../assets/img/img_banner_myinfo.png"
+            alt="myinfo_banner"
+            class="w-[120px] h-[80px] object-contain"
+          />
+        </article>
+        <article class="text-[11px] text-zinc-600">
+          <span
+            >오토마트 공매/공개매각에 입찰한 나의 입찰내역을 확인할 수 있는
+            서비스입니다. 현재부터 3개월까지의 나의 입찰내역을 확인할 수
+            있습니다. 입찰정보를 통해 해당 공고로 바로가기 및 입찰내용 확인이
+            가능합니다.</span
+          >
+        </article>
+      </section>
+
+      <div id="myBidList-container"></div>
+    </main>
+    <div id="footer-container"></div>
+  </body>
+</html>
