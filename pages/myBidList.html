@@ -14,13 +14,14 @@
           "#myBidList-container"
         );
         loadComponent(
-          "../components/common/pagination.html",
-          "#myBidList-pagination"
-        );
-        loadComponent(
-          "../components/myBidList/bidDetailPopup.html",
+          "../components/myBidList/findAddressPopup.html",
           "#myBidList-popup"
-        );
+        ).then(() => {
+          loadComponent(
+            "../components/common/pagination.html",
+            "#myBidList-pagination"
+          );
+        });
       });
     </script>
   </head>

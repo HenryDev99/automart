@@ -1,0 +1,256 @@
+<div
+  id="overlap-popup-overlay"
+  class="fixed inset-0 bg-transparent z-50 flex items-center justify-center overflow-y-hidden"
+>
+  <div
+    class="bg-white rounded-lg w-[70%] max-w-[600px] shadow-lg flex flex-col p-8 min-w-[300px] h-[80%] overflow-y-auto"
+  >
+    <div
+      class="flex items-center justify-between px-4 py-6 md:border-b border-zinc-300 min-h-fit"
+    >
+      <div
+        class="flex items-center gap-2 w-[132px] md:w-[228px] justify-center"
+      >
+        <img src="../../assets/img/logo.png" alt="AUTOMART" />
+      </div>
+      <button
+        class="text-black border border-zinc-300 rounded-md px-4 py-2 flex items-center justify-center gap-2"
+      >
+        <span class="text-lg sr-only md:not-sr-only">닫기</span>
+        <div
+          class="size-4 text-black"
+          style="
+            mask: url('../assets/img/ic_close.svg') no-repeat center;
+            -webkit-mask: url('../assets/img/ic_close.svg') no-repeat center;
+            mask-size: contain;
+            -webkit-mask-size: contain;
+            background-color: currentColor;
+          "
+        ></div>
+      </button>
+    </div>
+    <div class="flex flex-col p-2 md:p-10 w-full min-h-fit">
+      <!-- Header -->
+      <div class="flex flex-col gap-2 border-b border-zinc-200 pb-6 mb-8">
+        <h1 class="text-[#A10076] text-2xl font-bold">주소 찾기</h1>
+        <p class="text-zinc-600">
+          (검색 방법 : 시군구를 먼저 선택하고 통합검색어에 최대한 간략하게
+          입력하고 검색하십시오.)
+        </p>
+      </div>
+
+      <!-- Search Form -->
+      <div class="flex flex-col gap-4 mb-8">
+        <!-- Region Select -->
+        <div class="flex flex-col md:flex-row gap-4 md:items-start">
+          <div class="w-full md:w-[120px] pt-2 font-bold text-zinc-800">
+            시군구 선택
+          </div>
+          <div class="flex flex-col gap-2 w-full">
+            <div class="flex gap-2 w-full">
+              <div class="relative w-full">
+                <select
+                  class="w-full border border-zinc-300 rounded px-4 py-2 bg-white text-zinc-500"
+                >
+                  <option>시/도 선택(필수항목)</option>
+                </select>
+                <div
+                  class="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none"
+                >
+                  <div
+                    class="size-4 text-[#A10076]"
+                    style="
+                      mask: url('../assets/img/ic_arrow_down.svg') no-repeat
+                        center;
+                      -webkit-mask: url('../assets/img/ic_arrow_down.svg')
+                        no-repeat center;
+                      mask-size: contain;
+                      -webkit-mask-size: contain;
+                      background-color: currentColor;
+                    "
+                  ></div>
+                </div>
+              </div>
+              <div class="relative w-full">
+                <select
+                  class="w-full border border-zinc-300 rounded px-4 py-2 bg-white text-zinc-500"
+                >
+                  <option>시군구 선택(필수항목)</option>
+                </select>
+                <div
+                  class="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none"
+                >
+                  <div
+                    class="size-4 text-[#A10076]"
+                    style="
+                      mask: url('../assets/img/ic_arrow_down.svg') no-repeat
+                        center;
+                      -webkit-mask: url('../assets/img/ic_arrow_down.svg')
+                        no-repeat center;
+                      mask-size: contain;
+                      -webkit-mask-size: contain;
+                      background-color: currentColor;
+                    "
+                  ></div>
+                </div>
+              </div>
+            </div>
+            <div class="relative w-full">
+              <select
+                class="w-full border border-zinc-300 rounded px-4 py-2 appearance-none bg-white text-zinc-500"
+              >
+                <option>읍면동 선택(선택항목)</option>
+              </select>
+              <div
+                class="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none"
+              >
+                <div
+                  class="size-4 text-[#A10076]"
+                  style="
+                    mask: url('../assets/img/ic_arrow_down.svg') no-repeat
+                      center;
+                    -webkit-mask: url('../assets/img/ic_arrow_down.svg')
+                      no-repeat center;
+                    mask-size: contain;
+                    -webkit-mask-size: contain;
+                    background-color: currentColor;
+                  "
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Search Input -->
+        <div class="flex flex-col md:flex-row gap-4 md:items-center mt-2">
+          <div class="w-full md:w-[120px] font-bold text-zinc-800">
+            통합 검색어
+          </div>
+          <div class="flex gap-2 w-full">
+            <input
+              type="text"
+              placeholder="최대한 간략하게 입력하세요"
+              class="w-full border border-zinc-300 rounded px-4 py-2"
+            />
+            <button
+              class="bg-[#A10076] hover:bg-[#8a0065] text-white rounded px-6 py-2 font-bold whitespace-nowrap transition-colors"
+            >
+              검색
+            </button>
+          </div>
+        </div>
+        <div class="md:pl-[136px] text-zinc-500 text-sm">
+          (통합 검색어에 시/도, 시군구 및 동/호수 등은 입력하지 마십시요)
+        </div>
+      </div>
+
+      <!-- Results Table -->
+      <div class="border-t border-zinc-200">
+        <!-- Header -->
+        <div
+          class="flex bg-zinc-100 font-bold text-zinc-600 border-b border-zinc-200 py-3 text-center"
+        >
+          <div class="w-[100px] md:w-[140px]">우편번호</div>
+          <div class="flex-1">도로명 주소</div>
+        </div>
+
+        <!-- Row 1 -->
+        <div
+          class="flex items-center text-sm md:text-base border-b border-zinc-200 py-4"
+        >
+          <div
+            class="w-[100px] md:w-[140px] text-center font-bold text-zinc-800"
+          >
+            06314
+          </div>
+          <div class="flex-1 flex flex-col gap-1 pr-4">
+            <span class="font-bold text-zinc-800"
+              >서울특별시 서초구 반포대로 58 (서초동, 서초아트자이)</span
+            >
+            <span class="text-zinc-500"
+              >(지번주소) 서울특별시 서초구 서초동 1583-10 서초아트자이</span
+            >
+          </div>
+        </div>
+
+        <!-- Row 2 -->
+        <div
+          class="flex items-center text-sm md:text-base border-b border-zinc-200 py-4"
+        >
+          <div
+            class="w-[100px] md:w-[140px] text-center font-bold text-zinc-800"
+          >
+            06314
+          </div>
+          <div class="flex-1 flex flex-col gap-1 pr-4">
+            <span class="font-bold text-zinc-800"
+              >서울특별시 서초구 반포대로 58 (서초동, 서초아트자이)</span
+            >
+            <span class="text-zinc-500"
+              >(지번주소) 서울특별시 서초구 서초동 1583-10 서초아트자이</span
+            >
+          </div>
+        </div>
+
+        <!-- Row 3 -->
+        <div
+          class="flex items-center text-sm md:text-base border-b border-zinc-200 py-4"
+        >
+          <div
+            class="w-[100px] md:w-[140px] text-center font-bold text-zinc-800"
+          >
+            06314
+          </div>
+          <div class="flex-1 flex flex-col gap-1 pr-4">
+            <span class="font-bold text-zinc-800"
+              >서울특별시 서초구 반포대로 58 (서초동, 서초아트자이)</span
+            >
+            <span class="text-zinc-500"
+              >(지번주소) 서울특별시 서초구 서초동 1583-10 서초아트자이</span
+            >
+          </div>
+        </div>
+
+        <!-- Row 4 -->
+        <div
+          class="flex items-center text-sm md:text-base border-b border-zinc-200 py-4"
+        >
+          <div
+            class="w-[100px] md:w-[140px] text-center font-bold text-zinc-800"
+          >
+            06314
+          </div>
+          <div class="flex-1 flex flex-col gap-1 pr-4">
+            <span class="font-bold text-zinc-800"
+              >서울특별시 서초구 반포대로 58 (서초동, 서초아트자이)</span
+            >
+            <span class="text-zinc-500"
+              >(지번주소) 서울특별시 서초구 서초동 1583-10 서초아트자이</span
+            >
+          </div>
+        </div>
+
+        <!-- Row 5 -->
+        <div
+          class="flex items-center text-sm md:text-base border-b border-zinc-200 py-4"
+        >
+          <div
+            class="w-[100px] md:w-[140px] text-center font-bold text-zinc-800"
+          >
+            06314
+          </div>
+          <div class="flex-1 flex flex-col gap-1 pr-4">
+            <span class="font-bold text-zinc-800"
+              >서울특별시 서초구 반포대로 58 (서초동, 서초아트자이)</span
+            >
+            <span class="text-zinc-500"
+              >(지번주소) 서울특별시 서초구 서초동 1583-10 서초아트자이</span
+            >
+          </div>
+        </div>
+      </div>
+
+      <div id="myBidList-pagination" class="mt-8"></div>
+    </div>
+  </div>
+</div>
