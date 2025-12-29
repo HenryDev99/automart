@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko" class="overflow-x-hidden">
+  <head>
+    <script src="../core/header.js"></script>
+    <script src="../core/component-loader.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        defaultHeader.appendToHead();
+        loadComponent("../components/header.html", "#header-container");
+        loadComponent("../components/navigation.html", "#navigation-container");
+        loadComponent("../components/footer.html", "#footer-container");
+        loadComponent(
+          "../components/favoriteCar/tabContent1.html",
+          "#favoriteCar-container"
+        );
+        loadComponent(
+          "../components/common/pagination.html",
+          "#favoriteCar-pagination"
+        );
+      });
+    </script>
+  </head>
+  <body class="min-w-[360px] overflow-x-hidden w-full">
+    <div id="header-container"></div>
+    <div id="navigation-container" class="sr-only md:not-sr-only"></div>
+    <main class="overflow-x-hidden max-w-full w-full">
+      <section
+        class="sr-only md:not-sr-only py-4 grid bg-[#F4EDE3] grid-cols-3 md:px-8 lg:px-20 lg:gap-8"
+      >
+        <article class="col-span-2 flex flex-col justify-center">
+          <span class="font-semibold mb-4 text-[40px]"
+            ><span class="text-[#A10076]">나의 찜한</span> 차량</span
+          >
+          <span class="text-sm font-normal text-zinc-600 text-lg"
+            >차량 중에 찜하기로 등록한 차량을 조회할 수 있으며, 찜한차량은 최대
+            20대까지 등록 가능합니다. 등록한 차량은 매각발표일 -7일 미만의
+            자료까지 조회할 수 있으며, 찜해제는 차량상세에서 찜해제를 통해
+            해제할 수 있습니다.
+          </span>
+        </article>
+        <article class="col-span-1 flex justify-center items-center">
+          <img
+            src="../assets/img/img_banner_myinfo.png"
+            alt="myinfo_banner"
+            class="w-[400px] object-contain"
+          />
+        </article>
+      </section>
+      <section
+        class="p-4 bg-[#F4EDE3] flex flex-col justify-center items-center md:sr-only"
+      >
+        <article class="flex items-center justify-between gap-2 w-full">
+          <span class="font-semibold mb-4 text-2xl"
+            ><span class="text-[#A10076]">나의 찜한</span> 차량</span
+          >
+          <img
+            src="../assets/img/img_banner_myinfo.png"
+            alt="myinfo_banner"
+            class="w-[120px] h-[80px] object-contain"
+          />
+        </article>
+        <article class="text-[11px] text-zinc-600">
+          <span
+            >차량 중에 찜하기로 등록한 차량을 조회할 수 있으며, 찜한차량은 최대
+            20대까지 등록 가능합니다. 등록한 차량은 매각발표일 -7일 미만의
+            자료까지 조회할 수 있으며, 찜해제는 차량상세에서 찜해제를 통해
+            해제할 수 있습니다.</span
+          >
+        </article>
+      </section>
+      <section class="p-8 gap-8 flex flex-col">
+        <div class="w-full grid grid-cols-5">
+          <div
+            class="col-span-1 rounded-t-md bg-white py-4 px-2 border-t border-x border-black flex items-center justify-center"
+          >
+            <span class="text-sm md:text-xl font-semibold text-[#A10076]"
+              >전체</span
+            >
+          </div>
+          <div
+            class="col-span-1 rounded-t-md bg-zinc-100 py-4 px-2 border-t-zinc-300 border-x-zinc-300 border-b-black flex items-center justify-center border"
+          >
+            <span class="text-sm md:text-xl font-semibold text-zinc-600"
+              >관공서공매</span
+            >
+          </div>
+          <div
+            class="col-span-1 rounded-t-md bg-zinc-100 py-4 px-2 border-t-zinc-300 border-x-zinc-300 border-b-black flex items-center justify-center border"
+          >
+            <span class="text-sm md:text-xl font-semibold text-zinc-600"
+              >금융기관 공개매각</span
+            >
+          </div>
+          <div
+            class="col-span-1 rounded-t-md bg-zinc-100 py-4 px-2 border-t-zinc-300 border-x-zinc-300 border-b-black flex items-center justify-center border"
+          >
+            <span class="text-sm md:text-xl font-semibold text-zinc-600"
+              >개인 공개매각</span
+            >
+          </div>
+          <div
+            class="col-span-1 rounded-t-md bg-zinc-100 py-4 px-2 border-t-zinc-300 border-x-zinc-300 border-b-black flex items-center justify-center border"
+          >
+            <span class="text-sm md:text-xl font-semibold text-zinc-600"
+              >회원사 공개매각</span
+            >
+          </div>
+        </div>
+      </section>
+      <section class="px-8 gap-8 flex flex-col">
+        <article class="grid grid-cols-5 border-b border-zinc-300 py-6">
+          <div class="col-span-1 flex items-center justify-center">
+            <span class="font-bold">출력선택</span>
+          </div>
+          <div class="col-span-4 flex items-center gap-8">
+            <div class="flex items-center justify-start gap-2 min-w-15">
+              <input type="radio" />
+              <span class="text-sm md:text-base">10건씩</span>
+            </div>
+            <div class="flex items-center justify-start gap-2 min-w-15">
+              <input type="radio" />
+              <span class="text-sm md:text-base">20건씩</span>
+            </div>
+            <div class="flex items-center justify-start gap-2 min-w-15">
+              <input type="radio" />
+              <span class="text-sm md:text-base">30건씩</span>
+            </div>
+          </div>
+        </article>
+        <article>
+          찜한 차량은 최대 20대까지 등록이 가능하며, 매각발표일 7일 미만의
+          자료를 확인할 수 있습니다.<br />
+          조회 범위가 지난 자료는 삭제 처리되며, 매각이 완료된 차량은 임의
+          삭제될 수도 있습니다.
+        </article>
+      </section>
+      <div id="favoriteCar-container"></div>
+    </main>
+    <div id="footer-container"></div>
+  </body>
+</html>
