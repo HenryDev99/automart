@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="ko" class="overflow-x-hidden">
+  <head>
+    <script src="../core/header.js"></script>
+    <script src="../core/component-loader.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        defaultHeader.appendToHead();
+        loadComponent("../components/header.html", "#header-container");
+        loadComponent("../components/navigation.html", "#navigation-container");
+        loadComponent("../components/footer.html", "#footer-container");
+      });
+    </script>
+  </head>
+  <body class="min-w-[360px] overflow-x-hidden w-full">
+    <div id="header-container"></div>
+    <div id="navigation-container" class="sr-only md:not-sr-only"></div>
+    <main class="overflow-x-hidden max-w-full w-full">
+      <section
+        class="sr-only md:not-sr-only py-4 grid bg-[#E0EAF4] grid-cols-3 md:px-8 lg:px-20 lg:gap-8"
+      >
+        <article class="col-span-2 flex flex-col justify-center">
+          <span class="font-semibold mb-4 text-[40px] text-[#A10076]"
+            >수입차 실거래가</span
+          >
+          <span class="text-sm font-normal text-zinc-600 text-lg"
+            >수입차 실거래가는 금융기관에서 차량 경매를 통하여 낙찰된 데이터를
+            기준으로 최근 1개월 이전 정보를 분석한 결과로 제조사 모델별로
+            변속기, 배기량, 주행거리 등의 차량 정보와 보험개발원의 중고차 품질
+            확인을 위한 과거 사고이력정보와 오토마트에서 결합한 차량상태정보
+            등은 수입차 입찰에 도움이 되는 실거래가 정보를 제공합니다.
+          </span>
+        </article>
+        <article class="col-span-1 flex justify-center items-center">
+          <img
+            src="../assets/img/img_banner_importedCarPrice.png"
+            alt="introduce_banner"
+            class="w-[300px] h-[200px] object-contain"
+          />
+        </article>
+      </section>
+      <section
+        class="p-4 bg-[#E1F4E3] flex flex-col justify-center items-center md:sr-only"
+      >
+        <article class="flex items-center justify-between gap-2 w-full">
+          <span class="font-semibold mb-4 text-2xl text-[#A10076]"
+            >수입차 실거래가</span
+          >
+          <img
+            src="../assets/img/img_banner_importedCarPrice.png"
+            alt="introduce_banner"
+            class="w-[120px] h-[80px] object-contain"
+          />
+        </article>
+        <article class="text-[11px] text-zinc-600">
+          <span
+            >수입차 실거래가는 금융기관에서 차량 경매를 통하여 낙찰된 데이터를
+            기준으로 최근 1개월 이전 정보를 분석한 결과로 제조사 모델별로
+            변속기, 배기량, 주행거리 등의 차량 정보와 보험개발원의 중고차 품질
+            확인을 위한 과거 사고이력정보와 오토마트에서 결합한 차량상태정보
+            등은 수입차 입찰에 도움이 되는 실거래가 정보를 제공합니다.</span
+          >
+        </article>
+      </section>
+
+      <section class="max-w-7xl mx-auto w-full px-8 py-10">
+        <div class="flex flex-wrap justify-between items-center px-8 mb-16">
+          <div class="flex flex-col items-center gap-2 cursor-pointer">
+            <div
+              class="w-16 h-16 rounded-full flex items-center justify-center"
+            >
+              <img
+                src="../assets/img/img_logo_all.png"
+                alt="전체"
+                class="w-full h-full object-contain"
+              />
+            </div>
+            <span class="text-zinc-600 text-sm">전체</span>
+          </div>
+          <div class="flex flex-col items-center gap-2 cursor-pointer">
+            <div
+              class="w-16 h-16 rounded-full flex items-center justify-center"
+            >
+              <img
+                src="../assets/img/img_logo_bmw.png"
+                alt="BMW"
+                class="w-full h-full object-contain"
+              />
+            </div>
+            <span class="text-zinc-600 text-sm">BMW</span>
+          </div>
+          <div class="flex flex-col items-center gap-2 cursor-pointer">
+            <div
+              class="w-16 h-16 rounded-full flex items-center justify-center"
+            >
+              <img
+                src="../assets/img/img_logo_benz.png"
+                alt="벤츠"
+                class="w-full h-full object-contain"
+              />
+            </div>
+            <span class="text-zinc-600 text-sm">벤츠</span>
+          </div>
+          <div class="flex flex-col items-center gap-2 cursor-pointer">
+            <div
+              class="w-16 h-16 rounded-full flex items-center justify-center"
+            >
+              <img
+                src="../assets/img/img_logo_audi.png"
+                alt="아우디"
+                class="w-full h-full object-contain"
+              />
+            </div>
+            <span class="text-zinc-600 text-sm">아우디</span>
+          </div>
+          <div class="flex flex-col items-center gap-2 cursor-pointer">
+            <div
+              class="w-16 h-16 rounded-full flex items-center justify-center"
+            >
+              <img
+                src="../assets/img/img_logo_vw.png"
+                alt="폭스바겐"
+                class="w-full h-full object-contain"
+              />
+            </div>
+            <span class="text-zinc-600 text-sm">폭스바겐</span>
+          </div>
+          <div class="flex flex-col items-center gap-2 cursor-pointer">
+            <div
+              class="w-16 h-16 rounded-full flex items-center justify-center"
+            >
+              <img
+                src="../assets/img/img_logo_toyoda.png"
+                alt="토요타"
+                class="w-full h-full object-contain"
+              />
+            </div>
+            <span class="text-zinc-600 text-sm">토요타</span>
+          </div>
+          <div class="flex flex-col items-center gap-2 cursor-pointer">
+            <div
+              class="w-16 h-16 rounded-full flex items-center justify-center"
+            >
+              <img
+                src="../assets/img/img_logo_lr.png"
+                alt="랜드로버"
+                class="w-full h-full object-contain"
+              />
+            </div>
+            <span class="text-zinc-600 text-sm">랜드로버</span>
+          </div>
+          <div class="flex flex-col items-center gap-2 cursor-pointer">
+            <div
+              class="w-16 h-16 rounded-full flex items-center justify-center"
+            >
+              <img
+                src="../assets/img/img_logo_lexus.png"
+                alt="렉서스"
+                class="w-full h-full object-contain"
+              />
+            </div>
+            <span class="text-zinc-600 text-sm">렉서스</span>
+          </div>
+          <div class="flex flex-col items-center gap-2 cursor-pointer">
+            <div
+              class="w-16 h-16 rounded-full flex items-center justify-center"
+            >
+              <img
+                src="../assets/img/img_logo_ford.png"
+                alt="포드"
+                class="w-full h-full object-contain"
+              />
+            </div>
+            <span class="text-zinc-600 text-sm">포드</span>
+          </div>
+          <div class="flex flex-col items-center gap-2 cursor-pointer">
+            <div
+              class="w-16 h-16 rounded-full flex items-center justify-center"
+            >
+              <img
+                src="../assets/img/ic_menu.svg"
+                alt="기타"
+                class="w-12 h-12 object-contain"
+              />
+            </div>
+            <span class="text-zinc-600 text-sm">기타</span>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-6 mb-16">
+          <div class="flex items-center">
+            <label
+              class="w-24 md:w-32 text-zinc-800 text-base md:text-lg flex-shrink-0"
+              >모델명</label
+            >
+            <input
+              type="text"
+              placeholder="모델명을 입력하세요"
+              class="w-full h-12 px-4 border border-zinc-200 rounded-lg outline-none focus:border-[#A10076] text-base md:text-lg"
+            />
+          </div>
+          <div class="flex items-center">
+            <label
+              class="w-24 md:w-32 text-zinc-800 text-base md:text-lg flex-shrink-0"
+              >변속기</label
+            >
+            <div class="relative w-full">
+              <select
+                class="w-full h-12 px-4 border border-zinc-200 rounded-lg outline-none focus:border-[#A10076] appearance-none bg-white text-base md:text-lg"
+              >
+                <option>자동</option>
+                <option>수동</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="flex items-center">
+            <label
+              class="w-24 md:w-32 text-zinc-800 text-base md:text-lg flex-shrink-0"
+              >배기량</label
+            >
+            <div class="relative w-full">
+              <select
+                class="w-full h-12 px-4 border border-zinc-200 rounded-lg outline-none focus:border-[#A10076] appearance-none bg-white text-base md:text-lg"
+              >
+                <option>1,600 ~ 2,000cc</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="flex items-center">
+            <label
+              class="w-24 md:w-32 text-zinc-800 text-base md:text-lg flex-shrink-0"
+              >사용연료</label
+            >
+            <div class="relative w-full">
+              <select
+                class="w-full h-12 px-4 border border-zinc-200 rounded-lg outline-none focus:border-[#A10076] appearance-none bg-white text-base md:text-lg"
+              >
+                <option>가솔린</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="flex items-center">
+            <label
+              class="w-24 md:w-32 text-zinc-800 text-base md:text-lg flex-shrink-0"
+              >모델연도</label
+            >
+            <div class="flex items-center w-full gap-2">
+              <select
+                class="w-full h-12 px-4 border border-zinc-200 rounded-lg outline-none focus:border-[#A10076] appearance-none bg-white text-base md:text-lg"
+              >
+                <option>2018</option>
+              </select>
+
+              <span>-</span>
+
+              <select
+                class="w-full h-12 px-4 border border-zinc-200 rounded-lg outline-none focus:border-[#A10076] appearance-none bg-white text-base md:text-lg"
+              >
+                <option>2022</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="flex items-center">
+            <label
+              class="w-24 md:w-32 text-zinc-800 text-base md:text-lg flex-shrink-0"
+              >주행거리(km)</label
+            >
+            <div class="flex items-center w-full gap-2">
+              <select
+                class="w-full h-12 px-4 border border-zinc-200 rounded-lg outline-none focus:border-[#A10076] appearance-none bg-white text-base md:text-lg"
+              >
+                <option>2,000</option>
+              </select>
+
+              <span>-</span>
+
+              <select
+                class="w-full h-12 px-4 border border-zinc-200 rounded-lg outline-none focus:border-[#A10076] appearance-none bg-white text-base md:text-lg"
+              >
+                <option>35,000</option>
+              </select>
+            </div>
+          </div>
+          <div class="flex items-center">
+            <label
+              class="w-24 md:w-32 text-zinc-800 text-base md:text-lg flex-shrink-0"
+              >낙찰가격(만원)</label
+            >
+            <div class="flex items-center w-full gap-2">
+              <select
+                class="w-full h-12 px-4 border border-zinc-200 rounded-lg outline-none focus:border-[#A10076] appearance-none bg-white text-base md:text-lg"
+              >
+                <option>2,000</option>
+              </select>
+
+              <span>-</span>
+
+              <select
+                class="w-full h-12 px-4 border border-zinc-200 rounded-lg outline-none focus:border-[#A10076] appearance-none bg-white text-base md:text-lg"
+              >
+                <option>6,000</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex justify-center gap-4">
+          <button
+            class="px-8 py-3 rounded bg-zinc-100 text-zinc-600 border border-zinc-300"
+          >
+            조건 초기화
+          </button>
+          <button class="px-12 py-3 rounded bg-[#A10076] text-white">
+            실거래가 검색
+          </button>
+        </div>
+      </section>
+
+      <section class="max-w-7xl mx-auto w-full px-8 pb-20">
+        <div class="mb-4 text-[#A10076] font-medium text-sm md:text-base">
+          ※ 사고이력과 성능점검을 클릭하시면 상세 내역을 확인 할 수 있습니다.
+        </div>
+
+        <div class="overflow-x-auto">
+          <table
+            class="w-full min-w-[1000px] border-collapse border border-zinc-200 text-center text-sm"
+          >
+            <thead class="bg-zinc-50 text-zinc-600 font-medium">
+              <tr>
+                <th rowspan="3" class="border border-zinc-200 p-2 w-[180px]">
+                  No
+                </th>
+                <th class="border border-zinc-200 p-2 h-10">
+                  <div class="flex items-center justify-center gap-1">
+                    제조사/연료
+                    <div
+                      class="flex flex-col w-4 h-4 border border-zinc-300 bg-white rounded items-center justify-center"
+                    >
+                      <svg
+                        width="8"
+                        height="4"
+                        viewBox="0 0 8 4"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="mb-[1px]"
+                      >
+                        <path d="M4 0L8 4H0L4 0Z" fill="#A1A1AA" />
+                      </svg>
+                      <svg
+                        width="8"
+                        height="4"
+                        viewBox="0 0 8 4"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path d="M4 4L0 0H8L4 4Z" fill="#A1A1AA" />
+                      </svg>
+                    </div>
+                  </div>
+                </th>
+                <th class="border border-zinc-200 p-2 h-10">
+                  <div class="flex items-center justify-center gap-1">
+                    변속/배기량
+                    <div
+                      class="flex flex-col w-4 h-4 border border-zinc-300 bg-white rounded items-center justify-center"
+                    >
+                      <svg
+                        width="8"
+                        height="4"
+                        viewBox="0 0 8 4"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="mb-[1px]"
+                      >
+                        <path d="M4 0L8 4H0L4 0Z" fill="#A1A1AA" />
+                      </svg>
+                      <svg
+                        width="8"
+                        height="4"
+                        viewBox="0 0 8 4"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path d="M4 4L0 0H8L4 4Z" fill="#A1A1AA" />
+                      </svg>
+                    </div>
+                  </div>
+                </th>
+                <th class="border border-zinc-200 p-2 h-10">입찰시작일</th>
+                <th class="border border-zinc-200 p-2 h-10">차량가액범위</th>
+                <th class="border border-zinc-200 p-2 h-10">공매시작가</th>
+                <th rowspan="3" class="border border-zinc-200 p-2 w-32">
+                  과거(사고)이력<br />정보<br />차량성능점검서
+                </th>
+              </tr>
+              <tr>
+                <th class="border border-zinc-200 p-2 h-10">
+                  <div class="flex items-center justify-center gap-1">
+                    모델명
+                    <div
+                      class="flex flex-col w-4 h-4 border border-zinc-300 bg-white rounded items-center justify-center"
+                    >
+                      <svg
+                        width="8"
+                        height="4"
+                        viewBox="0 0 8 4"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="mb-[1px]"
+                      >
+                        <path d="M4 0L8 4H0L4 0Z" fill="#A1A1AA" />
+                      </svg>
+                      <svg
+                        width="8"
+                        height="4"
+                        viewBox="0 0 8 4"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path d="M4 4L0 0H8L4 4Z" fill="#A1A1AA" />
+                      </svg>
+                    </div>
+                  </div>
+                </th>
+                <th class="border border-zinc-200 p-2 h-10">
+                  <div class="flex items-center justify-center gap-1">
+                    최초등록일
+                    <div
+                      class="flex flex-col w-4 h-4 border border-zinc-300 bg-white rounded items-center justify-center"
+                    >
+                      <svg
+                        width="8"
+                        height="4"
+                        viewBox="0 0 8 4"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="mb-[1px]"
+                      >
+                        <path d="M4 0L8 4H0L4 0Z" fill="#A1A1AA" />
+                      </svg>
+                      <svg
+                        width="8"
+                        height="4"
+                        viewBox="0 0 8 4"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path d="M4 4L0 0H8L4 4Z" fill="#A1A1AA" />
+                      </svg>
+                    </div>
+                  </div>
+                </th>
+                <th class="border border-zinc-200 p-2" rowspan="2">
+                  매각발표일
+                </th>
+                <th class="border border-zinc-200 p-2" rowspan="2">
+                  AutoMart 예가
+                </th>
+                <th class="border border-zinc-200 p-2" rowspan="2">낙찰가격</th>
+              </tr>
+              <tr>
+                <th class="border border-zinc-200 p-2 h-10">
+                  <div class="flex items-center justify-center gap-1">
+                    모델연도
+                    <div
+                      class="flex flex-col w-4 h-4 border border-zinc-300 bg-white rounded items-center justify-center"
+                    >
+                      <svg
+                        width="8"
+                        height="4"
+                        viewBox="0 0 8 4"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="mb-[1px]"
+                      >
+                        <path d="M4 0L8 4H0L4 0Z" fill="#A1A1AA" />
+                      </svg>
+                      <svg
+                        width="8"
+                        height="4"
+                        viewBox="0 0 8 4"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path d="M4 4L0 0H8L4 4Z" fill="#A1A1AA" />
+                      </svg>
+                    </div>
+                  </div>
+                </th>
+                <th class="border border-zinc-200 p-2 h-10">
+                  <div class="flex items-center justify-center gap-1">
+                    주행거리
+                    <div
+                      class="flex flex-col w-4 h-4 border border-zinc-300 bg-white rounded items-center justify-center"
+                    >
+                      <svg
+                        width="8"
+                        height="4"
+                        viewBox="0 0 8 4"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="mb-[1px]"
+                      >
+                        <path d="M4 0L8 4H0L4 0Z" fill="#A1A1AA" />
+                      </svg>
+                      <svg
+                        width="8"
+                        height="4"
+                        viewBox="0 0 8 4"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path d="M4 4L0 0H8L4 4Z" fill="#A1A1AA" />
+                      </svg>
+                    </div>
+                  </div>
+                </th>
+              </tr>
+            </thead>
+            <tbody class="bg-white text-zinc-700">
+              <tr>
+                <td class="border border-zinc-200 p-4">
+                  <div class="flex items-center justify-center gap-4">
+                    <img
+                      src="../assets/img/img_temp_car.png"
+                      class="w-24 h-20 object-cover rounded"
+                      alt="Car Thumbnail"
+                    />
+                    <span class="text-xl text-zinc-500">01</span>
+                  </div>
+                </td>
+                <td class="border border-zinc-200 p-3 text-left">
+                  <div class="flex flex-col gap-1 items-start">
+                    <span class="font-bold text-zinc-800">BMW (경유)</span>
+                    <span class="font-bold text-lg text-zinc-800"
+                      >BMW 320dTouring</span
+                    >
+                    <span class="text-zinc-500">2016</span>
+                  </div>
+                </td>
+                <td class="border border-zinc-200 p-3 text-left">
+                  <div class="flex flex-col gap-1 items-start">
+                    <span>자동 (1,998cc)</span>
+                    <span>20.02.13(42개월)</span>
+                    <span>25,000 km</span>
+                  </div>
+                </td>
+                <td class="border border-zinc-200 p-3">
+                  <div class="flex flex-col gap-1">
+                    <span>2023. 07. 02</span>
+                    <span>2023. 07. 17</span>
+                  </div>
+                </td>
+                <td class="border border-zinc-200 p-3 text-right">
+                  <div class="flex flex-col gap-1">
+                    <span>3,125~3,531 만원</span>
+                    <span>3,300~3,800 만원</span>
+                  </div>
+                </td>
+                <td class="border border-zinc-200 p-3 text-right">
+                  <div class="flex flex-col gap-1">
+                    <span class="font-bold text-lg">40,000,000원</span>
+                    <span class="font-bold text-lg text-[#A10076]"
+                      >41,000,000원</span
+                    >
+                  </div>
+                </td>
+                <td class="border border-zinc-200 p-3">
+                  <div class="flex flex-col gap-2 items-center">
+                    <button
+                      class="w-full px-2 py-1.5 rounded border border-[#A10076] text-[#A10076] text-xs font-bold hover:bg-pink-50 transition-colors"
+                    >
+                      사고이력
+                    </button>
+                    <button
+                      class="w-full px-2 py-1.5 rounded border border-[#0076A1] text-[#0076A1] text-xs font-bold hover:bg-sky-50 transition-colors"
+                    >
+                      성능점검
+                    </button>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+    <div id="footer-container"></div>
+  </body>
+</html>

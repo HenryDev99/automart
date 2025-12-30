@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="ko" class="overflow-x-hidden">
+  <head>
+    <script src="../core/header.js"></script>
+    <script src="../core/component-loader.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        defaultHeader.appendToHead();
+        loadComponent("../components/header.html", "#header-container");
+        loadComponent("../components/navigation.html", "#navigation-container");
+        loadComponent("../components/footer.html", "#footer-container");
+      });
+    </script>
+  </head>
+  <body class="min-w-[360px] overflow-x-hidden w-full">
+    <div id="header-container"></div>
+    <div id="navigation-container" class="sr-only md:not-sr-only"></div>
+    <main class="overflow-x-hidden max-w-full w-full">
+      <section
+        class="sr-only md:not-sr-only py-4 grid bg-[#E1F4E3] grid-cols-3 md:px-8 lg:px-20 lg:gap-8"
+      >
+        <article class="col-span-2 flex flex-col justify-center">
+          <span class="font-semibold mb-4 text-[40px] text-[#A10076]"
+            >차량보관소</span
+          >
+          <span class="text-sm font-normal text-zinc-600 text-lg"
+            >오토마트 전국 차량보관소를 검색할 수 있는 서비스입니다. 방문하여
+            차량을 확인할 수 있습니다. 약도 및 연락처 등 찾아오는 방법등을
+            확인할 수 있습니다.
+          </span>
+        </article>
+        <article class="col-span-1 flex justify-center items-center">
+          <img
+            src="../assets/img/img_banner_carWarehouse.png"
+            alt="introduce_banner"
+            class="w-[300px] h-[200px] object-contain"
+          />
+        </article>
+      </section>
+      <section
+        class="p-4 bg-[#E1F4E3] flex flex-col justify-center items-center md:sr-only"
+      >
+        <article class="flex items-center justify-between gap-2 w-full">
+          <span class="font-semibold mb-4 text-2xl text-[#A10076]"
+            >차량보관소</span
+          >
+          <img
+            src="../assets/img/img_banner_carWarehouse.png"
+            alt="introduce_banner"
+            class="w-[120px] h-[80px] object-contain"
+          />
+        </article>
+        <article class="text-[11px] text-zinc-600">
+          <span
+            >오토마트 전국 차량보관소를 검색할 수 있는 서비스입니다. 방문하여
+            차량을 확인할 수 있습니다. 약도 및 연락처 등 찾아오는 방법등을
+            확인할 수 있습니다.</span
+          >
+        </article>
+      </section>
+
+      <section class="p-8 flex flex-col max-w-7xl mx-auto w-full">
+        <div class="flex flex-col w-full mb-8">
+          <h3 class="text-2xl font-bold text-[#A10076] mb-2">
+            오토마트 차량보관소
+          </h3>
+          <div class="w-full h-[1px] bg-zinc-300"></div>
+        </div>
+
+        <div class="grid grid-cols-5 gap-8">
+          <div
+            class="col-span-5 md:col-span-3 grid grid-cols-2 md:grid-cols-3 gap-3"
+          >
+            <button
+              class="w-full py-3 rounded-lg border border-zinc-200 bg-white text-zinc-600 hover:bg-gray-50 transition-colors"
+            >
+              (구)제주보관소
+            </button>
+            <button
+              class="w-full py-3 rounded-lg border border-[#A10076] bg-white text-[#A10076] font-bold shadow-sm"
+            >
+              강릉보관소
+            </button>
+            <button
+              class="w-full py-3 rounded-lg border border-zinc-200 bg-white text-zinc-600 hover:bg-gray-50 transition-colors"
+            >
+              (구)제주보관소
+            </button>
+            <button
+              class="w-full py-3 rounded-lg border border-zinc-200 bg-white text-zinc-600 hover:bg-gray-50 transition-colors"
+            >
+              (구)제주보관소
+            </button>
+            <button
+              class="w-full py-3 rounded-lg border border-zinc-200 bg-white text-zinc-600 hover:bg-gray-50 transition-colors"
+            >
+              (구)제주보관소
+            </button>
+            <button
+              class="w-full py-3 rounded-lg border border-zinc-200 bg-white text-zinc-600 hover:bg-gray-50 transition-colors"
+            >
+              (구)제주보관소
+            </button>
+            <button
+              class="w-full py-3 rounded-lg border border-zinc-200 bg-white text-zinc-600 hover:bg-gray-50 transition-colors"
+            >
+              (구)제주보관소
+            </button>
+            <button
+              class="w-full py-3 rounded-lg border border-zinc-200 bg-white text-zinc-600 hover:bg-gray-50 transition-colors"
+            >
+              (구)제주보관소
+            </button>
+            <button
+              class="w-full py-3 rounded-lg border border-zinc-200 bg-white text-zinc-600 hover:bg-gray-50 transition-colors"
+            >
+              (구)제주보관소
+            </button>
+            <button
+              class="w-full py-3 rounded-lg border border-zinc-200 bg-white text-zinc-600 hover:bg-gray-50 transition-colors"
+            >
+              (구)제주보관소
+            </button>
+            <button
+              class="w-full py-3 rounded-lg border border-zinc-200 bg-white text-zinc-600 hover:bg-gray-50 transition-colors"
+            >
+              (구)제주보관소
+            </button>
+            <button
+              class="w-full py-3 rounded-lg border border-zinc-200 bg-white text-zinc-600 hover:bg-gray-50 transition-colors"
+            >
+              (구)제주보관소
+            </button>
+            <button
+              class="w-full py-3 rounded-lg border border-zinc-200 bg-white text-zinc-600 hover:bg-gray-50 transition-colors"
+            >
+              (구)제주보관소
+            </button>
+            <button
+              class="w-full py-3 rounded-lg border border-zinc-200 bg-white text-zinc-600 hover:bg-gray-50 transition-colors"
+            >
+              (구)제주보관소
+            </button>
+            <button
+              class="w-full py-3 rounded-lg border border-zinc-200 bg-white text-zinc-600 hover:bg-gray-50 transition-colors"
+            >
+              (구)제주보관소
+            </button>
+            <button
+              class="w-full py-3 rounded-lg border border-zinc-200 bg-white text-zinc-600 hover:bg-gray-50 transition-colors"
+            >
+              (구)제주보관소
+            </button>
+            <button
+              class="w-full py-3 rounded-lg border border-zinc-200 bg-white text-zinc-600 hover:bg-gray-50 transition-colors"
+            >
+              (구)제주보관소
+            </button>
+            <button
+              class="w-full py-3 rounded-lg border border-zinc-200 bg-white text-zinc-600 hover:bg-gray-50 transition-colors"
+            >
+              (구)제주보관소
+            </button>
+            <button
+              class="w-full py-3 rounded-lg border border-zinc-200 bg-white text-zinc-600 hover:bg-gray-50 transition-colors"
+            >
+              (구)제주보관소
+            </button>
+            <button
+              class="w-full py-3 rounded-lg border border-zinc-200 bg-white text-zinc-600 hover:bg-gray-50 transition-colors"
+            >
+              (구)제주보관소
+            </button>
+            <button
+              class="w-full py-3 rounded-lg border border-zinc-200 bg-white text-zinc-600 hover:bg-gray-50 transition-colors"
+            >
+              (구)제주보관소
+            </button>
+            <button
+              class="w-full py-3 rounded-lg border border-zinc-200 bg-white text-zinc-600 hover:bg-gray-50 transition-colors"
+            >
+              (구)제주보관소
+            </button>
+          </div>
+          <div
+            class="sr-only md:not-sr-only md:col-span-2 flex flex-col items-center rounded-lg p-6 overflow-hidden"
+          >
+            <img
+              src="../assets/img/img_carWarehouse_map.png"
+              alt="전국 차량보관소 지도"
+              class="w-full h-full object-contain"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="max-w-7xl mx-auto w-full px-8 pb-20">
+        <h3 class="text-xl font-bold text-[#A10076] mb-4">
+          보관소 방문시 필수 확인사항
+        </h3>
+
+        <div class="bg-zinc-50 p-8 rounded-lg flex flex-col gap-10">
+          <div class="flex flex-col gap-4">
+            <h4
+              class="font-bold text-lg text-zinc-800 border-b border-zinc-300 pb-2"
+            >
+              [ 유의사항 ]
+            </h4>
+            <ul class="flex flex-col gap-2 text-sm text-zinc-600">
+              <li class="flex gap-2">
+                <span>-</span>
+                <span
+                  >보관소 방문시 신분증을 꼭 지참하기 바랍니다. 신분증을
+                  제출하셔야 차량 확인을 할 수 있습니다.</span
+                >
+              </li>
+              <li class="flex gap-2 text-[#A10076]">
+                <span>-</span>
+                <span
+                  >진행예정인(입찰기간이 아닌) 차량은 현장에서의 실물확인이
+                  불가하므로 이점 반드시 주의하시기 바랍니다.</span
+                >
+              </li>
+              <li class="flex gap-2">
+                <span>-</span>
+                <span
+                  >차량은 해당 보관소를 방문하여 반드시 직접 확인하기
+                  바랍니다.</span
+                >
+              </li>
+              <li class="flex gap-2">
+                <span>-</span>
+                <span
+                  >[이용안내]에서 업무시간을 확인하시고, 보관소 주소 및 약도는
+                  [찾아오시는길]의 내용을 참조하십시오.</span
+                >
+              </li>
+              <li class="flex gap-2">
+                <span>-</span>
+                <span>[개인정보 관련 사진 및 영상 촬영 및 유포 금지]</span>
+              </li>
+              <li class="pl-4 flex gap-2">
+                <span>1.</span>
+                <span
+                  >(주)오토마트 홈페이지 또는 보관소 내 모든 차량의 사진, 영상
+                  등을 소유자, 진행압류기관, 위탁보관기관등의 명시적 동의 없이
+                  촬영하여 블로그, 유튜브, 인스타 등 SNS에 게시하거나 또는
+                  상업적 목적으로 가공하여 제공하는 경우 개인정보보호법 위반으로
+                  민,현사상 책임을 질 수 있습니다.</span
+                >
+              </li>
+              <li class="pl-4 flex gap-2">
+                <span>2.</span>
+                <span
+                  >개인소지 휴대폰 등을 이용해 사진, 영상 등을 촬영할 경우 법
+                  위반 소지를 유의하시어 해당 차량을 특정할 수 있는 차량번호,
+                  개인 연락처 등이 노출되지 않도록 유의하시기 바랍니다.</span
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="flex flex-col gap-4">
+            <h4
+              class="font-bold text-lg text-zinc-800 border-b border-zinc-300 pb-2"
+            >
+              [ 차량 인수절차 및 필요서류 안내 ]
+            </h4>
+            <div class="flex flex-col gap-4 text-sm text-zinc-600">
+              <div class="flex gap-2">
+                <span>-</span>
+                <span
+                  >차량 출고는 기관의 허가를 통해 출고되므로
+                  잔금납부후(이전후출고는 이전확인) 해당 기관으로 통보하시기
+                  바랍니다.</span
+                >
+              </div>
+              <div class="flex gap-2 font-bold text-zinc-800">
+                <span>-</span>
+                <span
+                  >낙찰후 15일까지 보관소에서 차량을 인수해야하며, 15일이후
+                  출고시 보관료가 부가됩니다.</span
+                >
+              </div>
+              <div class="text-[#A10076] font-bold pl-3">
+                [ 오토마트 보관차량의 보관료 : 1일 6,000원, 그외 보관소는 해당
+                기관으로 문의 ]
+              </div>
+              <div class="flex gap-2">
+                <span>-</span>
+                <span
+                  >차량 인수시 필요한 기본서류 (아래 서류 외의 해당 공고문 상에
+                  필요서류가 추가로 있는 경우에는 추가 필요)</span
+                >
+              </div>
+
+              <ol class="list-decimal list-inside flex flex-col gap-2 pl-2">
+                <li>낙찰자 본인 출고 : 신분증</li>
+                <li>
+                  대리인 출고 : 대리인 신분증, 낙찰자 인감증명서(개인/법인),
+                  인감날인된 위임장<br />
+                  ( 단, 매매상사(개인사업)인 경우에 인감증명서 대신
+                  자동차관리사업등록증, 명판(사용인감날인), 입찰서상 대리인의
+                  종사원증으로 대체 가능 )
+                </li>
+                <li>
+                  가족 출고 : 낙찰자 본인 출고로 인정<br />
+                  단, 가족을 증명하는 가족관계증명서 등의 증빙서류를 제출해야
+                  하며, 외가 포함한 부모/자녀인 경우에만 가능.
+                </li>
+                <li>
+                  기업고객(법인/개인사업자(매매상사 등)) 출고<br />
+                  - 대표자 : 낙찰자 본인 출고로 인정 (대표자란 입찰서상에
+                  대표자로 등록하여 입찰한 기업의 대표자)<br />
+                  - 담당자 : 낙찰자 본인 출고로 인정 (담당자란 입찰서상에
+                  담당자로 등록하여 입찰한 기업소속의 직원)
+                </li>
+              </ol>
+
+              <div class="font-bold text-zinc-800 mt-2">
+                ※ 이전등록 후 출고 가능한 진행기관의 차량은 이전된 등록증을 추가
+                제출 해야한다.
+              </div>
+              <div class="text-zinc-500 text-xs">
+                ※ 위임장 다운로드(특정 양식없음) : [ 위임장(아래한글) ] / [
+                위임장(엑셀) ] / [ 위임장(워드) ]
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col gap-4">
+            <h4
+              class="font-bold text-lg text-zinc-800 border-b border-zinc-300 pb-2"
+            >
+              [ 오토마트 인천보관소 이용안내 ]
+            </h4>
+            <ul class="flex flex-col gap-2 text-sm text-zinc-600">
+              <li class="flex gap-2">
+                <span>-</span>
+                <span
+                  >차량의 실물확인은 입찰신청 기간중에만 확인이 가능합니다.
+                  <span class="text-[#A10076] font-bold"
+                    >(진행예정인 차량은 현장에서의 실물확인 불가)</span
+                  ></span
+                >
+              </li>
+              <li class="flex gap-2">
+                <span>-</span>
+                <span
+                  >차량확인 가능시간 :
+                  <span class="text-[#A10076] font-bold"
+                    >월요일 ~ 금요일 (10시~17시), 토요일 (10시~12시)</span
+                  ></span
+                >
+              </li>
+              <li class="flex gap-2">
+                <span>-</span>
+                <span
+                  >점심시간 : 12시 ~ 13시 30분 (점심시간은 차량확인 불가)</span
+                >
+              </li>
+              <li class="flex gap-2">
+                <span>-</span>
+                <span
+                  >기타 특이사항이 발생할 수도 있으므로 방문시에는 미리 연락하기
+                  바랍니다.<br />( 특히 업무특성상 보관소 방문전에 반드시 사전
+                  전화 통화후 내방하시기 바랍니다. )</span
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="flex flex-col gap-4">
+            <h4
+              class="font-bold text-lg text-zinc-800 border-b border-zinc-300 pb-2"
+            >
+              [ 오토마트 인천보관소 주소 및 연락처 ]
+            </h4>
+            <div class="flex flex-col gap-2 text-sm text-zinc-600 font-bold">
+              <div class="flex gap-2">
+                <span>※ 주소 : </span>
+                <span>인천광역시 중구 백운로387번길 53</span>
+              </div>
+              <div class="flex gap-2">
+                <span>※ 전화번호 : </span>
+                <span>032-578-0442</span>
+              </div>
+              <div class="flex gap-2">
+                <span>※ 팩스번호 : </span>
+                <span>032-578-0444</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="max-w-7xl mx-auto w-full px-8 pb-20">
+        <h3 class="text-xl font-bold text-[#A10076] mb-4">
+          오토마트 인천보관소 찾아오시는 길
+        </h3>
+
+        <div class="bg-zinc-50 p-8 rounded-lg flex flex-col gap-10"></div>
+      </section>
+    </main>
+    <div id="footer-container"></div>
+  </body>
+</html>
