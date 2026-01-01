@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko" class="overflow-x-hidden">
+  <head>
+    <script src="../core/header.js"></script>
+    <script src="../core/component-loader.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        defaultHeader.appendToHead();
+        loadComponent("../components/header.html", "#header-container");
+        loadComponent("../components/navigation.html", "#navigation-container");
+        loadComponent("../components/footer.html", "#footer-container");
+        loadComponent(
+          "../components/capital/shinhan.html",
+          "#capital-container"
+        );
+      });
+    </script>
+  </head>
+  <body class="min-w-[360px] overflow-x-hidden w-full">
+    <div id="header-container"></div>
+    <div id="navigation-container" class="sr-only md:not-sr-only"></div>
+    <main class="overflow-x-hidden max-w-full w-full">
+      <section
+        class="sr-only md:not-sr-only py-4 grid bg-[#E1F4E3] grid-cols-3 md:px-8 lg:px-20 lg:gap-8"
+      >
+        <article class="col-span-2 flex flex-col justify-center">
+          <span class="font-semibold mb-4 text-[40px] text-[#A10076]"
+            >할부/금융</span
+          >
+          <span class="text-sm font-normal text-zinc-600 text-lg"
+            >오토마트 공매/공개매각을 통해 낙찰된 차량의 할부서비스를 제공하는
+            금융서비스입니다. 차량 및 개인 신용도에 따라 할부가 제한될 수
+            있으므로 입찰 전에 할부가 지원되는 금융사를 통하여 할부 가능 여부를
+            먼저 확인하시기 바랍니다.
+          </span>
+        </article>
+        <article class="col-span-1 flex justify-center items-center">
+          <img
+            src="../assets/img/img_banner_capital.png"
+            alt="capital_banner"
+            class="w-[300px] h-[200px] object-contain"
+          />
+        </article>
+      </section>
+
+      <section
+        class="p-4 bg-[#E1F4E3] flex flex-col justify-center items-center md:sr-only"
+      >
+        <article class="flex items-center justify-between gap-2 w-full">
+          <span class="font-semibold mb-4 text-2xl text-[#A10076]"
+            >할부/금융</span
+          >
+          <img
+            src="../assets/img/img_banner_capital.png"
+            alt="capital_banner"
+            class="w-[120px] h-[80px] object-contain"
+          />
+        </article>
+        <article class="text-[11px] text-zinc-600">
+          <span
+            >오토마트 공매/공개매각을 통해 낙찰된 차량의 할부서비스를 제공하는
+            금융서비스입니다. 차량 및 개인 신용도에 따라 할부가 제한될 수
+            있으므로 입찰 전에 할부가 지원되는 금융사를 통하여 할부 가능 여부를
+            먼저 확인하시기 바랍니다.</span
+          >
+        </article>
+      </section>
+
+      <section class="p-8 flex flex-col gap-8">
+        <div class="w-full grid grid-cols-5">
+          <div
+            class="col-span-1 rounded-t-md bg-white py-4 px-2 border-t border-x border-black flex items-center justify-center"
+          >
+            <span class="text-base lg:text-xl font-semibold text-[#A10076]"
+              >신한카드</span
+            >
+          </div>
+          <div
+            class="col-span-1 rounded-t-md bg-zinc-100 py-4 px-2 border-t-zinc-300 border-x-zinc-300 border-b-black flex items-center justify-center border"
+          >
+            <span class="text-base lg:text-xl font-semibold text-zinc-600"
+              >하나캐피탈</span
+            >
+          </div>
+          <div
+            class="col-span-1 rounded-t-md bg-zinc-100 py-4 px-2 border-t-zinc-300 border-x-zinc-300 border-b-black flex items-center justify-center border"
+          >
+            <span class="text-base lg:text-xl font-semibold text-zinc-600"
+              >ALPHERA 파이낸셜</span
+            >
+          </div>
+          <div class="col-span-1 border-b">
+            <span class="text-xl font-semibold text-zinc-600"></span>
+          </div>
+          <div class="col-span-1 border-b">
+            <span class="text-xl font-semibold text-zinc-600"></span>
+          </div>
+        </div>
+
+        <div id="capital-container"></div>
+      </section>
+    </main>
+    <div id="footer-container" class="mt-4"></div>
+  </body>
+</html>
