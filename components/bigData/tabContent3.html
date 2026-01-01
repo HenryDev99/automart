@@ -1,0 +1,1200 @@
+<div class="w-full flex flex-col gap-8 pb-12">
+  <div class="bg-zinc-100 p-4 flex flex-col items-center gap-4 pb-6 rounded-lg">
+    <h2 class="font-bold text-[#A10076] text-xl md:text-2xl text-center">
+      오토마트 수입차 Bigdata 분석 [관공서/금융기관, 2013년~2022년]
+    </h2>
+    <p class="text-zinc-600 text-sm md:text-base text-center break-keep">
+      금융기관의 2013년부터 2022년까지 데이터를
+      <span class="font-bold text-[#A10076]">발표일 기준으로</span> 입고 후
+      <span class="font-bold text-[#A10076]">30일내 낙찰율이 69%로</span> 높음
+    </p>
+  </div>
+
+  <div class="flex flex-col items-center gap-6">
+    <h3
+      class="font-bold text-[#A10076] text-lg md:text-xl text-center break-keep"
+    >
+      수입차 공·경매 기간별 낙찰율 현황
+      <span class="text-sm"
+        >(관공서/금융기관, 기간은 입고 후 입찰완료일(휴일포함))</span
+      >
+    </h3>
+    <div
+      class="w-full max-w-5xl h-[400px] border-2 border-dashed border-zinc-300 flex items-center justify-center rounded text-zinc-400"
+    >
+      [ 기간별 낙찰율 현황 차트 영역 ]
+    </div>
+  </div>
+
+  <div class="sr-only lg:not-sr-only w-full overflow-x-auto mt-8">
+    <p class="text-xs text-zinc-500 text-right mb-2">
+      ※입고 후 관리 및 공개마감 일정(관리기간등록포함)
+    </p>
+
+    <table class="w-full min-w-[1000px] border-collapse text-center text-sm">
+      <thead>
+        <tr class="bg-[#A10076] text-white h-12">
+          <th
+            colspan="2"
+            class="border border-white/20 font-medium"
+            rowspan="2"
+          >
+            공매/공개매각
+          </th>
+          <th class="border border-white/20 font-medium" colspan="2">~3일</th>
+          <th class="border border-white/20 font-medium" colspan="2">4~5일</th>
+          <th class="border border-white/20 font-medium" colspan="2">6~7일</th>
+          <th class="border border-white/20 font-medium" colspan="2">8~14일</th>
+          <th class="border border-white/20 font-medium" colspan="2">
+            15~30일
+          </th>
+          <th class="border border-white/20 font-medium" colspan="2">31일~</th>
+          <th class="border border-white/20 font-medium" colspan="1">소계</th>
+        </tr>
+        <tr class="bg-[#A10076] text-white h-10">
+          <th class="border border-white/20 font-medium text-xs">차량수</th>
+          <th class="border border-white/20 font-medium text-xs">구성비</th>
+          <th class="border border-white/20 font-medium text-xs">차량수</th>
+          <th class="border border-white/20 font-medium text-xs">구성비</th>
+          <th class="border border-white/20 font-medium text-xs">차량수</th>
+          <th class="border border-white/20 font-medium text-xs">구성비</th>
+          <th class="border border-white/20 font-medium text-xs">차량수</th>
+          <th class="border border-white/20 font-medium text-xs">구성비</th>
+          <th class="border border-white/20 font-medium text-xs">차량수</th>
+          <th class="border border-white/20 font-medium text-xs">구성비</th>
+          <th class="border border-white/20 font-medium text-xs">차량수</th>
+          <th class="border border-white/20 font-medium text-xs">구성비</th>
+          <th class="border border-white/20 font-medium text-xs">차량수</th>
+        </tr>
+      </thead>
+      <tbody class="text-zinc-700">
+        <tr class="h-10 bg-blue-50">
+          <td
+            class="border border-zinc-200 bg-blue-500 text-white font-bold"
+            rowspan="2"
+          >
+            관공서
+          </td>
+          <td class="border border-zinc-200 bg-blue-100 font-medium">기간별</td>
+          <td class="border border-zinc-200">0</td>
+          <td class="border border-zinc-200">0%</td>
+          <td class="border border-zinc-200">0</td>
+          <td class="border border-zinc-200">0%</td>
+          <td class="border border-zinc-200">0</td>
+          <td class="border border-zinc-200">0%</td>
+          <td class="border border-zinc-200">11</td>
+          <td class="border border-zinc-200">0.2%</td>
+          <td class="border border-zinc-200 text-blue-600 font-bold">494</td>
+          <td class="border border-zinc-200 text-blue-600 font-bold">9.3%</td>
+          <td class="border border-zinc-200">4,813</td>
+          <td class="border border-zinc-200">90.5%</td>
+          <td
+            class="border border-zinc-200 font-bold text-blue-600"
+            rowspan="2"
+          >
+            5,318
+          </td>
+        </tr>
+        <tr class="h-10 bg-blue-100">
+          <td
+            class="border border-zinc-200 bg-blue-100 font-bold text-blue-600"
+          >
+            기간누계
+          </td>
+          <td class="border border-zinc-200 text-blue-600 font-bold">0</td>
+          <td class="border border-zinc-200 text-blue-600 font-bold">0%</td>
+          <td class="border border-zinc-200 text-blue-600 font-bold">0</td>
+          <td class="border border-zinc-200 text-blue-600 font-bold">0%</td>
+          <td class="border border-zinc-200 text-blue-600 font-bold">0</td>
+          <td class="border border-zinc-200 text-blue-600 font-bold">0%</td>
+          <td class="border border-zinc-200 text-blue-600 font-bold">11</td>
+          <td class="border border-zinc-200 text-blue-600 font-bold">0.2%</td>
+          <td class="border border-zinc-200 text-blue-600 font-bold">505</td>
+          <td class="border border-zinc-200 text-blue-600 font-bold">9.5%</td>
+          <td class="border border-zinc-200 text-blue-600 font-bold">5,318</td>
+          <td class="border border-zinc-200 text-blue-600 font-bold">100%</td>
+        </tr>
+
+        <tr class="h-10 bg-orange-50">
+          <td
+            class="border border-zinc-200 bg-orange-500 text-white font-bold"
+            rowspan="2"
+          >
+            금융기관
+          </td>
+          <td class="border border-zinc-200 bg-orange-100 font-medium">
+            기간별
+          </td>
+          <td class="border border-zinc-200">1,912</td>
+          <td class="border border-zinc-200">15.4%</td>
+          <td class="border border-zinc-200">1,860</td>
+          <td class="border border-zinc-200">15%</td>
+          <td class="border border-zinc-200">2,248</td>
+          <td class="border border-zinc-200">18.1%</td>
+          <td class="border border-zinc-200">3,084</td>
+          <td class="border border-zinc-200">24.8%</td>
+          <td class="border border-zinc-200 text-orange-600 font-bold">
+            1,961
+          </td>
+          <td class="border border-zinc-200 text-orange-600 font-bold">
+            15.8%
+          </td>
+          <td class="border border-zinc-200">1,367</td>
+          <td class="border border-zinc-200">11%</td>
+          <td
+            class="border border-zinc-200 font-bold text-orange-600"
+            rowspan="2"
+          >
+            12,432
+          </td>
+        </tr>
+        <tr class="h-10 bg-orange-100">
+          <td
+            class="border border-zinc-200 bg-orange-100 font-bold text-orange-600"
+          >
+            기간누계
+          </td>
+          <td class="border border-zinc-200 text-orange-600 font-bold">
+            1,912
+          </td>
+          <td class="border border-zinc-200 text-orange-600 font-bold">
+            15.4%
+          </td>
+          <td class="border border-zinc-200 text-orange-600 font-bold">
+            3,772
+          </td>
+          <td class="border border-zinc-200 text-orange-600 font-bold">
+            30.3%
+          </td>
+          <td class="border border-zinc-200 text-orange-600 font-bold">
+            6,020
+          </td>
+          <td class="border border-zinc-200 text-orange-600 font-bold">
+            48.4%
+          </td>
+          <td class="border border-zinc-200 text-orange-600 font-bold">
+            9,104
+          </td>
+          <td class="border border-zinc-200 text-orange-600 font-bold">
+            73.2%
+          </td>
+          <td class="border border-zinc-200 text-orange-600 font-bold">
+            11,065
+          </td>
+          <td class="border border-zinc-200 text-orange-600 font-bold">89%</td>
+          <td class="border border-zinc-200 text-orange-600 font-bold">
+            12,432
+          </td>
+          <td class="border border-zinc-200 text-orange-600 font-bold">100%</td>
+        </tr>
+
+        <!-- Total Rows -->
+        <tr class="h-10 bg-pink-50">
+          <td
+            class="border border-zinc-200 bg-[#A10076] text-white font-bold"
+            rowspan="2"
+          >
+            합계
+          </td>
+          <td class="border border-zinc-200 bg-pink-100 font-medium">기간별</td>
+          <td class="border border-zinc-200">1,912</td>
+          <td class="border border-zinc-200">10.8%</td>
+          <td class="border border-zinc-200">1,860</td>
+          <td class="border border-zinc-200">10.5%</td>
+          <td class="border border-zinc-200">2,248</td>
+          <td class="border border-zinc-200">12.7%</td>
+          <td class="border border-zinc-200">3,095</td>
+          <td class="border border-zinc-200">17.4%</td>
+          <td class="border border-zinc-200 text-[#A10076] font-bold">2,455</td>
+          <td class="border border-zinc-200 text-[#A10076] font-bold">13.8%</td>
+          <td class="border border-zinc-200">6,180</td>
+          <td class="border border-zinc-200">34.8%</td>
+          <td
+            class="border border-zinc-200 font-bold text-[#A10076]"
+            rowspan="2"
+          >
+            17,750
+          </td>
+        </tr>
+        <tr class="h-10 bg-pink-100">
+          <td
+            class="border border-zinc-200 bg-pink-100 font-bold text-[#A10076]"
+          >
+            기간누계
+          </td>
+          <td class="border border-zinc-200 text-[#A10076] font-bold">1,912</td>
+          <td class="border border-zinc-200 text-[#A10076] font-bold">10.8%</td>
+          <td class="border border-zinc-200 text-[#A10076] font-bold">3,772</td>
+          <td class="border border-zinc-200 text-[#A10076] font-bold">21.3%</td>
+          <td class="border border-zinc-200 text-[#A10076] font-bold">6,020</td>
+          <td class="border border-zinc-200 text-[#A10076] font-bold">33.9%</td>
+          <td class="border border-zinc-200 text-[#A10076] font-bold">9,115</td>
+          <td class="border border-zinc-200 text-[#A10076] font-bold">51.4%</td>
+          <td class="border border-zinc-200 text-[#A10076] font-bold">
+            11,570
+          </td>
+          <td class="border border-zinc-200 text-[#A10076] font-bold">65.2%</td>
+          <td class="border border-zinc-200 text-[#A10076] font-bold">
+            17,750
+          </td>
+          <td class="border border-zinc-200 text-[#A10076] font-bold">100%</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="lg:sr-only w-full flex flex-col gap-8">
+    <table
+      class="w-full border-collapse text-center text-xs border border-blue-200"
+    >
+      <thead>
+        <tr class="bg-blue-500 text-white h-10 text-sm">
+          <th colspan="4" class="border border-white/20">관공서</th>
+        </tr>
+        <tr class="bg-blue-500 text-white h-10">
+          <th colspan="2" class="w-1/2">공매/공개매각</th>
+          <th class="border border-white/20 w-1/4">기간별</th>
+          <th class="border border-white/20 w-1/4">기간누계</th>
+        </tr>
+      </thead>
+      <tbody class="text-zinc-700">
+        <tr class="h-10">
+          <td class="border border-zinc-200 bg-zinc-50" rowspan="2">~3일</td>
+          <td class="border border-zinc-200 bg-zinc-50">차량수</td>
+          <td class="border border-zinc-200">0</td>
+          <td class="border border-zinc-200 text-blue-500 font-bold">0</td>
+        </tr>
+        <tr class="h-10">
+          <td class="border border-zinc-200 bg-zinc-50">구성비</td>
+          <td class="border border-zinc-200">0</td>
+          <td class="border border-zinc-200 text-blue-500 font-bold">0%</td>
+        </tr>
+        <tr class="h-10">
+          <td class="border border-zinc-200 bg-zinc-50" rowspan="2">4~5일</td>
+          <td class="border border-zinc-200 bg-zinc-50">차량수</td>
+          <td class="border border-zinc-200">0</td>
+          <td class="border border-zinc-200 text-blue-500 font-bold">0</td>
+        </tr>
+        <tr class="h-10">
+          <td class="border border-zinc-200 bg-zinc-50">구성비</td>
+          <td class="border border-zinc-200">0</td>
+          <td class="border border-zinc-200 text-blue-500 font-bold">0%</td>
+        </tr>
+        <tr class="h-10">
+          <td class="border border-zinc-200 bg-zinc-50" rowspan="2">6~7일</td>
+          <td class="border border-zinc-200 bg-zinc-50">차량수</td>
+          <td class="border border-zinc-200">0</td>
+          <td class="border border-zinc-200 text-blue-500 font-bold">0</td>
+        </tr>
+        <tr class="h-10">
+          <td class="border border-zinc-200 bg-zinc-50">구성비</td>
+          <td class="border border-zinc-200">0</td>
+          <td class="border border-zinc-200 text-blue-500 font-bold">0%</td>
+        </tr>
+        <tr class="h-10">
+          <td class="border border-zinc-200 bg-zinc-50" rowspan="2">8~14일</td>
+          <td class="border border-zinc-200 bg-zinc-50">차량수</td>
+          <td class="border border-zinc-200">11</td>
+          <td class="border border-zinc-200 text-blue-500 font-bold">11</td>
+        </tr>
+        <tr class="h-10">
+          <td class="border border-zinc-200 bg-zinc-50">구성비</td>
+          <td class="border border-zinc-200">0.2%</td>
+          <td class="border border-zinc-200 text-blue-500 font-bold">0.2%</td>
+        </tr>
+        <tr class="h-10">
+          <td class="border border-zinc-200 bg-zinc-50" rowspan="2">15~30일</td>
+          <td class="border border-zinc-200 bg-zinc-50">차량수</td>
+          <td class="border border-zinc-200">494</td>
+          <td class="border border-zinc-200 text-blue-500 font-bold">505</td>
+        </tr>
+        <tr class="h-10">
+          <td class="border border-zinc-200 bg-zinc-50">구성비</td>
+          <td class="border border-zinc-200">9.3%</td>
+          <td class="border border-zinc-200 text-blue-500 font-bold">9.5%</td>
+        </tr>
+        <tr class="h-10">
+          <td class="border border-zinc-200 bg-zinc-50" rowspan="2">31일~</td>
+          <td class="border border-zinc-200 bg-zinc-50">차량수</td>
+          <td class="border border-zinc-200">4,813</td>
+          <td class="border border-zinc-200 text-blue-500 font-bold">5,318</td>
+        </tr>
+        <tr class="h-10">
+          <td class="border border-zinc-200 bg-zinc-50">구성비</td>
+          <td class="border border-zinc-200">90.5%</td>
+          <td class="border border-zinc-200 text-blue-500 font-bold">100%</td>
+        </tr>
+        <tr class="h-10 bg-blue-50">
+          <td class="border border-zinc-200 font-bold">소계</td>
+          <td class="border border-zinc-200 font-bold">차량수</td>
+          <td class="border border-zinc-200">5,318</td>
+          <td class="border border-zinc-200 text-blue-500 font-bold">5,318</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table
+      class="w-full border-collapse text-center text-xs border border-orange-200"
+    >
+      <thead>
+        <tr class="bg-orange-500 text-white h-10 text-sm">
+          <th colspan="4" class="border border-white/20">금융기관</th>
+        </tr>
+        <tr class="bg-orange-500 text-white h-10">
+          <th colspan="2" class="w-1/2">공매/공개매각</th>
+          <th class="border border-white/20 w-1/4">기간별</th>
+          <th class="border border-white/20 w-1/4">기간누계</th>
+        </tr>
+      </thead>
+      <tbody class="text-zinc-700">
+        <tr class="h-10">
+          <td class="border border-zinc-200 bg-zinc-50" rowspan="2">~3일</td>
+          <td class="border border-zinc-200 bg-zinc-50">차량수</td>
+          <td class="border border-zinc-200">1,912</td>
+          <td class="border border-zinc-200 text-orange-500 font-bold">
+            1,912
+          </td>
+        </tr>
+        <tr class="h-10">
+          <td class="border border-zinc-200 bg-zinc-50">구성비</td>
+          <td class="border border-zinc-200">15.4%</td>
+          <td class="border border-zinc-200 text-orange-500 font-bold">
+            15.4%
+          </td>
+        </tr>
+        <tr class="h-10">
+          <td class="border border-zinc-200 bg-zinc-50" rowspan="2">4~5일</td>
+          <td class="border border-zinc-200 bg-zinc-50">차량수</td>
+          <td class="border border-zinc-200">1,860</td>
+          <td class="border border-zinc-200 text-orange-500 font-bold">
+            3,772
+          </td>
+        </tr>
+        <tr class="h-10">
+          <td class="border border-zinc-200 bg-zinc-50">구성비</td>
+          <td class="border border-zinc-200">15%</td>
+          <td class="border border-zinc-200 text-orange-500 font-bold">
+            30.3%
+          </td>
+        </tr>
+        <tr class="h-10">
+          <td class="border border-zinc-200 bg-zinc-50" rowspan="2">6~7일</td>
+          <td class="border border-zinc-200 bg-zinc-50">차량수</td>
+          <td class="border border-zinc-200">2,248</td>
+          <td class="border border-zinc-200 text-orange-500 font-bold">
+            6,020
+          </td>
+        </tr>
+        <tr class="h-10">
+          <td class="border border-zinc-200 bg-zinc-50">구성비</td>
+          <td class="border border-zinc-200">18.1%</td>
+          <td class="border border-zinc-200 text-orange-500 font-bold">
+            48.4%
+          </td>
+        </tr>
+        <tr class="h-10">
+          <td class="border border-zinc-200 bg-zinc-50" rowspan="2">8~14일</td>
+          <td class="border border-zinc-200 bg-zinc-50">차량수</td>
+          <td class="border border-zinc-200">3,084</td>
+          <td class="border border-zinc-200 text-orange-500 font-bold">
+            9,104
+          </td>
+        </tr>
+        <tr class="h-10">
+          <td class="border border-zinc-200 bg-zinc-50">구성비</td>
+          <td class="border border-zinc-200">24.8%</td>
+          <td class="border border-zinc-200 text-orange-500 font-bold">
+            73.2%
+          </td>
+        </tr>
+        <tr class="h-10">
+          <td class="border border-zinc-200 bg-zinc-50" rowspan="2">15~30일</td>
+          <td class="border border-zinc-200 bg-zinc-50">차량수</td>
+          <td class="border border-zinc-200">1,961</td>
+          <td class="border border-zinc-200 text-orange-500 font-bold">
+            11,065
+          </td>
+        </tr>
+        <tr class="h-10">
+          <td class="border border-zinc-200 bg-zinc-50">구성비</td>
+          <td class="border border-zinc-200">15.8%</td>
+          <td class="border border-zinc-200 text-orange-500 font-bold">89%</td>
+        </tr>
+        <tr class="h-10">
+          <td class="border border-zinc-200 bg-zinc-50" rowspan="2">31일~</td>
+          <td class="border border-zinc-200 bg-zinc-50">차량수</td>
+          <td class="border border-zinc-200">1,367</td>
+          <td class="border border-zinc-200 text-orange-500 font-bold">
+            12,432
+          </td>
+        </tr>
+        <tr class="h-10">
+          <td class="border border-zinc-200 bg-zinc-50">구성비</td>
+          <td class="border border-zinc-200">11%</td>
+          <td class="border border-zinc-200 text-orange-500 font-bold">100%</td>
+        </tr>
+        <tr class="h-10 bg-orange-50">
+          <td class="border border-zinc-200 font-bold">소계</td>
+          <td class="border border-zinc-200 font-bold">차량수</td>
+          <td class="border border-zinc-200">12,432</td>
+          <td class="border border-zinc-200 text-orange-500 font-bold">
+            12,432
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table
+      class="w-full border-collapse text-center text-xs border border-pink-200"
+    >
+      <thead>
+        <tr class="bg-[#A10076] text-white h-10 text-sm">
+          <th colspan="4" class="border border-white/20">합계</th>
+        </tr>
+        <tr class="bg-[#A10076] text-white h-10">
+          <th colspan="2" class="w-1/2">공매/공개매각</th>
+          <th class="border border-white/20 w-1/4">기간별</th>
+          <th class="border border-white/20 w-1/4">기간누계</th>
+        </tr>
+      </thead>
+      <tbody class="text-zinc-700">
+        <tr class="h-10">
+          <td class="border border-zinc-200 bg-zinc-50" rowspan="2">~3일</td>
+          <td class="border border-zinc-200 bg-zinc-50">차량수</td>
+          <td class="border border-zinc-200">1,912</td>
+          <td class="border border-zinc-200 text-pink-600 font-bold">1,912</td>
+        </tr>
+        <tr class="h-10">
+          <td class="border border-zinc-200 bg-zinc-50">구성비</td>
+          <td class="border border-zinc-200">10.8%</td>
+          <td class="border border-zinc-200 text-pink-600 font-bold">10.8%</td>
+        </tr>
+        <tr class="h-10">
+          <td class="border border-zinc-200 bg-zinc-50" rowspan="2">4~5일</td>
+          <td class="border border-zinc-200 bg-zinc-50">차량수</td>
+          <td class="border border-zinc-200">1,860</td>
+          <td class="border border-zinc-200 text-pink-600 font-bold">3,772</td>
+        </tr>
+        <tr class="h-10">
+          <td class="border border-zinc-200 bg-zinc-50">구성비</td>
+          <td class="border border-zinc-200">10.5%</td>
+          <td class="border border-zinc-200 text-pink-600 font-bold">21.3%</td>
+        </tr>
+        <tr class="h-10">
+          <td class="border border-zinc-200 bg-zinc-50" rowspan="2">6~7일</td>
+          <td class="border border-zinc-200 bg-zinc-50">차량수</td>
+          <td class="border border-zinc-200">2,248</td>
+          <td class="border border-zinc-200 text-pink-600 font-bold">6,020</td>
+        </tr>
+        <tr class="h-10">
+          <td class="border border-zinc-200 bg-zinc-50">구성비</td>
+          <td class="border border-zinc-200">12.7%</td>
+          <td class="border border-zinc-200 text-pink-600 font-bold">33.9%</td>
+        </tr>
+        <tr class="h-10">
+          <td class="border border-zinc-200 bg-zinc-50" rowspan="2">8~14일</td>
+          <td class="border border-zinc-200 bg-zinc-50">차량수</td>
+          <td class="border border-zinc-200">3,095</td>
+          <td class="border border-zinc-200 text-pink-600 font-bold">9,115</td>
+        </tr>
+        <tr class="h-10">
+          <td class="border border-zinc-200 bg-zinc-50">구성비</td>
+          <td class="border border-zinc-200">17.4%</td>
+          <td class="border border-zinc-200 text-pink-600 font-bold">51.4%</td>
+        </tr>
+        <tr class="h-10">
+          <td class="border border-zinc-200 bg-zinc-50" rowspan="2">15~30일</td>
+          <td class="border border-zinc-200 bg-zinc-50">차량수</td>
+          <td class="border border-zinc-200">2,455</td>
+          <td class="border border-zinc-200 text-pink-600 font-bold">11,570</td>
+        </tr>
+        <tr class="h-10">
+          <td class="border border-zinc-200 bg-zinc-50">구성비</td>
+          <td class="border border-zinc-200">13.8%</td>
+          <td class="border border-zinc-200 text-pink-600 font-bold">65.2%</td>
+        </tr>
+        <tr class="h-10">
+          <td class="border border-zinc-200 bg-zinc-50" rowspan="2">31일~</td>
+          <td class="border border-zinc-200 bg-zinc-50">차량수</td>
+          <td class="border border-zinc-200">6,180</td>
+          <td class="border border-zinc-200 text-pink-600 font-bold">17,750</td>
+        </tr>
+        <tr class="h-10">
+          <td class="border border-zinc-200 bg-zinc-50">구성비</td>
+          <td class="border border-zinc-200">34.8%</td>
+          <td class="border border-zinc-200 text-pink-600 font-bold">100%</td>
+        </tr>
+        <tr class="h-10 bg-pink-50 text-[#A10076]">
+          <td class="border border-zinc-200 font-bold">소계</td>
+          <td class="border border-zinc-200 font-bold">차량수</td>
+          <td class="border border-zinc-200">17,750</td>
+          <td class="border border-zinc-200 font-bold">17,750</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="sr-only lg:not-sr-only flex flex-col items-center gap-6">
+    <h3
+      class="font-bold text-[#A10076] text-lg md:text-xl text-center break-keep"
+    >
+      수입차 공·경매 기간별 낙찰율 현황
+      <span class="text-sm"
+        >(관공서/금융기관, 기간은 입고 후 입찰완료일(휴일포함))</span
+      >
+    </h3>
+    <div
+      class="w-full max-w-5xl h-[400px] border-2 border-dashed border-zinc-300 flex items-center justify-center rounded text-zinc-400"
+    >
+      [ 기간별 낙찰율 현황 차트 영역 ]
+    </div>
+  </div>
+
+  <div class="sr-only lg:not-sr-only w-full overflow-x-auto">
+    <p class="text-[11px] text-zinc-500 text-right mb-1">
+      *입고 후 공매 및 공개매각 완료(판매)기간[휴일포함]
+    </p>
+
+    <table class="w-full min-w-[1000px] border-collapse text-center text-xs">
+      <thead>
+        <tr class="bg-[#A10076] text-white h-10">
+          <th
+            colspan="2"
+            class="border border-white/20 font-medium w-[10%]"
+            rowspan="2"
+          >
+            Maker
+          </th>
+          <th class="border border-white/20 font-medium" colspan="2">~3일</th>
+          <th class="border border-white/20 font-medium" colspan="2">4~5일</th>
+          <th class="border border-white/20 font-medium" colspan="2">6~7일</th>
+          <th class="border border-white/20 font-medium" colspan="2">8~14일</th>
+          <th class="border border-white/20 font-medium" colspan="2">
+            15~30일
+          </th>
+          <th class="border border-white/20 font-medium" colspan="2">31일~</th>
+          <th class="border border-white/20 font-medium w-[8%]">소계</th>
+        </tr>
+        <tr class="bg-[#A10076] text-white h-10">
+          <th class="border border-white/20 font-medium">차량수</th>
+          <th class="border border-white/20 font-medium">구성비</th>
+          <th class="border border-white/20 font-medium">차량수</th>
+          <th class="border border-white/20 font-medium">구성비</th>
+          <th class="border border-white/20 font-medium">차량수</th>
+          <th class="border border-white/20 font-medium">구성비</th>
+          <th class="border border-white/20 font-medium">차량수</th>
+          <th class="border border-white/20 font-medium">구성비</th>
+          <th class="border border-white/20 font-medium">차량수</th>
+          <th class="border border-white/20 font-medium">구성비</th>
+          <th class="border border-white/20 font-medium">차량수</th>
+          <th class="border border-white/20 font-medium">구성비</th>
+          <th class="border border-white/20 font-medium">차량수</th>
+        </tr>
+      </thead>
+      <tbody class="text-zinc-700">
+        <tr class="h-10 border-b border-zinc-200">
+          <td
+            class="border border-zinc-200 font-bold text-[#A10076] bg-white"
+            rowspan="2"
+          >
+            BMW
+          </td>
+          <td class="border border-zinc-200 bg-white">기간별</td>
+          <td class="border border-zinc-200">1,392</td>
+          <td class="border border-zinc-200">19.9%</td>
+          <td class="border border-zinc-200">1,209</td>
+          <td class="border border-zinc-200">17.3%</td>
+          <td class="border border-zinc-200">1,383</td>
+          <td class="border border-zinc-200">19.8%</td>
+          <td class="border border-zinc-200">1,855</td>
+          <td class="border border-zinc-200">26.5%</td>
+          <td class="border border-zinc-200">817</td>
+          <td class="border border-zinc-200">11.7%</td>
+          <td class="border border-zinc-200">339</td>
+          <td class="border border-zinc-200">4.8%</td>
+          <td class="border border-zinc-200">6,995</td>
+        </tr>
+        <tr class="h-10 border-b border-zinc-200 font-bold">
+          <td class="border border-zinc-200 bg-zinc-50">기간누계</td>
+          <td class="border border-zinc-200 bg-zinc-50">1,392</td>
+          <td class="border border-zinc-200 bg-zinc-50">19.9%</td>
+          <td class="border border-zinc-200 bg-zinc-50">2,601</td>
+          <td class="border border-zinc-200 bg-zinc-50">37.2%</td>
+          <td class="border border-zinc-200 bg-zinc-50">3,984</td>
+          <td class="border border-zinc-200 bg-zinc-50">57.0%</td>
+          <td class="border border-zinc-200 bg-zinc-50">5,839</td>
+          <td class="border border-zinc-200 bg-zinc-50">83.5%</td>
+          <td class="border border-zinc-200 bg-zinc-50">6,656</td>
+          <td class="border border-zinc-200 bg-zinc-50">95.2%</td>
+          <td class="border border-zinc-200 bg-zinc-50">6,995</td>
+          <td class="border border-zinc-200 bg-zinc-50">100%</td>
+          <td class="border border-zinc-200 bg-zinc-50">6,995</td>
+        </tr>
+
+        <tr class="h-10 border-b border-zinc-200">
+          <td
+            class="border border-zinc-200 font-bold text-[#A10076] bg-white"
+            rowspan="2"
+          >
+            벤츠
+          </td>
+          <td class="border border-zinc-200 bg-white">기간별</td>
+          <td class="border border-zinc-200">320</td>
+          <td class="border border-zinc-200">12.6%</td>
+          <td class="border border-zinc-200">370</td>
+          <td class="border border-zinc-200">14.6%</td>
+          <td class="border border-zinc-200">448</td>
+          <td class="border border-zinc-200">17.7%</td>
+          <td class="border border-zinc-200">462</td>
+          <td class="border border-zinc-200">18.2%</td>
+          <td class="border border-zinc-200">502</td>
+          <td class="border border-zinc-200">19.8%</td>
+          <td class="border border-zinc-200">430</td>
+          <td class="border border-zinc-200">17.0%</td>
+          <td class="border border-zinc-200">2,532</td>
+        </tr>
+        <tr class="h-10 border-b border-zinc-200 font-bold">
+          <td class="border border-zinc-200 bg-zinc-50">기간누계</td>
+          <td class="border border-zinc-200 bg-zinc-50">320</td>
+          <td class="border border-zinc-200 bg-zinc-50">12.6%</td>
+          <td class="border border-zinc-200 bg-zinc-50">690</td>
+          <td class="border border-zinc-200 bg-zinc-50">27.3%</td>
+          <td class="border border-zinc-200 bg-zinc-50">1,138</td>
+          <td class="border border-zinc-200 bg-zinc-50">44.9%</td>
+          <td class="border border-zinc-200 bg-zinc-50">1,600</td>
+          <td class="border border-zinc-200 bg-zinc-50">63.2%</td>
+          <td class="border border-zinc-200 bg-zinc-50">2,120</td>
+          <td class="border border-zinc-200 bg-zinc-50">83.0%</td>
+          <td class="border border-zinc-200 bg-zinc-50">2,532</td>
+          <td class="border border-zinc-200 bg-zinc-50">100%</td>
+          <td class="border border-zinc-200 bg-zinc-50">2,532</td>
+        </tr>
+
+        <tr class="h-10 border-b border-zinc-200">
+          <td
+            class="border border-zinc-200 font-bold text-[#A10076] bg-white"
+            rowspan="2"
+          >
+            아우디
+          </td>
+          <td class="border border-zinc-200 bg-white">기간별</td>
+          <td class="border border-zinc-200">49</td>
+          <td class="border border-zinc-200">5.5%</td>
+          <td class="border border-zinc-200">62</td>
+          <td class="border border-zinc-200">6.9%</td>
+          <td class="border border-zinc-200">107</td>
+          <td class="border border-zinc-200">11.9%</td>
+          <td class="border border-zinc-200">302</td>
+          <td class="border border-zinc-200">33.7%</td>
+          <td class="border border-zinc-200">237</td>
+          <td class="border border-zinc-200">26.5%</td>
+          <td class="border border-zinc-200">139</td>
+          <td class="border border-zinc-200">15.5%</td>
+          <td class="border border-zinc-200">896</td>
+        </tr>
+        <tr class="h-10 border-b border-zinc-200 font-bold">
+          <td class="border border-zinc-200 bg-zinc-50">기간누계</td>
+          <td class="border border-zinc-200 bg-zinc-50">49</td>
+          <td class="border border-zinc-200 bg-zinc-50">5.5%</td>
+          <td class="border border-zinc-200 bg-zinc-50">111</td>
+          <td class="border border-zinc-200 bg-zinc-50">12.4%</td>
+          <td class="border border-zinc-200 bg-zinc-50">218</td>
+          <td class="border border-zinc-200 bg-zinc-50">24.3%</td>
+          <td class="border border-zinc-200 bg-zinc-50">520</td>
+          <td class="border border-zinc-200 bg-zinc-50">58.0%</td>
+          <td class="border border-zinc-200 bg-zinc-50">757</td>
+          <td class="border border-zinc-200 bg-zinc-50">84.5%</td>
+          <td class="border border-zinc-200 bg-zinc-50">896</td>
+          <td class="border border-zinc-200 bg-zinc-50">100%</td>
+          <td class="border border-zinc-200 bg-zinc-50">896</td>
+        </tr>
+
+        <tr class="h-10 border-b border-zinc-200">
+          <td
+            class="border border-zinc-200 font-bold text-[#A10076] bg-white"
+            rowspan="2"
+          >
+            폭스바겐
+          </td>
+          <td class="border border-zinc-200 bg-white">기간별</td>
+          <td class="border border-zinc-200">14</td>
+          <td class="border border-zinc-200">3.2%</td>
+          <td class="border border-zinc-200">26</td>
+          <td class="border border-zinc-200">5.9%</td>
+          <td class="border border-zinc-200">46</td>
+          <td class="border border-zinc-200">10.5%</td>
+          <td class="border border-zinc-200">158</td>
+          <td class="border border-zinc-200">36.0%</td>
+          <td class="border border-zinc-200">120</td>
+          <td class="border border-zinc-200">27.3%</td>
+          <td class="border border-zinc-200">75</td>
+          <td class="border border-zinc-200">17.1%</td>
+          <td class="border border-zinc-200">439</td>
+        </tr>
+        <tr class="h-10 border-b border-zinc-200 font-bold">
+          <td class="border border-zinc-200 bg-zinc-50">기간누계</td>
+          <td class="border border-zinc-200 bg-zinc-50">14</td>
+          <td class="border border-zinc-200 bg-zinc-50">3.2%</td>
+          <td class="border border-zinc-200 bg-zinc-50">40</td>
+          <td class="border border-zinc-200 bg-zinc-50">9.1%</td>
+          <td class="border border-zinc-200 bg-zinc-50">86</td>
+          <td class="border border-zinc-200 bg-zinc-50">19.6%</td>
+          <td class="border border-zinc-200 bg-zinc-50">244</td>
+          <td class="border border-zinc-200 bg-zinc-50">55.6%</td>
+          <td class="border border-zinc-200 bg-zinc-50">364</td>
+          <td class="border border-zinc-200 bg-zinc-50">82.9%</td>
+          <td class="border border-zinc-200 bg-zinc-50">439</td>
+          <td class="border border-zinc-200 bg-zinc-50">100%</td>
+          <td class="border border-zinc-200 bg-zinc-50">439</td>
+        </tr>
+
+        <tr class="h-10 border-b border-zinc-200">
+          <td
+            class="border border-zinc-200 font-bold text-[#A10076] bg-white"
+            rowspan="2"
+          >
+            도요타
+          </td>
+          <td class="border border-zinc-200 bg-white">기간별</td>
+          <td class="border border-zinc-200">11</td>
+          <td class="border border-zinc-200">3.3%</td>
+          <td class="border border-zinc-200">15</td>
+          <td class="border border-zinc-200">4.5%</td>
+          <td class="border border-zinc-200">37</td>
+          <td class="border border-zinc-200">11.2%</td>
+          <td class="border border-zinc-200">40</td>
+          <td class="border border-zinc-200">12.1%</td>
+          <td class="border border-zinc-200">72</td>
+          <td class="border border-zinc-200">21.8%</td>
+          <td class="border border-zinc-200">156</td>
+          <td class="border border-zinc-200">47.1%</td>
+          <td class="border border-zinc-200">331</td>
+        </tr>
+        <tr class="h-10 border-b border-zinc-200 font-bold">
+          <td class="border border-zinc-200 bg-zinc-50">기간누계</td>
+          <td class="border border-zinc-200 bg-zinc-50">11</td>
+          <td class="border border-zinc-200 bg-zinc-50">3.3%</td>
+          <td class="border border-zinc-200 bg-zinc-50">26</td>
+          <td class="border border-zinc-200 bg-zinc-50">7.9%</td>
+          <td class="border border-zinc-200 bg-zinc-50">63</td>
+          <td class="border border-zinc-200 bg-zinc-50">19.0%</td>
+          <td class="border border-zinc-200 bg-zinc-50">103</td>
+          <td class="border border-zinc-200 bg-zinc-50">31.3%</td>
+          <td class="border border-zinc-200 bg-zinc-50">175</td>
+          <td class="border border-zinc-200 bg-zinc-50">52.9%</td>
+          <td class="border border-zinc-200 bg-zinc-50">331</td>
+          <td class="border border-zinc-200 bg-zinc-50">100%</td>
+          <td class="border border-zinc-200 bg-zinc-50">331</td>
+        </tr>
+
+        <tr class="h-10 border-b border-zinc-200">
+          <td
+            class="border border-zinc-200 font-bold text-[#A10076] bg-white"
+            rowspan="2"
+          >
+            포드
+          </td>
+          <td class="border border-zinc-200 bg-white">기간별</td>
+          <td class="border border-zinc-200">17</td>
+          <td class="border border-zinc-200">18.1%</td>
+          <td class="border border-zinc-200">18</td>
+          <td class="border border-zinc-200">19.1%</td>
+          <td class="border border-zinc-200">17</td>
+          <td class="border border-zinc-200">18.1%</td>
+          <td class="border border-zinc-200">24</td>
+          <td class="border border-zinc-200">25.5%</td>
+          <td class="border border-zinc-200">11</td>
+          <td class="border border-zinc-200">11.7%</td>
+          <td class="border border-zinc-200">7</td>
+          <td class="border border-zinc-200">7.4%</td>
+          <td class="border border-zinc-200">94</td>
+        </tr>
+        <tr class="h-10 border-b border-zinc-200 font-bold">
+          <td class="border border-zinc-200 bg-zinc-50">기간누계</td>
+          <td class="border border-zinc-200 bg-zinc-50">17</td>
+          <td class="border border-zinc-200 bg-zinc-50">18.1%</td>
+          <td class="border border-zinc-200 bg-zinc-50">35</td>
+          <td class="border border-zinc-200 bg-zinc-50">37.2%</td>
+          <td class="border border-zinc-200 bg-zinc-50">52</td>
+          <td class="border border-zinc-200 bg-zinc-50">55.3%</td>
+          <td class="border border-zinc-200 bg-zinc-50">76</td>
+          <td class="border border-zinc-200 bg-zinc-50">80.9%</td>
+          <td class="border border-zinc-200 bg-zinc-50">87</td>
+          <td class="border border-zinc-200 bg-zinc-50">92.6%</td>
+          <td class="border border-zinc-200 bg-zinc-50">94</td>
+          <td class="border border-zinc-200 bg-zinc-50">100%</td>
+          <td class="border border-zinc-200 bg-zinc-50">94</td>
+        </tr>
+
+        <tr class="h-10 border-b border-zinc-200">
+          <td
+            class="border border-zinc-200 font-bold text-[#A10076] bg-white"
+            rowspan="2"
+          >
+            랜드로버
+          </td>
+          <td class="border border-zinc-200 bg-white">기간별</td>
+          <td class="border border-zinc-200">21</td>
+          <td class="border border-zinc-200">14.2%</td>
+          <td class="border border-zinc-200">32</td>
+          <td class="border border-zinc-200">21.6%</td>
+          <td class="border border-zinc-200">25</td>
+          <td class="border border-zinc-200">16.9%</td>
+          <td class="border border-zinc-200">34</td>
+          <td class="border border-zinc-200">23.0%</td>
+          <td class="border border-zinc-200">18</td>
+          <td class="border border-zinc-200">12.2%</td>
+          <td class="border border-zinc-200">18</td>
+          <td class="border border-zinc-200">12.2%</td>
+          <td class="border border-zinc-200">148</td>
+        </tr>
+        <tr class="h-10 border-b border-zinc-200 font-bold">
+          <td class="border border-zinc-200 bg-zinc-50">기간누계</td>
+          <td class="border border-zinc-200 bg-zinc-50">21</td>
+          <td class="border border-zinc-200 bg-zinc-50">14.2%</td>
+          <td class="border border-zinc-200 bg-zinc-50">53</td>
+          <td class="border border-zinc-200 bg-zinc-50">35.8%</td>
+          <td class="border border-zinc-200 bg-zinc-50">78</td>
+          <td class="border border-zinc-200 bg-zinc-50">52.7%</td>
+          <td class="border border-zinc-200 bg-zinc-50">112</td>
+          <td class="border border-zinc-200 bg-zinc-50">75.7%</td>
+          <td class="border border-zinc-200 bg-zinc-50">130</td>
+          <td class="border border-zinc-200 bg-zinc-50">87.8%</td>
+          <td class="border border-zinc-200 bg-zinc-50">148</td>
+          <td class="border border-zinc-200 bg-zinc-50">100%</td>
+          <td class="border border-zinc-200 bg-zinc-50">148</td>
+        </tr>
+
+        <tr class="h-10 border-b border-zinc-200">
+          <td
+            class="border border-zinc-200 font-bold text-[#A10076] bg-white"
+            rowspan="2"
+          >
+            렉서스
+          </td>
+          <td class="border border-zinc-200 bg-white">기간별</td>
+          <td class="border border-zinc-200">10</td>
+          <td class="border border-zinc-200">5.9%</td>
+          <td class="border border-zinc-200">12</td>
+          <td class="border border-zinc-200">7.1%</td>
+          <td class="border border-zinc-200">28</td>
+          <td class="border border-zinc-200">16.5%</td>
+          <td class="border border-zinc-200">28</td>
+          <td class="border border-zinc-200">16.5%</td>
+          <td class="border border-zinc-200">30</td>
+          <td class="border border-zinc-200">17.6%</td>
+          <td class="border border-zinc-200">62</td>
+          <td class="border border-zinc-200">36.5%</td>
+          <td class="border border-zinc-200">170</td>
+        </tr>
+        <tr class="h-10 border-b border-zinc-200 font-bold">
+          <td class="border border-zinc-200 bg-zinc-50">기간누계</td>
+          <td class="border border-zinc-200 bg-zinc-50">10</td>
+          <td class="border border-zinc-200 bg-zinc-50">5.9%</td>
+          <td class="border border-zinc-200 bg-zinc-50">22</td>
+          <td class="border border-zinc-200 bg-zinc-50">12.9%</td>
+          <td class="border border-zinc-200 bg-zinc-50">50</td>
+          <td class="border border-zinc-200 bg-zinc-50">29.4%</td>
+          <td class="border border-zinc-200 bg-zinc-50">78</td>
+          <td class="border border-zinc-200 bg-zinc-50">45.9%</td>
+          <td class="border border-zinc-200 bg-zinc-50">108</td>
+          <td class="border border-zinc-200 bg-zinc-50">63.5%</td>
+          <td class="border border-zinc-200 bg-zinc-50">170</td>
+          <td class="border border-zinc-200 bg-zinc-50">100%</td>
+          <td class="border border-zinc-200 bg-zinc-50">170</td>
+        </tr>
+
+        <tr class="h-10">
+          <td
+            class="border-x border-zinc-200 font-bold text-[#A10076] bg-white"
+            rowspan="2"
+          >
+            8종외
+          </td>
+          <td class="border border-zinc-200 bg-white">기간별</td>
+          <td class="border border-zinc-200">78</td>
+          <td class="border border-zinc-200">9.4%</td>
+          <td class="border border-zinc-200">116</td>
+          <td class="border border-zinc-200">14.0%</td>
+          <td class="border border-zinc-200">157</td>
+          <td class="border border-zinc-200">19.0%</td>
+          <td class="border border-zinc-200">181</td>
+          <td class="border border-zinc-200">21.9%</td>
+          <td class="border border-zinc-200">154</td>
+          <td class="border border-zinc-200">18.6%</td>
+          <td class="border border-zinc-200">141</td>
+          <td class="border border-zinc-200">17.0%</td>
+          <td class="border border-zinc-200">827</td>
+        </tr>
+        <tr class="h-10 font-bold">
+          <td class="border-x border-zinc-200 bg-zinc-50">기간누계</td>
+          <td class="border-x border-zinc-200 bg-zinc-50">78</td>
+          <td class="border-x border-zinc-200 bg-zinc-50">9.4%</td>
+          <td class="border-x border-zinc-200 bg-zinc-50">194</td>
+          <td class="border-x border-zinc-200 bg-zinc-50">23.5%</td>
+          <td class="border-x border-zinc-200 bg-zinc-50">351</td>
+          <td class="border-x border-zinc-200 bg-zinc-50">42.4%</td>
+          <td class="border-x border-zinc-200 bg-zinc-50">532</td>
+          <td class="border-x border-zinc-200 bg-zinc-50">64.3%</td>
+          <td class="border-x border-zinc-200 bg-zinc-50">686</td>
+          <td class="border-x border-zinc-200 bg-zinc-50">83.0%</td>
+          <td class="border-x border-zinc-200 bg-zinc-50">827</td>
+          <td class="border-x border-zinc-200 bg-zinc-50">100%</td>
+          <td class="border-x border-zinc-200 bg-zinc-50">827</td>
+        </tr>
+
+        <tr class="h-10 border-y border-[#A10076] font-bold bg-white">
+          <td class="border-x border-zinc-200" colspan="2">합계</td>
+          <td class="border-x border-zinc-200">1,912</td>
+          <td class="border-x border-zinc-200">15.4%</td>
+          <td class="border-x border-zinc-200">1,860</td>
+          <td class="border-x border-zinc-200">15.0%</td>
+          <td class="border-x border-zinc-200">2,248</td>
+          <td class="border-x border-zinc-200">18.1%</td>
+          <td class="border-x border-zinc-200">3,084</td>
+          <td class="border-x border-zinc-200">24.8%</td>
+          <td class="border-x border-zinc-200">1,961</td>
+          <td class="border-x border-zinc-200">15.8%</td>
+          <td class="border-x border-zinc-200">1,367</td>
+          <td class="border-x border-zinc-200">11.0%</td>
+          <td class="border-x border-zinc-200">12,432</td>
+        </tr>
+        <tr
+          class="h-10 border-b border-[#A10076] font-bold text-[#A10076] bg-pink-50"
+        >
+          <td class="border-x border-zinc-200" colspan="2">누계 구성비</td>
+          <td class="border-x border-zinc-200">1,912</td>
+          <td class="border-x border-zinc-200">15.4%</td>
+          <td class="border-x border-zinc-200">3,772</td>
+          <td class="border-x border-zinc-200">30.3%</td>
+          <td class="border-x border-zinc-200">6,020</td>
+          <td class="border-x border-zinc-200">48.4%</td>
+          <td class="border-x border-zinc-200">9,104</td>
+          <td class="border-x border-zinc-200">73.2%</td>
+          <td class="border-x border-zinc-200">11,065</td>
+          <td class="border-x border-zinc-200">89.0%</td>
+          <td class="border-x border-zinc-200">12,432</td>
+          <td class="border-x border-zinc-200">100%</td>
+          <td class="border-x border-zinc-200">12,432</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="sr-only lg:not-sr-only flex flex-col items-center gap-6 mt-12">
+    <h3
+      class="font-bold text-[#A10076] text-lg md:text-xl text-center break-keep"
+    >
+      연도별 수입차 공매 및 공개매각 낙찰율 현황
+      <span class="text-sm"
+        >(관공서/금융기관, 낙찰율 = 낙찰대수/출품대수 * 100)</span
+      >
+    </h3>
+    <div
+      class="w-full max-w-5xl h-[450px] border-2 border-dashed border-zinc-300 flex items-center justify-center rounded text-zinc-400"
+    >
+      [ 연도별 낙찰율 현황 차트 영역 ]
+    </div>
+  </div>
+
+  <div class="sr-only lg:not-sr-only w-full overflow-x-auto mt-8">
+    <table class="w-full min-w-[1000px] border-collapse text-center text-sm">
+      <thead>
+        <tr class="bg-[#A10076] text-white h-12">
+          <th class="w-[6%] font-bold border border-zinc-300" rowspan="2">
+            년도
+          </th>
+          <th class="bg-blue-500 text-white font-bold" colspan="3">관공서</th>
+          <th class="bg-orange-500 text-white font-bold" colspan="3">
+            금융기관
+          </th>
+          <th class="bg-[#A10076] text-white font-bold" colspan="3">
+            관공서 + 금융기관
+          </th>
+        </tr>
+        <tr class="text-white h-10 text-xs">
+          <th class="border border-zinc-300 bg-blue-500">출품대수</th>
+          <th class="border border-zinc-300 bg-blue-500">낙찰대수</th>
+          <th class="border border-zinc-300 bg-blue-500">낙찰율</th>
+          <th class="border border-zinc-300 bg-orange-500">출품대수</th>
+          <th class="border border-zinc-300 bg-orange-500">낙찰대수</th>
+          <th class="border border-zinc-300 bg-orange-500">낙찰율</th>
+          <th class="border border-zinc-300 bg-[#A10076]">출품대수</th>
+          <th class="border border-zinc-300 bg-[#A10076]">낙찰대수</th>
+          <th class="border border-zinc-300 bg-[#A10076]">낙찰율</th>
+        </tr>
+      </thead>
+      <tbody class="text-zinc-700">
+        <tr class="h-10 border-b border-zinc-200">
+          <td class="border border-zinc-200 font-bold bg-zinc-50">2013</td>
+          <td class="border border-zinc-200">328</td>
+          <td class="border border-zinc-200">328</td>
+          <td class="border border-zinc-200 text-blue-600 font-bold">100.0%</td>
+          <td class="border border-zinc-200">834</td>
+          <td class="border border-zinc-200">793</td>
+          <td class="border border-zinc-200 text-orange-600 font-bold">
+            95.1%
+          </td>
+          <td class="border border-zinc-200">1,162</td>
+          <td class="border border-zinc-200">1,121</td>
+          <td class="border border-zinc-200 text-[#A10076] font-bold">96.5%</td>
+        </tr>
+        <tr class="h-10 border-b border-zinc-200">
+          <td class="border border-zinc-200 font-bold bg-zinc-50">2014</td>
+          <td class="border border-zinc-200">385</td>
+          <td class="border border-zinc-200">377</td>
+          <td class="border border-zinc-200 text-blue-600 font-bold">97.9%</td>
+          <td class="border border-zinc-200">1,031</td>
+          <td class="border border-zinc-200">996</td>
+          <td class="border border-zinc-200 text-orange-600 font-bold">
+            96.6%
+          </td>
+          <td class="border border-zinc-200">1,416</td>
+          <td class="border border-zinc-200">1,373</td>
+          <td class="border border-zinc-200 text-[#A10076] font-bold">97.0%</td>
+        </tr>
+        <tr class="h-10 border-b border-zinc-200">
+          <td class="border border-zinc-200 font-bold bg-zinc-50">2015</td>
+          <td class="border border-zinc-200">497</td>
+          <td class="border border-zinc-200">496</td>
+          <td class="border border-zinc-200 text-blue-600 font-bold">99.8%</td>
+          <td class="border border-zinc-200">902</td>
+          <td class="border border-zinc-200">804</td>
+          <td class="border border-zinc-200 text-orange-600 font-bold">
+            89.1%
+          </td>
+          <td class="border border-zinc-200">1,399</td>
+          <td class="border border-zinc-200">1,300</td>
+          <td class="border border-zinc-200 text-[#A10076] font-bold">92.9%</td>
+        </tr>
+        <tr class="h-10 border-b border-zinc-200">
+          <td class="border border-zinc-200 font-bold bg-zinc-50">2016</td>
+          <td class="border border-zinc-200">690</td>
+          <td class="border border-zinc-200">683</td>
+          <td class="border border-zinc-200 text-blue-600 font-bold">99.0%</td>
+          <td class="border border-zinc-200">967</td>
+          <td class="border border-zinc-200">924</td>
+          <td class="border border-zinc-200 text-orange-600 font-bold">
+            95.6%
+          </td>
+          <td class="border border-zinc-200">1,657</td>
+          <td class="border border-zinc-200">1,607</td>
+          <td class="border border-zinc-200 text-[#A10076] font-bold">97.0%</td>
+        </tr>
+
+        <tr class="h-10 border-b border-zinc-200">
+          <td class="border border-zinc-200 font-bold bg-zinc-50">2017</td>
+          <td class="border border-zinc-200">569</td>
+          <td class="border border-zinc-200">565</td>
+          <td class="border border-zinc-200 text-blue-600 font-bold">99.3%</td>
+          <td class="border border-zinc-200">1,124</td>
+          <td class="border border-zinc-200">1,051</td>
+          <td class="border border-zinc-200 text-orange-600 font-bold">
+            93.5%
+          </td>
+          <td class="border border-zinc-200">1,693</td>
+          <td class="border border-zinc-200">1,616</td>
+          <td class="border border-zinc-200 text-[#A10076] font-bold">95.5%</td>
+        </tr>
+
+        <tr class="h-10 border-b border-zinc-200">
+          <td class="border border-zinc-200 font-bold bg-zinc-50">2018</td>
+          <td class="border border-zinc-200">428</td>
+          <td class="border border-zinc-200">424</td>
+          <td class="border border-zinc-200 text-blue-600 font-bold">99.1%</td>
+          <td class="border border-zinc-200">1,627</td>
+          <td class="border border-zinc-200">1,482</td>
+          <td class="border border-zinc-200 text-orange-600 font-bold">
+            91.1%
+          </td>
+          <td class="border border-zinc-200">2,055</td>
+          <td class="border border-zinc-200">1,906</td>
+          <td class="border border-zinc-200 text-[#A10076] font-bold">92.7%</td>
+        </tr>
+
+        <tr class="h-10 border-b border-zinc-200">
+          <td class="border border-zinc-200 font-bold bg-zinc-50">2019</td>
+          <td class="border border-zinc-200">625</td>
+          <td class="border border-zinc-200">622</td>
+          <td class="border border-zinc-200 text-blue-600 font-bold">99.5%</td>
+          <td class="border border-zinc-200">2,061</td>
+          <td class="border border-zinc-200">1,799</td>
+          <td class="border border-zinc-200 text-orange-600 font-bold">
+            87.3%
+          </td>
+          <td class="border border-zinc-200">2,686</td>
+          <td class="border border-zinc-200">2,421</td>
+          <td class="border border-zinc-200 text-[#A10076] font-bold">90.1%</td>
+        </tr>
+
+        <tr class="h-10 border-b border-zinc-200">
+          <td class="border border-zinc-200 font-bold bg-zinc-50">2020</td>
+          <td class="border border-zinc-200">732</td>
+          <td class="border border-zinc-200">730</td>
+          <td class="border border-zinc-200 text-blue-600 font-bold">99.7%</td>
+          <td class="border border-zinc-200">2,081</td>
+          <td class="border border-zinc-200">1,859</td>
+          <td class="border border-zinc-200 text-orange-600 font-bold">
+            89.3%
+          </td>
+          <td class="border border-zinc-200">2,813</td>
+          <td class="border border-zinc-200">2,589</td>
+          <td class="border border-zinc-200 text-[#A10076] font-bold">92.0%</td>
+        </tr>
+
+        <tr class="h-10 border-b border-zinc-200">
+          <td class="border border-zinc-200 font-bold bg-zinc-50">2021</td>
+          <td class="border border-zinc-200">594</td>
+          <td class="border border-zinc-200">593</td>
+          <td class="border border-zinc-200 text-blue-600 font-bold">99.8%</td>
+          <td class="border border-zinc-200">1,515</td>
+          <td class="border border-zinc-200">1,449</td>
+          <td class="border border-zinc-200 text-orange-600 font-bold">
+            95.6%
+          </td>
+          <td class="border border-zinc-200">2,109</td>
+          <td class="border border-zinc-200">2,042</td>
+          <td class="border border-zinc-200 text-[#A10076] font-bold">96.8%</td>
+        </tr>
+
+        <tr class="h-10">
+          <td class="border-x border-zinc-200 font-bold bg-zinc-50">2022</td>
+          <td class="border-x border-zinc-200">506</td>
+          <td class="border-x border-zinc-200">500</td>
+          <td class="border-x border-zinc-200 text-blue-600 font-bold">
+            98.8%
+          </td>
+          <td class="border-x border-zinc-200">1,381</td>
+          <td class="border-x border-zinc-200">1,275</td>
+          <td class="border-x border-zinc-200 text-orange-600 font-bold">
+            92.3%
+          </td>
+          <td class="border-x border-zinc-200">1,887</td>
+          <td class="border-x border-zinc-200">1,775</td>
+          <td class="border-x border-zinc-200 text-[#A10076] font-bold">
+            94.1%
+          </td>
+        </tr>
+
+        <tr class="h-12 border-y border-[#A10076] font-bold bg-zinc-50">
+          <td class="border-x border-zinc-200 text-[#A10076]">합계</td>
+          <td class="border-x border-zinc-200 bg-blue-50">5,354</td>
+          <td class="border-x border-zinc-200 bg-blue-50">5,318</td>
+          <td class="border-x border-zinc-200 text-blue-600 bg-blue-50">
+            99.3%
+          </td>
+          <td class="border-x border-zinc-200 bg-orange-50">13,523</td>
+          <td class="border-x border-zinc-200 bg-orange-50">12,432</td>
+          <td class="border-x border-zinc-200 text-orange-600 bg-orange-50">
+            91.9%
+          </td>
+          <td class="border-x border-zinc-200 bg-pink-50">18,877</td>
+          <td class="border-x border-zinc-200 bg-pink-50">17,750</td>
+          <td class="border-x border-zinc-200 text-[#A10076] bg-pink-50">
+            94.0%
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
