@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko" class="overflow-x-hidden">
+  <head>
+    <script src="../core/header.js"></script>
+    <script src="../core/component-loader.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        defaultHeader.appendToHead();
+        loadComponent("../components/header.html", "#header-container");
+        loadComponent("../components/navigation.html", "#navigation-container");
+        loadComponent("../components/footer.html", "#footer-container");
+        loadComponent(
+          "../components/bigData/tabContent2.html",
+          "#bigData-container"
+        );
+      });
+    </script>
+  </head>
+  <body class="min-w-[360px] overflow-x-hidden w-full">
+    <div id="header-container"></div>
+    <div id="navigation-container" class="sr-only md:not-sr-only"></div>
+    <main class="overflow-x-hidden max-w-full w-full">
+      <section
+        class="sr-only md:not-sr-only py-4 grid bg-[#DBE2FF] grid-cols-3 md:px-8 lg:px-20 lg:gap-8"
+      >
+        <article class="col-span-2 flex flex-col justify-center">
+          <span class="font-semibold mb-4 text-[40px] text-[#A10076]"
+            >수입차<span class="text-black">빅데이터</span></span
+          >
+          <span class="text-sm font-normal text-zinc-600 text-lg"
+            >오토마트 수입차 Bigdata 분석은 관공서와 금융기관의 2013년부터
+            2022년까지 데이터를 발표일 기준으로 분석한 결과로 수입차 공매 및
+            경매 현황, 수입차 메이커별 현황, 수입차 낙찰율 현황, 수입차
+            낙찰가비율 현황, 수입차 낙찰가 현황 등의 Bigdata 정보를 공개함으로써
+            입찰자에게 입찰참여에 활용할 수 있는 정보제공이 목적입니다.
+          </span>
+        </article>
+        <article class="col-span-1 flex justify-center items-center">
+          <img
+            src="../assets/img/img_banner_bigData.png"
+            alt="capital_banner"
+            class="w-[300px] h-[200px] object-contain"
+          />
+        </article>
+      </section>
+
+      <section
+        class="p-4 bg-[#DBE2FF] flex flex-col justify-center items-center md:sr-only"
+      >
+        <article class="flex items-center justify-between gap-2 w-full">
+          <span class="font-semibold mb-4 text-2xl text-[#A10076]"
+            >수입차<span class="text-black">빅데이터</span></span
+          >
+          <img
+            src="../assets/img/img_banner_bigData.png"
+            alt="bigData"
+            class="w-[120px] h-[80px] object-contain"
+          />
+        </article>
+        <article class="text-[11px] text-zinc-600">
+          <span
+            >오토마트 수입차 Bigdata 분석은 관공서와 금융기관의 2013년부터
+            2022년까지 데이터를 발표일 기준으로 분석한 결과로 수입차 공매 및
+            경매 현황, 수입차 메이커별 현황, 수입차 낙찰율 현황, 수입차
+            낙찰가비율 현황, 수입차 낙찰가 현황 등의 Bigdata 정보를 공개함으로써
+            입찰자에게 입찰참여에 활용할 수 있는 정보제공이 목적입니다.</span
+          >
+        </article>
+      </section>
+
+      <section class="p-8 flex flex-col gap-8">
+        <div class="w-full grid grid-cols-5">
+          <div
+            class="col-span-1 rounded-t-md bg-white py-4 px-2 border-t border-x border-black flex items-center justify-center"
+          >
+            <span class="text-base lg:text-xl font-semibold text-[#A10076]"
+              >수입차 공매 및 경매 현황</span
+            >
+          </div>
+          <div
+            class="col-span-1 rounded-t-md bg-zinc-100 py-4 px-2 border-t-zinc-300 border-x-zinc-300 border-b-black flex items-center justify-center border"
+          >
+            <span class="text-base lg:text-xl font-semibold text-zinc-600"
+              >수입차 메이커별 현황</span
+            >
+          </div>
+          <div
+            class="col-span-1 rounded-t-md bg-zinc-100 py-4 px-2 border-t-zinc-300 border-x-zinc-300 border-b-black flex items-center justify-center border"
+          >
+            <span class="text-base lg:text-xl font-semibold text-zinc-600"
+              >수입차 낙찰율 현황</span
+            >
+          </div>
+          <div
+            class="col-span-1 rounded-t-md bg-zinc-100 py-4 px-2 border-t-zinc-300 border-x-zinc-300 border-b-black flex items-center justify-center border"
+          >
+            <span class="text-base lg:text-xl font-semibold text-zinc-600"
+              >수입차 낙찰가비율 현황</span
+            >
+          </div>
+          <div
+            class="col-span-1 rounded-t-md bg-zinc-100 py-4 px-2 border-t-zinc-300 border-x-zinc-300 border-b-black flex items-center justify-center border"
+          >
+            <span class="text-base lg:text-xl font-semibold text-zinc-600"
+              >수입차 낙찰가 현황</span
+            >
+          </div>
+        </div>
+        <div id="bigData-container"></div>
+      </section>
+    </main>
+    <div id="footer-container" class="mt-4"></div>
+  </body>
+</html>
