@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="ko" class="overflow-x-hidden">
+  <head>
+    <script src="../core/header.js"></script>
+    <script src="../core/component-loader.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        defaultHeader.appendToHead();
+        loadComponent("../components/header.html", "#header-container");
+        loadComponent("../components/navigation.html", "#navigation-container");
+        loadComponent("../components/footer.html", "#footer-container");
+      });
+    </script>
+  </head>
+  <body class="min-w-[360px] overflow-x-hidden w-full">
+    <div id="carDetailPopup"></div>
+    <div id="header-container"></div>
+    <div id="navigation-container" class="sr-only md:not-sr-only"></div>
+    <main class="overflow-x-hidden max-w-full w-full">
+      <section
+        class="sr-only md:not-sr-only py-4 grid bg-[#CDF3EC] grid-cols-3 md:px-8 lg:px-20 lg:gap-8"
+      >
+        <article class="col-span-2 flex flex-col justify-center">
+          <span class="font-semibold mb-4 text-[40px]"
+            ><span class="text-[#A10076]">차량상세</span> 정보</span
+          >
+          <span class="text-sm font-normal text-zinc-600 text-lg"
+            >공매 및 공개매각 차량에 대한 기본 정보를 제공합니다. 해당 공고의
+            공고문과 유의사항을 반드시 숙지하시고 차량은 반드시 직접 실물 확인을
+            하고 입찰하시기 바랍니다.
+          </span>
+        </article>
+        <article class="col-span-1 flex justify-center items-center">
+          <img
+            src="../assets/img/img_carSerarch_banner.png"
+            alt="car_search_banner"
+            class="w-[300px] h-[200px] object-contain"
+          />
+        </article>
+      </section>
+
+      <section
+        class="p-4 bg-[#CDF3EC] flex flex-col justify-center items-center md:sr-only"
+      >
+        <article class="flex items-center justify-between gap-2 w-full">
+          <span class="font-semibold mb-4 text-2xl"
+            ><span class="text-[#A10076]">차량</span> 검색</span
+          >
+          <img
+            src="../assets/img/img_carSerarch_banner.png"
+            alt="car_search_banner"
+            class="w-[120px] h-[80px] object-contain"
+          />
+        </article>
+        <article class="text-[11px] text-zinc-600">
+          <span
+            >차량을 일정별로 조건을 설정하여 차량을 검색하는 서비스입니다.
+            검색된 목록에서 [입찰] 버튼을 클릭하면 해당 공고문으로 이동되며
+            각각의 공고문 내용은 반드시 확인하고 입찰하셔야 합니다.</span
+          >
+        </article>
+      </section>
+
+      <section class="p-4 md:p-8 flex flex-col gap-8 max-w-[1280px] mx-auto">
+        <h2
+          class="text-base md:text-2xl font-bold flex flex-wrap items-center gap-2"
+        >
+          <span class="text-[#A10076]">메르세데스벤츠모빌리티코리아(주)</span>
+          <span class="text-gray-300">|</span>
+          <span
+            >차량정보 [2025-6호-<span class="text-[#A10076]">진행중</span
+            >]</span
+          >
+        </h2>
+
+        <div
+          class="bg-gray-50 p-6 flex flex-col md:flex-row justify-center items-center gap-2 md:gap-8 text-sm md:text-base"
+        >
+          <p>
+            <span class="text-[#A10076] font-bold">* 입찰신청 기간 :</span>
+            2025년 11월 10일 ~ 2025년 11월 24일 24시 00분
+          </p>
+          <p>
+            <span class="text-[#A10076] font-bold">* 발표일시 :</span> 2025년
+            11월 25일 14시 00분 이후
+          </p>
+        </div>
+
+        <div
+          class="border-t border-t-gray-200 border-b border-b-gray-200 text-sm md:text-base"
+        >
+          <div class="grid grid-cols-1 md:grid-cols-6 border-b border-gray-200">
+            <div
+              class="bg-gray-50 p-4 font-medium flex items-center justify-center md:justify-start"
+            >
+              차량순번
+            </div>
+            <div class="p-4 flex items-center justify-center md:justify-start">
+              1
+            </div>
+            <div
+              class="bg-gray-50 p-4 font-medium flex items-center justify-center md:justify-start"
+            >
+              차량번호
+            </div>
+            <div class="p-4 flex items-center justify-center md:justify-start">
+              87너1450
+            </div>
+            <div
+              class="bg-gray-50 p-4 font-medium flex items-center justify-center md:justify-start"
+            >
+              차량명
+            </div>
+            <div
+              class="p-4 flex items-center justify-center md:justify-start md:col-span-1"
+            >
+              Mercedes-BenzEQE350+ (전기)
+            </div>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-6 border-b border-gray-200">
+            <div
+              class="bg-gray-50 p-4 font-medium flex items-center justify-center md:justify-start"
+            >
+              모델연도/기어
+            </div>
+            <div class="p-4 flex items-center justify-center md:justify-start">
+              2024 / 자동
+            </div>
+            <div
+              class="bg-gray-50 p-4 font-medium flex items-center justify-center md:justify-start"
+            >
+              주행거리
+            </div>
+            <div class="p-4 flex items-center justify-center md:justify-start">
+              19,862
+            </div>
+            <div
+              class="bg-gray-50 p-4 font-medium flex items-center justify-center md:justify-start"
+            >
+              공고
+            </div>
+            <div class="p-4 flex items-center justify-center md:justify-start">
+              2025-6 ( 3차 )
+            </div>
+          </div>
+          <!-- Row 3 -->
+          <div class="grid grid-cols-1 md:grid-cols-6 border-b border-gray-200">
+            <div
+              class="bg-gray-50 p-4 font-medium flex items-center justify-center md:justify-start"
+            >
+              예정가
+            </div>
+            <div class="p-4 flex items-center justify-center md:justify-start">
+              53,300,000
+            </div>
+            <div
+              class="bg-gray-50 p-4 font-medium flex items-center justify-center md:justify-start"
+            >
+              색상/배기량
+            </div>
+            <div class="p-4 flex items-center justify-center md:justify-start">
+              검정 / 3,000cc
+            </div>
+            <div
+              class="bg-gray-50 p-4 font-medium flex items-center justify-center md:justify-start"
+            >
+              보관소
+            </div>
+            <div class="p-4 flex items-center justify-center md:justify-start">
+              오토마트 대전보관소
+            </div>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-6 border-b border-gray-200">
+            <div
+              class="bg-gray-50 p-4 font-medium flex justify-center items-center md:justify-start"
+            >
+              유의사항
+            </div>
+            <div class="p-4 md:col-span-5 text-[#A10076]">
+              <p class="mb-1 text-sm md:text-base leading-relaxed">
+                차량점검서는 점검일 기준으로 작성된 것으로 차량 특성상 점검
+                내용이 상이하더라도 책임지지 않습니다. 반드시 차량 상태를 직접
+                확인한 후 입찰하십시오. (프론트패널/라디에이터서포트가 볼트
+                체결/비금속재질(FRP)인 경우에는 교환여부 확인불가 및 클레임
+                불가입니다.)
+              </p>
+              <p class="text-sm md:text-base leading-relaxed">
+                ※ 거래 제한국가인 러시아 연방 또는 벨라루스 공화국으로 과거에
+                차량 등을 수출한 적이 없으며, 그러한 목적으로 입찰에 참가할 수
+                없습니다.
+              </p>
+            </div>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-6 border-b border-gray-200">
+            <div
+              class="bg-gray-50 p-4 font-medium flex justify-center items-center md:justify-start text-center md:text-left h-full"
+            >
+              차량설명<br class="hidden md:block" />(특이사항)
+            </div>
+            <div
+              class="p-4 md:col-span-5 text-gray-700 leading-relaxed text-sm md:text-base"
+            >
+              <div class="mb-2">
+                <span
+                  class="inline-block border border-[#A10076] text-[#A10076] text-xs px-1 mr-1 align-text-bottom"
+                  >주의</span
+                >
+                <span class="text-[#A10076]"
+                  >매수대금 납부일: 매각결정 발표일의 익일 16시까지 (공고문
+                  참조)</span
+                >
+              </div>
+              <p class="mb-4">
+                정식수입차량임.렌트 차량으로 세금계산서 발행
+                가능함.현금영수증발행불가함.최초등록일(2024-10-31) 차량내 소화기
+                없음 (낙찰자 설치 의무있음-공고문 참고요망).스마트키 2개,매뉴얼
+                있음 낙찰후 영업용(렌트)번호 말소후 일반 번호로 변경해야함
+              </p>
+              <p class="mb-2 font-medium">[ 공고문 참조 사항 ]</p>
+              <p class="mb-2">
+                낙찰시 낙찰금액 이외에 [957,000원]을 별도로 낙찰자 수수료를 추가
+                납부하여야 합니다.
+              </p>
+              <p class="text-gray-500">
+                * 해당 차량은 기관의 내부 발표 절차로 인해 결과발표가 지연 및
+                매각이 취소될 수 있습니다.
+              </p>
+            </div>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-6">
+            <div
+              class="bg-gray-50 p-4 font-medium flex justify-center items-center md:justify-start text-center md:text-left h-full"
+            >
+              이전 절차<br class="hidden md:block" />(주의사항)
+            </div>
+            <div
+              class="p-4 md:col-span-5 text-gray-700 leading-relaxed text-sm md:text-base"
+            >
+              <p class="mb-2">
+                해당 차량은 등록대행을 통한 명의이전이 필수이며 이전완료후
+                차량을 인도받을 수 있으며, 이에 필요한 이전비용 및
+                서류처리대행비용등 수수료를 포함한 비용 8만원(매매상사는
+                4만원)은 낙찰자가 부담하여야 합니다.
+              </p>
+              <p class="mb-2">
+                이전소요기간은 잔금입금 및 서류 도착후 3~4일 소요됩니다. ( 최대
+                10일까지 소요될 수 있음 )
+              </p>
+              <p>[공고문]과 입찰신청시 [입찰자 유의사항] 동의내용 확인요망</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-gray-50 p-6 flex flex-col gap-4">
+          <div class="flex justify-between items-center">
+            <h3 class="font-bold text-lg">할부가능 차량 안내</h3>
+            <button
+              class="bg-white border rounded px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 font-medium shadow-sm"
+            >
+              서비스 더 알아보기 >
+            </button>
+          </div>
+          <ul
+            class="list-disc list-inside space-y-2 text-sm md:text-base text-gray-700 marker:text-[#A10076]"
+          >
+            <li>
+              <span class="text-gray-700 align-text-top"
+                >대상차량(기본) : 오토마트 보관소에 보관중인 차량 중
+                대출금(잔금)이 700만원 이상인 차량 (최초등록일 기준 10년미만
+                차량, 세부내용에서 제외차량 확인요함)</span
+              >
+            </li>
+            <li>
+              <span class="text-gray-700 align-text-top"
+                >대상자 : 할부신청을 하여 심사 승인된 낙찰자 (입찰신청시
+                금융서비스 동의자 및 오토마트 할부서비스에서 사전
+                접수신청)</span
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div class="aspect-[4/3] overflow-hidden relative group">
+            <img
+              src="../assets/img/img_temp_car.png"
+              alt="차량 전면"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="aspect-[4/3] overflow-hidden relative group">
+            <img
+              src="../assets/img/img_temp_car.png"
+              alt="차량 후면"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="aspect-[4/3] overflow-hidden relative group">
+            <img
+              src="../assets/img/img_temp_car.png"
+              alt="차량 내부"
+              class="w-full h-full object-cover"
+            />
+          </div>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
+          <button
+            class="border border-[#A10076] text-[#A10076] bg-white px-8 py-3 font-semibold min-w-[150px] rounded-md"
+          >
+            차량점검서 보기
+          </button>
+          <button
+            class="border border-[#A10076] text-[#A10076] bg-white px-8 py-3 font-semibold min-w-[150px] rounded-md"
+          >
+            전체 사진 보기
+          </button>
+          <button
+            class="border border-[#A10076] text-[#A10076] bg-white px-8 py-3 font-semibold min-w-[150px] rounded-md"
+          >
+            찜 하기
+          </button>
+          <button
+            class="border border-[#A10076] text-[#A10076] bg-white px-8 py-3 font-semibold min-w-[150px] rounded-md"
+          >
+            입찰
+          </button>
+          <button
+            class="border border-[#A10076] text-[#A10076] bg-white px-8 py-3 font-semibold min-w-[150px] rounded-md"
+          >
+            돌아가기
+          </button>
+        </div>
+
+        <!-- Footer Warnings -->
+        <ul
+          class="space-y-1 text-sm text-gray-700 list-disc list-inside marker:text-[#A10076]"
+        >
+          <li>
+            차량 사진을 클릭하면 확대된 사진으로 조회할 수 있으며,
+            [전체사진보기] 버튼이 있는 경우는 추가된 사진을 조회할 수 있습니다.
+          </li>
+          <li>
+            [차량점검서보기] 버튼이 있는 경우 차량점검서를 확인할 수 있습니다.
+            [차량점검서보기]가 없는 경우는 점검서가 제공되지 않습니다.
+          </li>
+          <li>
+            차량확인등으로 인해 소모된 연료에 대해서는 낙찰자 부담하에 연료를
+            보충하여 인수해야 합니다.
+          </li>
+          <li>
+            지역번호 또는 번호판이 없는 경우 신규번호판 발급여부를 확인하시기
+            바랍니다. (일부 관공서는 무조건 신규발급 - 공고문 확인)
+          </li>
+          <li>
+            세금계산서(계산서) 발급 여부는 차량설명(특이사항) 참조바라며,
+            체납자(소유자)의 사업자 등록여부는 확인이 불가합니다
+          </li>
+        </ul>
+
+        <div class="flex justify-center pt-8">
+          <button
+            class="bg-[#F5F5F5] border border-gray-300 px-16 py-3 font-bold text-gray-700 hover:bg-gray-200 transition-colors text-base"
+          >
+            이전 페이지
+          </button>
+        </div>
+      </section>
+    </main>
+    <div id="footer-container" class="mt-4"></div>
+  </body>
+</html>
