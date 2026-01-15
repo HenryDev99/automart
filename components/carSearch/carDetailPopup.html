@@ -1,16 +1,15 @@
 <div
-  id="overlap-popup-overlay"
+  id="car-check-popup-overlay"
   class="fixed inset-0 bg-transparent z-50 flex items-center justify-center"
 >
   <div
-    class="bg-white rounded-lg w-[70%] max-w-[600px] shadow-lg flex flex-col p-8 min-w-[300px]"
+    class="bg-white rounded-lg w-[70%] h-[70%] max-w-[600px] shadow-lg flex flex-col p-8 min-w-[300px] max-h-[70dvh] overflow-y-auto"
   >
+    <!-- Header -->
     <div
-      class="flex items-center justify-between px-4 py-6 md:border-b border-zinc-300"
+      class="flex items-center justify-between px-2 py-4 md:px-4 md:py-6 md:border-b border-zinc-300 min-h-fit"
     >
-      <div
-        class="flex items-center gap-2 w-[132px] md:w-[228px] justify-center"
-      >
+      <div class="flex items-center gap-2 w-[120px] md:w-[228px]">
         <img src="../../assets/img/logo.png" alt="AUTOMART" />
       </div>
       <button
@@ -29,26 +28,273 @@
         ></div>
       </button>
     </div>
-    <div
-      class="flex flex-col justify-center md:p-8 gap-4 md:border border-zinc-300 rounded-md mt-8"
-    >
-      <ul class="list-disc list-inside text-[#A10076] text-sm md:text-lg">
-        <li class="mb-4">
-          <span class="text-black"> 차량정보 : XXX0344 </span>
-        </li>
-        <li class="mb-4">
-          <span class="text-black">
-            진행기관 : 메르세데스벤츠모빌리티코리아(주)
-          </span>
-        </li>
-      </ul>
 
-      <img src="../../assets/img/img_temp_car.png" />
-    </div>
-    <button
-      class="bg-zinc-100 text-zinc-600 rounded-md px-6 md:px-20 py-2 w-fit mt-6 border border-zinc-300 self-center text-base md:text-xl"
+    <!-- Main Content -->
+    <div
+      class="flex flex-col justify-center border border-zinc-300 rounded-md mt-6 p-4 md:p-6 gap-6 min-h-fit"
     >
-      닫기
-    </button>
+      <!-- Info Section -->
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 gap-y-2 gap-x-8 text-sm md:text-base"
+      >
+        <div class="flex items-center gap-2">
+          <span class="text-[#A10076] font-bold">•</span>
+          <span class="font-medium text-zinc-700">차량번호 :</span>
+          <span class="text-zinc-600">06무2234</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <span class="text-[#A10076] font-bold">•</span>
+          <span class="font-medium text-zinc-700">차량명 :</span>
+          <span class="text-zinc-600">NEW 그랜저XG</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <span class="text-[#A10076] font-bold">•</span>
+          <span class="font-medium text-zinc-700">점검일자 :</span>
+          <span class="text-zinc-600">2025년 10월 01일</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <span class="text-[#A10076] font-bold">•</span>
+          <span class="font-medium text-zinc-700">진행기관 :</span>
+          <span class="text-zinc-600">화성시청</span>
+        </div>
+      </div>
+
+      <!-- Car Image -->
+      <div
+        class="w-full aspect-[16/10] bg-zinc-100 rounded-lg overflow-hidden flex items-center justify-center"
+      >
+        <!-- User requested empty src -->
+        <img src="" alt="Car Image" class="w-full h-full object-cover" />
+      </div>
+
+      <!-- Diagram and Grid Section -->
+      <div class="flex flex-col md:flex-row gap-6">
+        <!-- Left: Car Diagram -->
+        <div
+          class="flex items-center justify-center md:justify-start shrink-0 w-[30%]"
+        >
+          <div class="aspect-[1/1.5]">
+            <img
+              src=""
+              alt="Car Check Diagram"
+              class="w-full h-full object-contain"
+            />
+          </div>
+        </div>
+
+        <!-- Right: Check Grid -->
+        <div
+          class="grid grid-cols-9 gap-1 flex-1 text-[10px] md:text-[11px] h-fit"
+        >
+          <!-- Row 1 -->
+          <div
+            class="border border-[#A10076] text-[#A10076] bg-white flex items-center justify-center aspect-square md:aspect-[unset] md:h-12 rounded cursor-pointer hover:bg-pink-50 transition"
+          >
+            전면
+          </div>
+          <div
+            class="border border-[#A10076] text-[#A10076] bg-white flex items-center justify-center aspect-square md:aspect-[unset] md:h-12 rounded cursor-pointer hover:bg-pink-50 transition"
+          >
+            후면
+          </div>
+          <div
+            class="border border-[#A10076] text-[#A10076] bg-white flex items-center justify-center aspect-square md:aspect-[unset] md:h-12 rounded cursor-pointer hover:bg-pink-50 transition"
+          >
+            내부
+          </div>
+
+          <div
+            class="border border-zinc-300 text-zinc-400 bg-white flex flex-col items-center justify-center aspect-square md:aspect-[unset] md:h-12 rounded"
+          >
+            <span class="font-bold text-zinc-400">A</span>
+            <span class="text-[9px] tracking-tighter">뒷범퍼</span>
+          </div>
+
+          <!-- Active/Highlighted C -->
+          <div
+            class="border border-[#A10076] text-[#A10076] bg-white flex flex-col items-center justify-center aspect-square md:aspect-[unset] md:h-12 rounded font-bold"
+          >
+            <span>C</span>
+            <span class="text-[9px] tracking-tighter">뒷휀다(우)</span>
+          </div>
+
+          <div
+            class="border border-zinc-300 text-zinc-400 bg-white flex flex-col items-center justify-center aspect-square md:aspect-[unset] md:h-12 rounded"
+          >
+            <span class="font-bold text-zinc-400">D</span>
+            <span class="text-[9px] tracking-tighter">트렁크</span>
+          </div>
+
+          <div
+            class="border border-[#A10076] text-[#A10076] bg-white flex flex-col items-center justify-center aspect-square md:aspect-[unset] md:h-12 rounded font-bold"
+          >
+            <span>E</span>
+            <span class="text-[9px] tracking-tighter">뒷휀다(좌)</span>
+          </div>
+
+          <!-- Selected F (Solid Pink) -->
+          <div
+            class="border border-[#A10076] bg-[#A10076] text-white flex flex-col items-center justify-center aspect-square md:aspect-[unset] md:h-12 rounded font-bold shadow-sm"
+          >
+            <span>F</span>
+            <span class="text-[9px] tracking-tighter">뒷도어(우)</span>
+          </div>
+
+          <div
+            class="border border-[#A10076] text-[#A10076] bg-white flex flex-col items-center justify-center aspect-square md:aspect-[unset] md:h-12 rounded font-bold"
+          >
+            <span>G</span>
+            <span class="text-[9px] tracking-tighter">루프</span>
+          </div>
+
+          <!-- Row 2 -->
+          <div
+            class="border border-zinc-300 text-zinc-400 bg-white flex flex-col items-center justify-center aspect-square md:aspect-[unset] md:h-12 rounded"
+          >
+            <span class="font-bold text-zinc-400">H</span>
+            <span class="text-[9px] tracking-tighter">뒷도어(좌)</span>
+          </div>
+          <div
+            class="border border-zinc-300 text-zinc-400 bg-white flex flex-col items-center justify-center aspect-square md:aspect-[unset] md:h-12 rounded"
+          >
+            <span class="font-bold text-zinc-400">I</span>
+            <span class="text-[9px] tracking-tighter">앞도어(우)</span>
+          </div>
+          <div
+            class="border border-[#A10076] text-[#A10076] bg-white flex flex-col items-center justify-center aspect-square md:aspect-[unset] md:h-12 rounded font-bold"
+          >
+            <span>J</span>
+            <span class="text-[9px] tracking-tighter">앞도어(좌)</span>
+          </div>
+          <div
+            class="border border-zinc-300 text-zinc-400 bg-white flex flex-col items-center justify-center aspect-square md:aspect-[unset] md:h-12 rounded"
+          >
+            <span class="font-bold text-zinc-400">K</span>
+            <span class="text-[9px] tracking-tighter">앞휀다(우)</span>
+          </div>
+          <div
+            class="border border-zinc-300 text-zinc-400 bg-white flex flex-col items-center justify-center aspect-square md:aspect-[unset] md:h-12 rounded"
+          >
+            <span class="font-bold text-zinc-400">M</span>
+            <span class="text-[9px] tracking-tighter">본네트</span>
+          </div>
+          <div
+            class="border border-zinc-300 text-zinc-400 bg-white flex flex-col items-center justify-center aspect-square md:aspect-[unset] md:h-12 rounded"
+          >
+            <span class="font-bold text-zinc-400">O</span>
+            <span class="text-[9px] tracking-tighter">앞휀다(좌)</span>
+          </div>
+          <div
+            class="border border-zinc-300 text-zinc-400 bg-white flex flex-col items-center justify-center aspect-square md:aspect-[unset] md:h-12 rounded"
+          >
+            <span class="font-bold text-zinc-400">Q</span>
+            <span class="text-[9px] tracking-tighter">앞범퍼</span>
+          </div>
+          <div
+            class="border border-[#A10076] text-[#A10076] bg-white flex items-center justify-center aspect-square md:aspect-[unset] md:h-12 rounded"
+          >
+            계기판
+          </div>
+          <div
+            class="border border-[#A10076] text-[#A10076] bg-white flex items-center justify-center aspect-square md:aspect-[unset] md:h-12 rounded"
+          >
+            측면1
+          </div>
+
+          <!-- Row 3 -->
+          <div
+            class="border border-[#A10076] text-[#A10076] bg-white flex items-center justify-center aspect-square md:aspect-[unset] md:h-12 rounded"
+          >
+            측면2
+          </div>
+          <div
+            class="border border-[#A10076] text-[#A10076] bg-white flex items-center justify-center aspect-square md:aspect-[unset] md:h-12 rounded"
+          >
+            엔진룸
+          </div>
+          <div
+            class="border border-[#A10076] text-[#A10076] bg-white flex items-center justify-center aspect-square md:aspect-[unset] md:h-12 rounded"
+          >
+            기타1
+          </div>
+          <div
+            class="border border-[#A10076] text-[#A10076] bg-white flex items-center justify-center aspect-square md:aspect-[unset] md:h-12 rounded"
+          >
+            기타2
+          </div>
+          <div
+            class="border border-[#A10076] text-[#A10076] bg-white flex items-center justify-center aspect-square md:aspect-[unset] md:h-12 rounded"
+          >
+            기타3
+          </div>
+          <div
+            class="border border-[#A10076] text-[#A10076] bg-white flex items-center justify-center aspect-square md:aspect-[unset] md:h-12 rounded"
+          >
+            기타4
+          </div>
+          <div
+            class="border border-[#A10076] text-[#A10076] bg-white flex items-center justify-center aspect-square md:aspect-[unset] md:h-12 rounded"
+          >
+            기타5
+          </div>
+          <div
+            class="border border-[#A10076] text-[#A10076] bg-white flex items-center justify-center aspect-square md:aspect-[unset] md:h-12 rounded"
+          >
+            기타6
+          </div>
+          <div
+            class="border border-[#A10076] text-[#A10076] bg-white flex items-center justify-center aspect-square md:aspect-[unset] md:h-12 rounded"
+          >
+            기타7
+          </div>
+
+          <!-- Row 4 -->
+          <div
+            class="border border-[#A10076] text-[#A10076] bg-white flex items-center justify-center aspect-square md:aspect-[unset] md:h-12 rounded"
+          >
+            기타8
+          </div>
+          <div
+            class="border border-[#A10076] text-[#A10076] bg-white flex items-center justify-center aspect-square md:aspect-[unset] md:h-12 rounded"
+          >
+            기타9
+          </div>
+          <div
+            class="border border-[#A10076] text-[#A10076] bg-white flex items-center justify-center aspect-square md:aspect-[unset] md:h-12 rounded"
+          >
+            기타10
+          </div>
+          <div
+            class="border border-[#A10076] text-[#A10076] bg-white flex items-center justify-center aspect-square md:aspect-[unset] md:h-12 rounded"
+          >
+            기타11
+          </div>
+          <div
+            class="border border-[#A10076] text-[#A10076] bg-white flex items-center justify-center aspect-square md:aspect-[unset] md:h-12 rounded"
+          >
+            기타12
+          </div>
+          <div
+            class="border border-[#A10076] text-[#A10076] bg-white flex items-center justify-center aspect-square md:aspect-[unset] md:h-12 rounded"
+          >
+            기타13
+          </div>
+          <div
+            class="border border-[#A10076] text-[#A10076] bg-white flex items-center justify-center aspect-square md:aspect-[unset] md:h-12 rounded"
+          >
+            기타14
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Action -->
+    <div class="flex justify-center mt-6 md:mt-8 min-h-fit">
+      <button
+        class="bg-zinc-100 text-zinc-600 rounded-md px-12 md:px-24 py-3 border border-zinc-300 font-medium hover:bg-zinc-200 transition"
+      >
+        닫기
+      </button>
+    </div>
   </div>
 </div>

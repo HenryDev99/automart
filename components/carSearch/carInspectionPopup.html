@@ -1,0 +1,1078 @@
+<div
+  id="car-inspection-popup-overlay"
+  class="fixed inset-0 bg-transparent z-50 flex items-center justify-center p-4 bg-opacity-50"
+>
+  <div
+    class="bg-white rounded-lg w-[90%] md:w-[70%] max-w-[800px] shadow-xl flex flex-col p-6 md:p-10 max-h-[90vh] overflow-y-auto"
+  >
+    <div
+      class="flex items-center justify-between px-2 py-4 md:px-4 md:py-6 md:border-b border-zinc-300 min-h-fit"
+    >
+      <div class="flex items-center gap-2 w-[120px] md:w-[228px]">
+        <img src="../../assets/img/logo.png" alt="AUTOMART" />
+      </div>
+      <button
+        class="text-black border border-zinc-300 rounded-md px-4 py-2 flex items-center justify-center gap-2"
+      >
+        <span class="text-lg sr-only md:not-sr-only">닫기</span>
+        <div
+          class="size-4 text-black"
+          style="
+            mask: url('../assets/img/ic_close.svg') no-repeat center;
+            -webkit-mask: url('../assets/img/ic_close.svg') no-repeat center;
+            mask-size: contain;
+            -webkit-mask-size: contain;
+            background-color: currentColor;
+          "
+        ></div>
+      </button>
+    </div>
+    <!-- Content Wrapper -->
+    <div
+      class="flex flex-col justify-center border border-zinc-300 rounded-md mt-6 p-4 md:p-6 gap-6 min-h-fit"
+    >
+      <!-- Title -->
+      <h1 class="text-center text-2xl md:text-3xl font-bold text-[#A10076]">
+        차량 점검서
+      </h1>
+
+      <!-- Disclaimer Section -->
+      <div class="text-xs md:text-sm text-zinc-600 space-y-3 p-2">
+        <div class="flex gap-2 items-start">
+          <span class="text-[#A10076] font-bold mt-1">•</span>
+          <div class="leading-relaxed">
+            본 자료는 입찰에 참여하는 분들을 위해 화성시청과(와) 오토마트에서
+            제공한 참고자료입니다.<br />
+            <span class="text-[#A10076]"
+              >이 자료는 참고자료로 화성시청이나 오토마트에서는 자료에 대한
+              책임을 지지 않습니다.</span
+            >
+          </div>
+        </div>
+        <div class="flex gap-2 items-start">
+          <span class="text-[#A10076] font-bold mt-1">•</span>
+          <div class="leading-relaxed">
+            <span class="text-[#A10076] underline underline-offset-4"
+              >입찰 전에 차량보관소를 방문하여 반드시 차량을 직접 확인하신 후에
+              입찰에 참여하십시오.</span
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Info Header -->
+      <div class="mt-4">
+        <h2
+          class="text-xl md:text-2xl font-bold text-[#A10076] flex items-center gap-2"
+        >
+          차량 기본 정보
+          <span class="text-zinc-800 text-lg md:text-xl font-normal"
+            >[ 06무 8811 ]</span
+          >
+        </h2>
+      </div>
+
+      <!-- Detail Table -->
+      <div class="border-t-2 border-zinc-200">
+        <!-- Row 1 -->
+        <div class="flex flex-col md:flex-row border-b border-zinc-200 text-sm">
+          <div
+            class="flex w-full md:w-1/2 border-b md:border-b-0 border-zinc-200 md:border-r"
+          >
+            <div
+              class="bg-zinc-100 w-[30%] flex items-center justify-center py-3 font-medium text-zinc-700"
+            >
+              차량번호
+            </div>
+            <div
+              class="bg-white w-[70%] flex items-center px-4 py-3 text-zinc-600"
+            >
+              06무 8811
+            </div>
+          </div>
+          <div class="flex w-full md:w-1/2">
+            <div
+              class="bg-zinc-100 w-[30%] flex items-center justify-center py-3 font-medium text-zinc-700"
+            >
+              제조사
+            </div>
+            <div
+              class="bg-white w-[70%] flex items-center px-4 py-3 text-zinc-600"
+            >
+              현대자동차
+            </div>
+          </div>
+        </div>
+        <!-- Row 2 -->
+        <div class="flex flex-col md:flex-row border-b border-zinc-200 text-sm">
+          <div
+            class="flex w-full md:w-1/2 border-b md:border-b-0 border-zinc-200 md:border-r"
+          >
+            <div
+              class="bg-zinc-100 w-[30%] flex items-center justify-center py-3 font-medium text-zinc-700"
+            >
+              차량명
+            </div>
+            <div
+              class="bg-white w-[70%] flex items-center px-4 py-3 text-zinc-600"
+            >
+              NEW 그랜저XG
+            </div>
+          </div>
+          <div class="flex w-full md:w-1/2">
+            <div
+              class="bg-zinc-100 w-[30%] flex items-center justify-center py-3 font-medium text-zinc-700"
+            >
+              연료
+            </div>
+            <div
+              class="bg-white w-[70%] flex items-center px-4 py-3 text-zinc-600"
+            >
+              휘발유
+            </div>
+          </div>
+        </div>
+        <!-- Row 3 -->
+        <div class="flex flex-col md:flex-row border-b border-zinc-200 text-sm">
+          <div
+            class="flex w-full md:w-1/2 border-b md:border-b-0 border-zinc-200 md:border-r"
+          >
+            <div
+              class="bg-zinc-100 w-[30%] flex items-center justify-center py-3 font-medium text-zinc-700"
+            >
+              모델연도
+            </div>
+            <div
+              class="bg-white w-[70%] flex items-center px-4 py-3 text-zinc-600"
+            >
+              2004
+            </div>
+          </div>
+          <div class="flex w-full md:w-1/2">
+            <div
+              class="bg-zinc-100 w-[30%] flex items-center justify-center py-3 font-medium text-zinc-700 text-center"
+            >
+              주행거리<br />(km)
+            </div>
+            <div
+              class="bg-white w-[70%] flex items-center px-4 py-3 text-zinc-600"
+            >
+              95,717
+            </div>
+          </div>
+        </div>
+        <!-- Row 4 -->
+        <div class="flex flex-col md:flex-row border-b border-zinc-200 text-sm">
+          <div
+            class="flex w-full md:w-1/2 border-b md:border-b-0 border-zinc-200 md:border-r"
+          >
+            <div
+              class="bg-zinc-100 w-[30%] flex items-center justify-center py-3 font-medium text-zinc-700"
+            >
+              변속기
+            </div>
+            <div
+              class="bg-white w-[70%] flex items-center px-4 py-3 text-zinc-600"
+            >
+              자동
+            </div>
+          </div>
+          <div class="flex w-full md:w-1/2">
+            <div
+              class="bg-zinc-100 w-[30%] flex items-center justify-center py-3 font-medium text-zinc-700"
+            >
+              배기량(cc)
+            </div>
+            <div
+              class="bg-white w-[70%] flex items-center px-4 py-3 text-zinc-600"
+            >
+              2,000
+            </div>
+          </div>
+        </div>
+        <!-- Row 5 -->
+        <div class="flex flex-col md:flex-row border-b border-zinc-200 text-sm">
+          <div
+            class="flex w-full md:w-1/2 border-b md:border-b-0 border-zinc-200 md:border-r"
+          >
+            <div
+              class="bg-zinc-100 w-[30%] flex items-center justify-center py-3 font-medium text-zinc-700"
+            >
+              원동기형식
+            </div>
+            <div
+              class="bg-white w-[70%] flex items-center px-4 py-3 text-zinc-600"
+            >
+              G6BV
+            </div>
+          </div>
+          <div class="flex w-full md:w-1/2">
+            <div
+              class="bg-zinc-100 w-[30%] flex items-center justify-center py-3 font-medium text-zinc-700"
+            >
+              구동방식
+            </div>
+            <div
+              class="bg-white w-[70%] flex items-center px-4 py-3 text-zinc-600"
+            >
+              2WD
+            </div>
+          </div>
+        </div>
+        <!-- Row 6 -->
+        <div class="flex flex-col md:flex-row border-b border-zinc-200 text-sm">
+          <div
+            class="flex w-full md:w-1/2 border-b md:border-b-0 border-zinc-200 md:border-r"
+          >
+            <div
+              class="bg-zinc-100 w-[30%] flex items-center justify-center py-3 font-medium text-zinc-700"
+            >
+              색상
+            </div>
+            <div
+              class="bg-white w-[70%] flex items-center px-4 py-3 text-zinc-600"
+            >
+              흰색
+            </div>
+          </div>
+          <div class="flex w-full md:w-1/2">
+            <div
+              class="bg-zinc-100 w-[30%] flex items-center justify-center py-3 font-medium text-zinc-700"
+            >
+              차대번호
+            </div>
+            <div
+              class="bg-white w-[70%] flex items-center px-4 py-3 text-zinc-600"
+            >
+              KMHFT41CP4A303245
+            </div>
+          </div>
+        </div>
+        <!-- Row 7 -->
+        <div class="flex flex-col md:flex-row border-b border-zinc-200 text-sm">
+          <div
+            class="flex w-full md:w-1/2 border-b md:border-b-0 border-zinc-200"
+          >
+            <div
+              class="bg-zinc-100 w-[30%] flex items-center justify-center py-3 font-medium text-zinc-700"
+            >
+              타입
+            </div>
+            <div
+              class="bg-white w-[70%] flex items-center px-4 py-3 text-zinc-600"
+            >
+              승용
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 악세서리 및 옵션 -->
+      <div class="mt-8">
+        <h2 class="text-xl md:text-2xl font-bold text-[#A10076] mb-4">
+          악세서리 및 옵션
+        </h2>
+
+        <div class="border-t-2 border-zinc-200">
+          <div
+            class="grid grid-cols-1 md:grid-cols-3 text-sm text-zinc-700 font-medium bg-white"
+          >
+            <!-- Row 1 -->
+            <div
+              class="flex items-center justify-between p-3 border-b border-zinc-200 md:border-r md:[&:nth-child(3n)]:border-r-0"
+            >
+              <span>파워핸들</span>
+              <input type="checkbox" checked class="w-5 h-5 accent-[#A10076]" />
+            </div>
+            <div
+              class="flex items-center justify-between p-3 border-b border-zinc-200 md:border-r md:[&:nth-child(3n)]:border-r-0"
+            >
+              <span>핸들리모컨</span>
+              <input type="checkbox" checked class="w-5 h-5 accent-[#A10076]" />
+            </div>
+            <div
+              class="flex items-center justify-between p-3 border-b border-zinc-200 md:border-r md:[&:nth-child(3n)]:border-r-0"
+            >
+              <span>크루즈컨트롤</span>
+              <input type="checkbox" checked class="w-5 h-5 accent-[#A10076]" />
+            </div>
+
+            <!-- Row 2 -->
+            <div
+              class="flex items-center justify-between p-3 border-b border-zinc-200 md:border-r md:[&:nth-child(3n)]:border-r-0"
+            >
+              <span>패들시프트</span>
+              <input type="checkbox" checked class="w-5 h-5 accent-[#A10076]" />
+            </div>
+            <div
+              class="flex items-center justify-between p-3 border-b border-zinc-200 md:border-r md:[&:nth-child(3n)]:border-r-0"
+            >
+              <span>전동틸팅핸들</span>
+              <input type="checkbox" checked class="w-5 h-5 accent-[#A10076]" />
+            </div>
+            <div
+              class="flex items-center justify-between p-3 border-b border-zinc-200 md:border-r md:[&:nth-child(3n)]:border-r-0"
+            >
+              <span>히팅핸들</span>
+              <input type="checkbox" checked class="w-5 h-5 accent-[#A10076]" />
+            </div>
+
+            <!-- Row 3 -->
+            <div
+              class="flex items-center justify-between p-3 border-b border-zinc-200 md:border-r md:[&:nth-child(3n)]:border-r-0"
+            >
+              <span>헤드업디스플레이</span>
+              <input type="checkbox" checked class="w-5 h-5 accent-[#A10076]" />
+            </div>
+            <div
+              class="flex items-center justify-between p-3 border-b border-zinc-200 md:border-r md:[&:nth-child(3n)]:border-r-0"
+            >
+              <span>블랙박스</span>
+              <input type="checkbox" checked class="w-5 h-5 accent-[#A10076]" />
+            </div>
+            <div
+              class="flex items-center justify-between p-3 border-b border-zinc-200 md:border-r md:[&:nth-child(3n)]:border-r-0"
+            >
+              <span>하이패스룸미러</span>
+              <input type="checkbox" checked class="w-5 h-5 accent-[#A10076]" />
+            </div>
+
+            <!-- Row 4 -->
+            <div
+              class="flex items-center justify-between p-3 border-b border-zinc-200 md:border-r md:[&:nth-child(3n)]:border-r-0"
+            >
+              <span>DMB</span>
+              <input type="checkbox" checked class="w-5 h-5 accent-[#A10076]" />
+            </div>
+            <div
+              class="flex items-center justify-between p-3 border-b border-zinc-200 md:border-r md:[&:nth-child(3n)]:border-r-0"
+            >
+              <span>네비게이션</span>
+              <input type="checkbox" checked class="w-5 h-5 accent-[#A10076]" />
+            </div>
+            <div
+              class="flex items-center justify-between p-3 border-b border-zinc-200 md:border-r md:[&:nth-child(3n)]:border-r-0"
+            >
+              <span>전방카메라</span>
+              <input type="checkbox" checked class="w-5 h-5 accent-[#A10076]" />
+            </div>
+
+            <!-- Row 5 -->
+            <div
+              class="flex items-center justify-between p-3 border-b border-zinc-200 md:border-r md:[&:nth-child(3n)]:border-r-0"
+            >
+              <span>전방측면카메라</span>
+              <input type="checkbox" checked class="w-5 h-5 accent-[#A10076]" />
+            </div>
+            <div
+              class="flex items-center justify-between p-3 border-b border-zinc-200 md:border-r md:[&:nth-child(3n)]:border-r-0"
+            >
+              <span>측면카메라</span>
+              <input type="checkbox" checked class="w-5 h-5 accent-[#A10076]" />
+            </div>
+            <div
+              class="flex items-center justify-between p-3 border-b border-zinc-200 md:border-r md:[&:nth-child(3n)]:border-r-0"
+            >
+              <span>후방카메라</span>
+              <input type="checkbox" checked class="w-5 h-5 accent-[#A10076]" />
+            </div>
+
+            <!-- Row 6 -->
+            <div
+              class="flex items-center justify-between p-3 border-b border-zinc-200 md:border-r md:[&:nth-child(3n)]:border-r-0"
+            >
+              <span>어라운드뷰</span>
+              <input type="checkbox" checked class="w-5 h-5 accent-[#A10076]" />
+            </div>
+            <div
+              class="flex items-center justify-between p-3 border-b border-zinc-200 md:border-r md:[&:nth-child(3n)]:border-r-0"
+            >
+              <span>전방감지기</span>
+              <input type="checkbox" checked class="w-5 h-5 accent-[#A10076]" />
+            </div>
+            <div
+              class="flex items-center justify-between p-3 border-b border-zinc-200 md:border-r md:[&:nth-child(3n)]:border-r-0"
+            >
+              <span>후방감지기</span>
+              <input type="checkbox" checked class="w-5 h-5 accent-[#A10076]" />
+            </div>
+
+            <!-- Row 7 -->
+            <div
+              class="flex items-center justify-between p-3 border-b border-zinc-200 md:border-r md:[&:nth-child(3n)]:border-r-0"
+            >
+              <span>에어컨</span>
+              <input type="checkbox" checked class="w-5 h-5 accent-[#A10076]" />
+            </div>
+            <div
+              class="flex items-center justify-between p-3 border-b border-zinc-200 md:border-r md:[&:nth-child(3n)]:border-r-0"
+            >
+              <span>CD플레이어</span>
+              <input type="checkbox" checked class="w-5 h-5 accent-[#A10076]" />
+            </div>
+            <div
+              class="flex items-center justify-between p-3 border-b border-zinc-200 md:border-r md:[&:nth-child(3n)]:border-r-0"
+            >
+              <span>메모리시트</span>
+              <input type="checkbox" checked class="w-5 h-5 accent-[#A10076]" />
+            </div>
+
+            <!-- Row 8 -->
+            <div
+              class="flex items-center justify-between p-3 border-b border-zinc-200 md:border-r md:[&:nth-child(3n)]:border-r-0"
+            >
+              <span>열선시트</span>
+              <input type="checkbox" checked class="w-5 h-5 accent-[#A10076]" />
+            </div>
+            <div
+              class="flex items-center justify-between p-3 border-b border-zinc-200 md:border-r md:[&:nth-child(3n)]:border-r-0"
+            >
+              <span>송풍시트</span>
+              <input type="checkbox" checked class="w-5 h-5 accent-[#A10076]" />
+            </div>
+            <div
+              class="flex items-center justify-between p-3 border-b border-zinc-200 md:border-r md:[&:nth-child(3n)]:border-r-0"
+            >
+              <span>전동시트</span>
+              <input type="checkbox" checked class="w-5 h-5 accent-[#A10076]" />
+            </div>
+
+            <!-- Row 9 -->
+            <div
+              class="flex items-center justify-between p-3 border-b border-zinc-200 md:border-r md:[&:nth-child(3n)]:border-r-0"
+            >
+              <span>파워윈도우</span>
+              <input type="checkbox" checked class="w-5 h-5 accent-[#A10076]" />
+            </div>
+            <div
+              class="flex items-center justify-between p-3 border-b border-zinc-200 md:border-r md:[&:nth-child(3n)]:border-r-0"
+            >
+              <span>전동접이식사이드미러</span>
+              <input type="checkbox" checked class="w-5 h-5 accent-[#A10076]" />
+            </div>
+            <div
+              class="flex items-center justify-between p-3 border-b border-zinc-200 md:border-r md:[&:nth-child(3n)]:border-r-0"
+            >
+              <span>전동사이드미러</span>
+              <input type="checkbox" checked class="w-5 h-5 accent-[#A10076]" />
+            </div>
+
+            <!-- Row 10 -->
+            <div
+              class="flex items-center justify-between p-3 border-b border-zinc-200 md:border-r md:[&:nth-child(3n)]:border-r-0"
+            >
+              <span>자동썬루프</span>
+              <input type="checkbox" checked class="w-5 h-5 accent-[#A10076]" />
+            </div>
+            <div
+              class="flex items-center justify-between p-3 border-b border-zinc-200 md:border-r md:[&:nth-child(3n)]:border-r-0"
+            >
+              <span>운전석에어백</span>
+              <input type="checkbox" checked class="w-5 h-5 accent-[#A10076]" />
+            </div>
+            <div
+              class="flex items-center justify-between p-3 border-b border-zinc-200 md:border-r md:[&:nth-child(3n)]:border-r-0"
+            >
+              <span>조수석에어백</span>
+              <input type="checkbox" checked class="w-5 h-5 accent-[#A10076]" />
+            </div>
+
+            <!-- Row 11 -->
+            <div
+              class="flex items-center justify-between p-3 border-b border-zinc-200 md:border-r md:[&:nth-child(3n)]:border-r-0"
+            >
+              <span>측면에어백</span>
+              <input type="checkbox" checked class="w-5 h-5 accent-[#A10076]" />
+            </div>
+            <div
+              class="flex items-center justify-between p-3 border-b border-zinc-200 md:border-r md:[&:nth-child(3n)]:border-r-0"
+            >
+              <span>커튼에어백</span>
+              <input type="checkbox" checked class="w-5 h-5 accent-[#A10076]" />
+            </div>
+            <div
+              class="flex items-center justify-between p-3 border-b border-zinc-200 md:border-r md:[&:nth-child(3n)]:border-r-0"
+            >
+              <span>무선도어락</span>
+              <input type="checkbox" checked class="w-5 h-5 accent-[#A10076]" />
+            </div>
+
+            <!-- Row 12 -->
+            <div
+              class="flex items-center justify-between p-3 border-b border-zinc-200 md:border-r md:[&:nth-child(3n)]:border-r-0"
+            >
+              <span>스마트키</span>
+              <input type="checkbox" checked class="w-5 h-5 accent-[#A10076]" />
+            </div>
+            <div
+              class="flex items-center justify-between p-3 border-b border-zinc-200 md:border-r md:[&:nth-child(3n)]:border-r-0"
+            >
+              <span>버튼시동</span>
+              <input type="checkbox" checked class="w-5 h-5 accent-[#A10076]" />
+            </div>
+            <div
+              class="flex items-center justify-between p-3 border-b border-zinc-200 md:border-r md:[&:nth-child(3n)]:border-r-0"
+            >
+              <span>사각지대경고장치</span>
+              <input type="checkbox" checked class="w-5 h-5 accent-[#A10076]" />
+            </div>
+
+            <!-- Row 13 -->
+            <div
+              class="flex items-center justify-between p-3 border-b border-zinc-200 md:border-r md:[&:nth-child(3n)]:border-r-0"
+            >
+              <span>차선이탈경고장치</span>
+              <input type="checkbox" checked class="w-5 h-5 accent-[#A10076]" />
+            </div>
+            <div
+              class="flex items-center justify-between p-3 border-b border-zinc-200 md:border-r md:[&:nth-child(3n)]:border-r-0"
+            >
+              <span>전방충돌경고장치</span>
+              <input type="checkbox" checked class="w-5 h-5 accent-[#A10076]" />
+            </div>
+            <div
+              class="flex items-center justify-between p-3 border-b border-zinc-200 md:border-r md:[&:nth-child(3n)]:border-r-0"
+            >
+              <span>전자식파킹브레이크</span>
+              <input type="checkbox" checked class="w-5 h-5 accent-[#A10076]" />
+            </div>
+
+            <!-- Row 14 -->
+            <div
+              class="flex items-center justify-between p-3 border-b border-zinc-200 md:border-r md:[&:nth-child(3n)]:border-r-0"
+            >
+              <span>ABS</span>
+              <input type="checkbox" checked class="w-5 h-5 accent-[#A10076]" />
+            </div>
+            <div
+              class="flex items-center justify-between p-3 border-b border-zinc-200 md:border-r md:[&:nth-child(3n)]:border-r-0"
+            >
+              <span>알루미늄휠</span>
+              <input type="checkbox" checked class="w-5 h-5 accent-[#A10076]" />
+            </div>
+            <div
+              class="flex items-center justify-between p-3 border-b border-zinc-200 md:border-r md:[&:nth-child(3n)]:border-r-0"
+            >
+              <span>스페어타이어</span>
+              <input type="checkbox" checked class="w-5 h-5 accent-[#A10076]" />
+            </div>
+          </div>
+
+          <!-- 기타옵션 -->
+          <div
+            class="p-4 border-b border-zinc-200 text-zinc-700 text-sm font-medium"
+          >
+            기타옵션 :
+          </div>
+        </div>
+      </div>
+
+      <!-- 차량상태정보 -->
+      <div class="mt-8">
+        <h2 class="text-xl md:text-2xl font-bold text-[#A10076] mb-4">
+          차량상태정보
+          <span class="text-sm md:text-base font-normal text-[#D65DB1]"
+            >(비교단위 : 상, 중, 하)</span
+          >
+        </h2>
+
+        <div class="border-t-2 border-zinc-200 text-sm text-zinc-700">
+          <!-- 기본점검 -->
+          <div class="bg-zinc-100 px-4 py-2 font-bold border-b border-zinc-200">
+            기본점검
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 bg-white">
+            <div
+              class="flex justify-between items-center p-3 border-b border-zinc-200 md:border-r md:[&:nth-child(3n)]:border-r-0"
+            >
+              <span class="font-medium">BATTERY 비중전압</span>
+              <span class="text-[#A10076] font-bold">중</span>
+            </div>
+            <div
+              class="flex justify-between items-center p-3 border-b border-zinc-200 md:border-r md:[&:nth-child(3n)]:border-r-0"
+            >
+              <span class="font-medium">엔진 오일량 색도</span>
+              <span class="text-[#A10076] font-bold">중</span>
+            </div>
+            <div
+              class="flex justify-between items-center p-3 border-b border-zinc-200 md:border-r md:[&:nth-child(3n)]:border-r-0"
+            >
+              <span class="font-medium">부동액량 비중</span>
+              <span class="text-[#A10076] font-bold">중</span>
+            </div>
+            <div
+              class="flex justify-between items-center p-3 border-b border-zinc-200 md:border-r md:[&:nth-child(3n)]:border-r-0"
+            >
+              <span class="font-medium">파워 오일량 색도</span>
+              <span class="text-[#A10076] font-bold">중</span>
+            </div>
+            <div
+              class="flex justify-between items-center p-3 border-b border-zinc-200 md:border-r md:[&:nth-child(3n)]:border-r-0"
+            >
+              <span class="font-medium">브레이크량 색도</span>
+              <span class="text-[#A10076] font-bold">중</span>
+            </div>
+            <div
+              class="flex justify-between items-center p-3 border-b border-zinc-200 md:border-r md:[&:nth-child(3n)]:border-r-0"
+            >
+              <span class="font-medium">미션 오일량 색도</span>
+              <span class="text-[#A10076] font-bold">중</span>
+            </div>
+          </div>
+
+          <!-- 엔진룸 -->
+          <div class="bg-zinc-100 px-4 py-2 font-bold border-b border-zinc-200">
+            엔진룸
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 bg-white">
+            <div
+              class="flex justify-between items-center p-3 border-b border-zinc-200 md:border-r md:[&:nth-child(3n)]:border-r-0"
+            >
+              <span class="font-medium">Oil/Water 누유 (누수)</span>
+              <span class="text-[#A10076] font-bold">중</span>
+            </div>
+            <div
+              class="flex justify-between items-center p-3 border-b border-zinc-200 md:border-r md:[&:nth-child(3n)]:border-r-0"
+            >
+              <span class="font-medium">각종 벨트 장력</span>
+              <span class="text-[#A10076] font-bold">중</span>
+            </div>
+            <div
+              class="flex justify-between items-center p-3 border-b border-zinc-200 md:border-r md:[&:nth-child(3n)]:border-r-0"
+            >
+              <span class="font-medium">엔진룸 청결도</span>
+              <span class="text-[#A10076] font-bold">중</span>
+            </div>
+            <div
+              class="flex justify-between items-center p-3 border-b border-zinc-200 md:border-r md:[&:nth-child(3n)]:border-r-0"
+            >
+              <span class="font-medium">계기판게이지작동상태</span>
+              <span class="text-[#A10076] font-bold">중</span>
+            </div>
+            <!-- Empty cells for alignment if needed, or leave blank effectively in grid -->
+            <div
+              class="hidden md:block border-b border-zinc-200 md:border-r md:[&:nth-child(3n)]:border-r-0"
+            ></div>
+            <div
+              class="hidden md:block border-b border-zinc-200 md:border-r md:[&:nth-child(3n)]:border-r-0"
+            ></div>
+          </div>
+
+          <!-- 동력전달장치 -->
+          <div class="bg-zinc-100 px-4 py-2 font-bold border-b border-zinc-200">
+            동력전달장치
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 bg-white">
+            <div
+              class="flex justify-between items-center p-3 border-b border-zinc-200 md:border-r md:[&:nth-child(3n)]:border-r-0"
+            >
+              <span class="font-medium">변속 성능</span>
+              <span class="text-[#A10076] font-bold">중</span>
+            </div>
+            <div
+              class="flex justify-between items-center p-3 border-b border-zinc-200 md:border-r md:[&:nth-child(3n)]:border-r-0"
+            >
+              <span class="font-medium">고도한마모로인한이상음</span>
+              <span class="text-[#A10076] font-bold">중</span>
+            </div>
+            <div
+              class="hidden md:block border-b border-zinc-200 md:border-r md:[&:nth-child(3n)]:border-r-0"
+            ></div>
+          </div>
+
+          <!-- 브레이크 -->
+          <div class="bg-zinc-100 px-4 py-2 font-bold border-b border-zinc-200">
+            브레이크
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 bg-white">
+            <div
+              class="flex justify-between items-center p-3 border-b border-zinc-200 md:border-r md:[&:nth-child(3n)]:border-r-0"
+            >
+              <span class="font-medium">제동 성능</span>
+              <span class="text-[#A10076] font-bold">중</span>
+            </div>
+            <div
+              class="flex justify-between items-center p-3 border-b border-zinc-200 md:border-r md:[&:nth-child(3n)]:border-r-0"
+            >
+              <span class="font-medium">브레이크 소울 & 떨림</span>
+              <span class="text-[#A10076] font-bold">중</span>
+            </div>
+            <div
+              class="flex justify-between items-center p-3 border-b border-zinc-200 md:border-r md:[&:nth-child(3n)]:border-r-0"
+            >
+              <span class="font-medium">주차브레이크 성능</span>
+              <span class="text-[#A10076] font-bold">중</span>
+            </div>
+          </div>
+
+          <!-- 엔진 -->
+          <div class="bg-zinc-100 px-4 py-2 font-bold border-b border-zinc-200">
+            엔진
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 bg-white">
+            <div
+              class="flex justify-between items-center p-3 border-b border-zinc-200 md:border-r md:[&:nth-child(3n)]:border-r-0"
+            >
+              <span class="font-medium">초기 시동성</span>
+              <span class="text-[#A10076] font-bold">중</span>
+            </div>
+            <div
+              class="flex justify-between items-center p-3 border-b border-zinc-200 md:border-r md:[&:nth-child(3n)]:border-r-0"
+            >
+              <span class="font-medium">공전 RPM 안전성</span>
+              <span class="text-[#A10076] font-bold">중</span>
+            </div>
+            <div
+              class="flex justify-between items-center p-3 border-b border-zinc-200 md:border-r md:[&:nth-child(3n)]:border-r-0"
+            >
+              <span class="font-medium">배출가스 색</span>
+              <span class="text-[#A10076] font-bold">중</span>
+            </div>
+          </div>
+
+          <!-- 옵션 장치 성능 -->
+          <div class="bg-zinc-100 px-4 py-2 font-bold border-b border-zinc-200">
+            옵션 장치 성능
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 bg-white">
+            <div
+              class="flex justify-between items-center p-3 border-b border-zinc-200 md:border-r md:[&:nth-child(3n)]:border-r-0"
+            >
+              <span class="font-medium">썬루프</span>
+              <span class="text-[#A10076] font-bold">중</span>
+            </div>
+            <div
+              class="flex justify-between items-center p-3 border-b border-zinc-200 md:border-r md:[&:nth-child(3n)]:border-r-0"
+            >
+              <span class="font-medium">파워윈도우</span>
+              <span class="text-[#A10076] font-bold">중</span>
+            </div>
+            <div
+              class="flex justify-between items-center p-3 border-b border-zinc-200 md:border-r md:[&:nth-child(3n)]:border-r-0"
+            >
+              <span class="font-medium">전동사이드미러</span>
+              <span class="text-[#A10076] font-bold">중</span>
+            </div>
+            <div
+              class="flex justify-between items-center p-3 border-b border-zinc-200 md:border-r md:[&:nth-child(3n)]:border-r-0"
+            >
+              <span class="font-medium">자동 도어록</span>
+              <span class="text-[#A10076] font-bold">중</span>
+            </div>
+            <div
+              class="flex justify-between items-center p-3 border-b border-zinc-200 md:border-r md:[&:nth-child(3n)]:border-r-0"
+            >
+              <span class="font-medium">전동 시트</span>
+              <span class="text-[#A10076] font-bold">중</span>
+            </div>
+            <div
+              class="flex justify-between items-center p-3 border-b border-zinc-200 md:border-r md:[&:nth-child(3n)]:border-r-0"
+            >
+              <span class="font-medium">오디오 SYSTEM</span>
+              <span class="text-[#A10076] font-bold">중</span>
+            </div>
+          </div>
+
+          <!-- 조향 장치 -->
+          <div class="bg-zinc-100 px-4 py-2 font-bold border-b border-zinc-200">
+            조향 장치
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 bg-white">
+            <div
+              class="flex justify-between items-center p-3 border-b border-zinc-200 md:border-r md:[&:nth-child(3n)]:border-r-0"
+            >
+              <span class="font-medium">조향력</span>
+              <span class="text-[#A10076] font-bold">중</span>
+            </div>
+            <div
+              class="flex justify-between items-center p-3 border-b border-zinc-200 md:border-r md:[&:nth-child(3n)]:border-r-0"
+            >
+              <span class="font-medium">차량 직진성</span>
+              <span class="text-[#A10076] font-bold">중</span>
+            </div>
+            <div
+              class="hidden md:block border-b border-zinc-200 md:border-r md:[&:nth-child(3n)]:border-r-0"
+            ></div>
+          </div>
+
+          <!-- 외장 램프 -->
+          <div class="bg-zinc-100 px-4 py-2 font-bold border-b border-zinc-200">
+            외장 램프
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 bg-white">
+            <div
+              class="flex justify-between items-center p-3 border-b border-zinc-200 md:border-r md:[&:nth-child(3n)]:border-r-0"
+            >
+              <span class="font-medium">헤드 램프</span>
+              <span class="text-[#A10076] font-bold">중</span>
+            </div>
+            <div
+              class="flex justify-between items-center p-3 border-b border-zinc-200 md:border-r md:[&:nth-child(3n)]:border-r-0"
+            >
+              <span class="font-medium">시그널 램프</span>
+              <span class="text-[#A10076] font-bold">중</span>
+            </div>
+            <div
+              class="flex justify-between items-center p-3 border-b border-zinc-200 md:border-r md:[&:nth-child(3n)]:border-r-0"
+            >
+              <span class="font-medium">콤비네이션 램프</span>
+              <span class="text-[#A10076] font-bold">중</span>
+            </div>
+            <div
+              class="flex justify-between items-center p-3 border-b border-zinc-200 md:border-r md:[&:nth-child(3n)]:border-r-0"
+            >
+              <span class="font-medium">안내등</span>
+              <span class="text-[#A10076] font-bold">중</span>
+            </div>
+            <div
+              class="hidden md:block border-b border-zinc-200 md:border-r md:[&:nth-child(3n)]:border-r-0"
+            ></div>
+            <div
+              class="hidden md:block border-b border-zinc-200 md:border-r md:[&:nth-child(3n)]:border-r-0"
+            ></div>
+          </div>
+
+          <!-- 하부 -->
+          <div class="bg-zinc-100 px-4 py-2 font-bold border-b border-zinc-200">
+            하부
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 bg-white">
+            <div
+              class="flex justify-between items-center p-3 border-b border-zinc-200 md:border-r md:[&:nth-child(3n)]:border-r-0"
+            >
+              <span class="font-medium">타이밍상태</span>
+              <span class="text-[#A10076] font-bold">중</span>
+            </div>
+            <div
+              class="flex justify-between items-center p-3 border-b border-zinc-200 md:border-r md:[&:nth-child(3n)]:border-r-0"
+            >
+              <span class="font-medium">하체 소음</span>
+              <span class="text-[#A10076] font-bold">중</span>
+            </div>
+            <div
+              class="hidden md:block border-b border-zinc-200 md:border-r md:[&:nth-child(3n)]:border-r-0"
+            ></div>
+          </div>
+
+          <!-- 에어컨, 히터 & 환기장치 -->
+          <div class="bg-zinc-100 px-4 py-2 font-bold border-b border-zinc-200">
+            에어컨, 히터 & 환기장치
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 bg-white">
+            <div
+              class="flex justify-between items-center p-3 border-b border-zinc-200 md:border-r md:[&:nth-child(3n)]:border-r-0"
+            >
+              <span class="font-medium">에어컨 성능</span>
+              <span class="text-[#A10076] font-bold">중</span>
+            </div>
+            <div
+              class="flex justify-between items-center p-3 border-b border-zinc-200 md:border-r md:[&:nth-child(3n)]:border-r-0"
+            >
+              <span class="font-medium">히터 성능</span>
+              <span class="text-[#A10076] font-bold">중</span>
+            </div>
+            <div
+              class="flex justify-between items-center p-3 border-b border-zinc-200 md:border-r md:[&:nth-child(3n)]:border-r-0"
+            >
+              <span class="font-medium">콤프래셔/송풍소음</span>
+              <span class="text-[#A10076] font-bold">중</span>
+            </div>
+          </div>
+
+          <!-- 특이사항 -->
+          <div class="bg-zinc-100 px-4 py-2 font-bold border-b border-zinc-200">
+            특이사항
+          </div>
+          <div class="p-4 bg-white border-b border-zinc-200 text-[#A10076]">
+            최초등록일(2003-08-11) 차량내 소화기 없음 (낙찰자 설치 의무있음).
+            제작년도 :2003년
+          </div>
+
+          <!-- 외장, 내장 종합 소견 -->
+          <div class="bg-zinc-100 px-4 py-2 font-bold border-b border-zinc-200">
+            외장, 내장 종합 소견
+          </div>
+          <div class="p-4 bg-white border-b border-zinc-200 text-[#A10076]">
+            부조하였음/액정모니터불량/전구체크
+            등점등/전면유리미세돌자국있음/부문판금도장 굴곡생활흠집 있음
+          </div>
+
+          <!-- 외장교환, 수리요망부위 -->
+          <div class="bg-zinc-100 px-4 py-2 font-bold border-b border-zinc-200">
+            외장교환, 수리요망부위
+          </div>
+          <div class="p-4 bg-white border-b border-zinc-200 text-[#A10076]">
+            오일누유/전조등백화현상있음/라디에이터서포트교환/사이드 필러
+            교환/이음소리있음
+          </div>
+        </div>
+      </div>
+
+      <!-- 부위별 차량상태 -->
+      <div class="mt-8">
+        <div class="border-t-2 border-zinc-200">
+          <!-- Title -->
+          <div
+            class="bg-zinc-100 px-4 py-3 font-bold border-b border-zinc-200 text-sm text-zinc-800"
+          >
+            부위별 차량상태
+          </div>
+
+          <div class="flex flex-col md:flex-row border-b border-zinc-200">
+            <!-- Left Table -->
+            <div class="w-full md:w-[65%] text-sm flex flex-col">
+              <!-- Row 1 -->
+              <div class="flex border-b border-zinc-200 min-h-fit">
+                <div
+                  class="w-[30%] bg-zinc-100 flex items-center justify-center py-3 font-medium text-zinc-700 border-r border-zinc-200"
+                >
+                  교환경력 부분
+                </div>
+                <div
+                  class="w-[70%] bg-white px-4 py-3 text-zinc-600 font-medium"
+                >
+                  A C F G I K M O Q
+                </div>
+              </div>
+              <!-- Row 2 -->
+              <div class="flex border-b border-zinc-200 min-h-fit">
+                <div
+                  class="w-[30%] bg-zinc-100 flex items-center justify-center py-3 font-medium text-zinc-700 border-r border-zinc-200"
+                >
+                  수리경력 부분
+                </div>
+                <div
+                  class="w-[70%] bg-white px-4 py-3 text-zinc-600 font-medium"
+                >
+                  D H
+                </div>
+              </div>
+              <!-- Row 3 -->
+              <div class="flex border-b border-zinc-200 min-h-fit">
+                <div
+                  class="w-[30%] bg-zinc-100 flex items-center justify-center py-3 font-medium text-zinc-700 border-r border-zinc-200"
+                >
+                  도색경력 부분
+                </div>
+                <div
+                  class="w-[70%] bg-white px-4 py-3 text-zinc-600 font-medium h-[44px]"
+                ></div>
+              </div>
+              <!-- Row 4 -->
+              <div class="flex border-b border-zinc-200 min-h-fit">
+                <div
+                  class="w-[30%] bg-zinc-100 flex items-center justify-center py-3 font-medium text-zinc-700 border-r border-zinc-200"
+                >
+                  굴곡발생 부분
+                </div>
+                <div
+                  class="w-[70%] bg-white px-4 py-3 text-zinc-600 font-medium"
+                >
+                  A C E I Q
+                </div>
+              </div>
+              <!-- Row 5 -->
+              <div class="flex border-b border-zinc-200 min-h-fit">
+                <div
+                  class="w-[30%] bg-zinc-100 flex items-center justify-center py-3 font-medium text-zinc-700 border-r border-zinc-200"
+                >
+                  흠집발생 부분
+                </div>
+                <div
+                  class="w-[70%] bg-white px-4 py-3 text-zinc-600 font-medium"
+                >
+                  H J Q
+                </div>
+              </div>
+              <!-- Row 6 (Notice) -->
+              <div class="flex h-full flex-grow min-h-fit">
+                <div
+                  class="w-[30%] bg-zinc-100 flex items-center justify-center py-3 font-medium text-zinc-700 border-r border-zinc-200"
+                >
+                  제조사
+                </div>
+                <div
+                  class="w-[70%] bg-zinc-50 px-4 py-3 text-[#A10076] font-medium text-xs leading-relaxed flex items-center"
+                >
+                  해당 점검서는 참고사항입니다. 차량상태 및 사고유무는 입찰자가
+                  반드시 현물을 직접확인후 입찰하시기 바랍니다.(클레임 불가)
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Image -->
+            <div
+              class="w-full md:w-[35%] flex items-center justify-center p-6 md:border-l border-zinc-200 bg-white"
+            >
+              <img
+                src=""
+                alt="차량 전개도"
+                class="max-w-full h-auto object-contain min-h-[200px]"
+              />
+            </div>
+          </div>
+
+          <!-- Key Map -->
+          <div class="p-6 border-b border-zinc-200">
+            <div
+              class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 text-sm text-zinc-700 font-bold"
+            >
+              <div class="border-b border-zinc-200 py-4">A [뒷범퍼]</div>
+              <div class="border-b border-zinc-200 py-4">C [뒷휀다(우)]</div>
+              <div class="border-b border-zinc-200 py-4">D [트렁크]</div>
+              <div class="border-b border-zinc-200 py-4">E [뒷휀다(좌)]</div>
+              <div class="border-b border-zinc-200 py-4">F [뒷도어(우)]</div>
+
+              <div class="border-b border-zinc-200 py-4">G [루프]</div>
+              <div class="border-b border-zinc-200 py-4">H [뒷도어(좌)]</div>
+              <div class="border-b border-zinc-200 py-4">I [앞도어(우)]</div>
+              <div class="border-b border-zinc-200 py-4">J [앞도어(좌)]</div>
+              <div class="border-b border-zinc-200 py-4">K [앞휀다(우)]</div>
+
+              <div class="border-b border-zinc-200 py-4">M [본넷트]</div>
+              <div class="border-b border-zinc-200 py-4">O [앞휀다(좌)]</div>
+              <div class="border-b border-zinc-200 py-4">Q [앞범퍼]</div>
+              <div class="border-b border-zinc-200 py-4"></div>
+              <div class="border-b border-zinc-200 py-4"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Notice -->
+        <div class="mt-6 space-y-2 text-xs md:text-sm px-2">
+          <div class="flex gap-2 items-start">
+            <span class="text-[#A10076] font-bold mt-1">•</span>
+            <div class="leading-relaxed text-zinc-600">
+              본 자료는 입찰에 참여하는 분들을 위해 화성시청과(와) 오토마트에서
+              제공한 참고자료입니다.<br />
+              <span class="text-[#A10076]"
+                >이자료는 참고자료로 화성시청이나 오토마트에서는 자료에 대한
+                책임은 지지 않습니다.</span
+              >
+            </div>
+          </div>
+          <div class="flex gap-2 items-start">
+            <span class="text-[#A10076] font-bold mt-1">•</span>
+            <div class="leading-relaxed">
+              <span
+                class="text-[#A10076] underline underline-offset-4 font-medium"
+              >
+                입찰 전에 차량보관소를 방문하여 반드시 차량을 직접 확인하신 후에
+                입찰에 참여하십시오.
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Close Button -->
+      <div class="flex justify-center mt-8">
+        <button
+          class="bg-zinc-100 text-zinc-600 rounded-md px-12 md:px-24 py-3 border border-zinc-300 font-medium hover:bg-zinc-200 transition"
+        >
+          닫기
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
